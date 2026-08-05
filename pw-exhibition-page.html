@@ -1,0 +1,2616 @@
+
+
+<head>
+  <title>POST WINGS | 波翼藝術</title>
+
+  <!-- 正式上線請更換GA4代碼 -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-VTZNRHLELH"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-VTZNRHLELH");
+  </script>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta
+    name="keywords"
+    content="POST WINGS, 波翼藝術, 虛擬展間, 當代藝術, Web3.0"
+  />
+  <meta
+    name="description"
+    content="波翼藝術專注於當代藝術市場 Web3.0 虛實整合服務。"
+  />
+
+  <link rel="apple-touch-icon" href="./img/apple-touch-icon.png" />
+  <link rel="icon" href="./img/favicon.ico" />
+
+  <meta property="og:url" content="https://www.postwings.art/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="POST WINGS 波翼藝術 | 藝術資產管理服務" />
+  <meta
+    property="og:description"
+    content="POST WINGS 波翼藝術專注於藝術展覽、授權、虛擬實境展間與 Web3.0 藝術服務。"
+  />
+  <meta
+    property="og:image"
+    content="https://www.postwings.art/img/og-image.jpg"
+  />
+
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+
+<body class="pw-site" data-build="designer-preview">
+<header class="pw-site-header" data-pw-header>
+  <div class="pw-container pw-site-header__inner">
+    <!-- LOGO -->
+    <a
+      class="pw-site-header__brand"
+      href="./index.html"
+      aria-label="回到 POST WINGS 首頁"
+    >
+      <img src="./img/logo.png" class="pw-site-header__logo" alt="POST WINGS" />
+    </a>
+
+    <!-- 大版主選單 -->
+    <nav class="pw-site-header__nav" aria-label="主要選單">
+      <button
+        class="pw-btn pw-site-header__nav-toggle"
+        type="button"
+        aria-controls="pw-header-menu-panel"
+        aria-expanded="false"
+        data-pw-toggle="menu"
+        data-pw-menu-key="exhibitions"
+      >
+        線上展演
+      </button>
+
+      <button
+        class="pw-btn pw-site-header__nav-toggle"
+        type="button"
+        aria-controls="pw-header-menu-panel"
+        aria-expanded="false"
+        data-pw-toggle="menu"
+        data-pw-menu-key="artists"
+      >
+        探索藝術人
+      </button>
+
+      <button
+        class="pw-btn pw-site-header__nav-toggle"
+        type="button"
+        aria-controls="pw-header-menu-panel"
+        aria-expanded="false"
+        data-pw-toggle="menu"
+        data-pw-menu-key="people"
+      >
+        翼見人物
+      </button>
+
+      <button
+        class="pw-btn pw-site-header__nav-toggle"
+        type="button"
+        aria-controls="pw-header-menu-panel"
+        aria-expanded="false"
+        data-pw-toggle="menu"
+        data-pw-menu-key="news"
+      >
+        波翼快訊
+      </button>
+
+      <!-- 加入我們：直接連結，不打開次選單 -->
+      <a class="pw-btn pw-site-header__nav-link" href="./pw-join-us.html">
+        加入我們
+      </a>
+    </nav>
+
+    <!-- 右側按鈕 -->
+    <div class="pw-site-header__actions">
+      <!-- 大版搜尋 toggle；小版隱藏 -->
+      <button
+        id="pw-search-toggle"
+        class="pw-site-header__icon-btn pw-site-header__icon-btn--search"
+        type="button"
+        aria-label="開啟搜尋"
+        aria-controls="pw-header-search-panel"
+        aria-expanded="false"
+        data-pw-toggle="search"
+      >
+        <img src="./img/pw-icon-search.png" alt="" />
+      </button>
+
+      <!-- 小版 menu toggle；大版預設隱藏 -->
+      <button
+        id="pw-menu-toggle"
+        class="pw-site-header__icon-btn pw-site-header__icon-btn--menu"
+        type="button"
+        aria-label="開啟選單"
+        aria-controls="pw-header-menu-panel"
+        aria-expanded="false"
+        data-pw-toggle="menu"
+      >
+        <img src="./img/pw-icon-menu.png" alt="" />
+      </button>
+
+      <!-- 語言 toggle -->
+      <div
+        class="pw-site-header__action-item pw-site-header__action-item--lang"
+      >
+        <button
+          id="pw-lang-toggle"
+          class="pw-site-header__icon-btn pw-site-header__icon-btn--lang"
+          type="button"
+          aria-label="切換語言"
+          aria-controls="pw-header-lang-panel"
+          aria-expanded="false"
+          data-pw-toggle="lang"
+        >
+          <img src="./img/pw-icon-lang.png" alt="" />
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 搜尋區塊 -->
+  <div
+    id="pw-header-search-panel"
+    class="pw-site-header__search-panel"
+    aria-hidden="true"
+    data-pw-panel="search"
+  >
+    <div class="pw-container">
+      <form
+        class="pw-site-header__search-form"
+        action="./pw-search-page.html"
+        method="get"
+        role="search"
+      >
+        <label
+          class="pw-site-header__icon-btn pw-sr-only"
+          for="pw-header-search-input"
+        >
+          <img src="./img/pw-icon-search.png" alt="" />
+        </label>
+
+        <input
+          id="pw-header-search-input"
+          class="pw-site-header__search-input"
+          type="search"
+          name="keyword"
+          placeholder="請輸入藝術家名字、創作媒材"
+        />
+      </form>
+    </div>
+  </div>
+
+  <!-- 展開選單 -->
+  <div
+    id="pw-header-menu-panel"
+    class="pw-site-header__menu-panel"
+    aria-hidden="true"
+    data-pw-panel="menu"
+  >
+    <div class="pw-container pw-site-header__menu-inner">
+      <nav class="pw-site-header__menu-grid" aria-label="展開選單">
+        <!-- 線上展演 -->
+        <div
+          class="pw-site-header__menu-group"
+          data-pw-menu-group="exhibitions"
+        >
+          <span class="pw-site-header__menu-title"> 線上展演 </span>
+
+          <a
+            class="pw-site-header__menu-link"
+            href="./pw-exhibition-page.html?tab=solo"
+          >
+            藝術個展
+          </a>
+
+          <a
+            class="pw-site-header__menu-link"
+            href="./pw-exhibition-page.html?tab=group"
+          >
+            團體聯展
+          </a>
+
+          <a
+            class="pw-site-header__menu-link"
+            href="./pw-exhibition-page.html?tab=fair"
+          >
+            藝文特展
+          </a>
+
+          <a
+            class="pw-site-header__menu-link"
+            href="./pw-exhibition-page.html?tab=curated"
+          >
+            藏家收藏間
+          </a>
+        </div>
+
+        <!-- 探索藝術人 -->
+        <div class="pw-site-header__menu-group" data-pw-menu-group="artists">
+          <span class="pw-site-header__menu-title"> 探索藝術人 </span>
+
+          <a
+            class="pw-site-header__menu-link"
+            href="./pw-artist-explore-page.html?tab=masters"
+          >
+            藝術大師
+          </a>
+
+          <a
+            class="pw-site-header__menu-link"
+            href="./pw-artist-explore-page.html?tab=creators"
+          >
+            創藝人物
+          </a>
+
+          <a
+            class="pw-site-header__menu-link"
+            href="./pw-artist-explore-page.html?tab=organizations"
+          >
+            藝術團體
+          </a>
+
+          <a
+            class="pw-site-header__menu-link"
+            href="./pw-artist-explore-page.html?tab=institutions"
+          >
+            藝術機構
+          </a>
+        </div>
+
+        <!-- 翼見人物 -->
+        <div class="pw-site-header__menu-group" data-pw-menu-group="people">
+          <span class="pw-site-header__menu-title"> 翼見人物 </span>
+
+          <a
+            class="pw-site-header__menu-link"
+            href="./pw-wing-people-page.html?tab=shorts"
+          >
+            短影音
+          </a>
+
+          <a
+            class="pw-site-header__menu-link"
+            href="./pw-wing-people-page.html?tab=interview"
+          >
+            專 訪
+          </a>
+        </div>
+
+        <!-- 波翼快訊 -->
+        <div class="pw-site-header__menu-group" data-pw-menu-group="news">
+          <span class="pw-site-header__menu-title"> 波翼快訊 </span>
+
+          <a class="pw-site-header__menu-link" href="./pw-wing-news-page.html">
+            平面新聞
+          </a>
+        </div>
+      </nav>
+
+      <!-- 小版底部 CTA -->
+      <div class="pw-site-header__menu-cta">
+        <div class="pw-btn-wrap">
+          <a
+            class="pw-site-header__menu-cta-link"
+            href="https://www.postwings.art/service"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            建立3D展間
+          </a>
+
+          <a class="pw-site-header__menu-cta-link" href="./pw-join-us.html">
+            加入我們
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 語言選單 -->
+  <div
+    id="pw-header-lang-panel"
+    class="pw-site-header__lang-panel"
+    aria-hidden="true"
+    data-pw-panel="lang"
+  >
+    <a
+      class="pw-site-header__lang-link pw-site-header__lang-link--active"
+      href="#!"
+      aria-current="true"
+    >
+      中 文
+    </a>
+
+    <a class="pw-site-header__lang-link" href="#!"> English </a>
+
+    <a class="pw-site-header__lang-link" href="#!"> 日本語 </a>
+
+    <a class="pw-site-header__lang-link" href="#!"> 한국어 </a>
+
+    <a class="pw-site-header__lang-link" href="#!"> Español </a>
+
+    <a class="pw-site-header__lang-link" href="#!"> Français </a>
+
+    <a class="pw-site-header__lang-link" href="#!"> Deutsch </a>
+  </div>
+</header>
+
+
+<main class="pw-main">
+  <div
+    class="pw-exhibition-page"
+    data-pw-exhibition-page
+  >
+    <h1 class="pw-exhibition-page__sr-only">
+      線上 3D 展演
+    </h1>
+
+    <div
+      class="pw-exhibition-page__tabs-layout"
+      data-pw-tabs
+      data-pw-exhibition-tabs
+    >
+      <!-- 第一層：展演類型 -->
+      <section
+        class="pw-section pw-exhibition-page__navigation"
+        aria-label="線上展演分類"
+      >
+        <div class="pw-container">
+          <div class="pw-inner pw-exhibition-page__navigation-inner">
+            <div
+              class="pw-category-tabs pw-exhibition-page__tabs"
+              role="tablist"
+              aria-label="線上展演內容分類"
+            >
+              <button
+                class="pw-category-tabs__button pw-exhibition-page__tab is-active"
+                id="exhibition-solo-tab"
+                type="button"
+                role="tab"
+                aria-selected="true"
+                aria-controls="exhibition-solo-panel"
+                tabindex="0"
+                data-pw-tab-trigger="solo"
+              >
+                藝術個展
+              </button>
+
+              <button
+                class="pw-category-tabs__button pw-exhibition-page__tab"
+                id="exhibition-group-tab"
+                type="button"
+                role="tab"
+                aria-selected="false"
+                aria-controls="exhibition-group-panel"
+                tabindex="-1"
+                data-pw-tab-trigger="group"
+              >
+                團體聯展
+              </button>
+
+              <button
+                class="pw-category-tabs__button pw-exhibition-page__tab"
+                id="exhibition-fair-tab"
+                type="button"
+                role="tab"
+                aria-selected="false"
+                aria-controls="exhibition-fair-panel"
+                tabindex="-1"
+                data-pw-tab-trigger="fair"
+              >
+                藝文特展
+              </button>
+
+              <button
+                class="pw-category-tabs__button pw-exhibition-page__tab"
+                id="exhibition-curated-tab"
+                type="button"
+                role="tab"
+                aria-selected="false"
+                aria-controls="exhibition-curated-panel"
+                tabindex="-1"
+                data-pw-tab-trigger="curated"
+              >
+                藏家收藏間
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 藝術個展：直接進入 3DVR 展間 -->
+      
+
+<section
+  class="pw-exhibition-page__panel"
+  id="exhibition-solo-panel"
+  role="tabpanel"
+  aria-labelledby="exhibition-solo-tab"
+  tabindex="0"
+  data-pw-tab-panel="solo"
+  data-pw-exhibition-panel="solo"
+  
+>
+  <div class="pw-section pw-exhibition-page__panel-header">
+    <div class="pw-container">
+      <div class="pw-inner pw-exhibition-page__panel-header-inner">
+        
+          <div
+            class="pw-category-scroll pw-exhibition-page__category-scroll"
+            data-pw-category-scroll
+            data-pw-exhibition-category-scroll
+          >
+            <button
+              class="pw-icon-btn pw-exhibition-page__category-control pw-exhibition-page__category-control--prev"
+              type="button"
+              aria-label="查看上一組展演分類"
+              data-pw-category-scroll-prev
+            >
+              <span aria-hidden="true">‹</span>
+            </button>
+
+            <div
+              class="pw-category-scroll__rail pw-exhibition-page__category-rail"
+              data-pw-category-scroll-rail
+            >
+              
+                <button
+                  class="pw-chip pw-category-scroll__button pw-exhibition-page__category is-active"
+                  type="button"
+                  aria-pressed="true"
+                  data-pw-category-scroll-item
+                  data-pw-exhibition-category="all"
+                  data-heading-en="ALL EXHIBITIONS"
+                  data-heading-zh="全部展演"
+                >
+                  全部
+                </button>
+              
+                <button
+                  class="pw-chip pw-category-scroll__button pw-exhibition-page__category "
+                  type="button"
+                  aria-pressed="false"
+                  data-pw-category-scroll-item
+                  data-pw-exhibition-category="oil-painting"
+                  data-heading-en="OIL PAINTING"
+                  data-heading-zh="油彩藝術"
+                >
+                  油彩藝術
+                </button>
+              
+                <button
+                  class="pw-chip pw-category-scroll__button pw-exhibition-page__category "
+                  type="button"
+                  aria-pressed="false"
+                  data-pw-category-scroll-item
+                  data-pw-exhibition-category="ink-art"
+                  data-heading-en="INK ART"
+                  data-heading-zh="水墨藝術"
+                >
+                  水墨藝術
+                </button>
+              
+                <button
+                  class="pw-chip pw-category-scroll__button pw-exhibition-page__category "
+                  type="button"
+                  aria-pressed="false"
+                  data-pw-category-scroll-item
+                  data-pw-exhibition-category="pastel"
+                  data-heading-en="PASTEL ART"
+                  data-heading-zh="粉彩藝術"
+                >
+                  粉彩藝術
+                </button>
+              
+                <button
+                  class="pw-chip pw-category-scroll__button pw-exhibition-page__category "
+                  type="button"
+                  aria-pressed="false"
+                  data-pw-category-scroll-item
+                  data-pw-exhibition-category="photography"
+                  data-heading-en="PHOTOGRAPHY"
+                  data-heading-zh="攝影藝術"
+                >
+                  攝影藝術
+                </button>
+              
+                <button
+                  class="pw-chip pw-category-scroll__button pw-exhibition-page__category "
+                  type="button"
+                  aria-pressed="false"
+                  data-pw-category-scroll-item
+                  data-pw-exhibition-category="sculpture"
+                  data-heading-en="SCULPTURE"
+                  data-heading-zh="雕塑藝術"
+                >
+                  雕塑藝術
+                </button>
+              
+                <button
+                  class="pw-chip pw-category-scroll__button pw-exhibition-page__category "
+                  type="button"
+                  aria-pressed="false"
+                  data-pw-category-scroll-item
+                  data-pw-exhibition-category="digital-art"
+                  data-heading-en="DIGITAL ART"
+                  data-heading-zh="數位藝術"
+                >
+                  數位藝術
+                </button>
+              
+                <button
+                  class="pw-chip pw-category-scroll__button pw-exhibition-page__category "
+                  type="button"
+                  aria-pressed="false"
+                  data-pw-category-scroll-item
+                  data-pw-exhibition-category="mixed-media"
+                  data-heading-en="MIXED MEDIA"
+                  data-heading-zh="複合媒材"
+                >
+                  複合媒材
+                </button>
+              
+                <button
+                  class="pw-chip pw-category-scroll__button pw-exhibition-page__category "
+                  type="button"
+                  aria-pressed="false"
+                  data-pw-category-scroll-item
+                  data-pw-exhibition-category="installation"
+                  data-heading-en="INSTALLATION ART"
+                  data-heading-zh="裝置藝術"
+                >
+                  裝置藝術
+                </button>
+              
+            </div>
+
+            <button
+              class="pw-icon-btn pw-exhibition-page__category-control pw-exhibition-page__category-control--next"
+              type="button"
+              aria-label="查看下一組展演分類"
+              data-pw-category-scroll-next
+            >
+              <span aria-hidden="true">›</span>
+            </button>
+          </div>
+        
+
+        <header
+          class="pw-accent-heading pw-accent-heading--page pw-exhibition-page__heading"
+        >
+          <h2
+            class="pw-accent-heading__title"
+            id="exhibition-solo-panel-title"
+            data-pw-exhibition-heading-en
+          >
+            SOLO EXHIBITION
+          </h2>
+
+          <p
+            class="pw-accent-heading__subtitle"
+            data-pw-exhibition-heading-zh
+          >
+            藝術個展
+          </p>
+        </header>
+      </div>
+    </div>
+  </div>
+
+  <div class="pw-section pw-exhibition-page__results">
+    <div class="pw-container">
+      <div class="pw-inner pw-exhibition-page__results-inner">
+        <!--
+          React Clean 交付用的基本卡片 DOM。
+
+          預覽版切換次分類時，
+          pw-exhibition-page.js 只替換此 ul 內容。
+
+          卡片目的地由 cardDestination 決定。
+        -->
+        <ul
+          class="pw-exhibition-page__list"
+          aria-labelledby="exhibition-solo-panel-title"
+          data-pw-exhibition-list
+        >
+          <li class="pw-exhibition-page__item">
+            <article class="pw-exhibition-page__card is-featured">
+              <a
+                class="pw-exhibition-page__card-link"
+                href="https://virtual.metaassets.asia/exhibitions/LiChienYi"
+                aria-label="開啟 3D 展間：李健儀油畫創作展"
+                
+                  target="_blank"
+                  rel="noopener noreferrer"
+                
+              >
+                <span class="pw-exhibition-page__media">
+                  <img
+                    class="pw-exhibition-page__image"
+                    src="https://cdn.metaassets.asia/exhibitions/banner_55_20251212073814.jpg"
+                    alt="李健儀油畫創作展主視覺"
+                    loading="lazy"
+                    decoding="async"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                  >
+                  <!-- 先隱藏不顯示 -->
+                  <span class="pw-exhibition-page__media-badge">
+                    3DVR
+                  </span>
+                </span>
+
+                <span class="pw-exhibition-page__card-body">
+                  <!-- 先隱藏不顯示 
+                  <span class="pw-exhibition-page__artist">
+                    李健儀
+                  </span>
+-->
+                  <h3 class="pw-exhibition-page__title">
+                    李健儀油畫創作展
+                  </h3>
+
+                  <span class="pw-exhibition-page__description">
+                    以油彩探索文化記憶與生命經驗，呈現完整的線上展演內容。
+                  </span>
+                </span>
+              </a>
+            </article>
+          </li>
+
+          <li class="pw-exhibition-page__item">
+            <article class="pw-exhibition-page__card">
+              <a
+                class="pw-exhibition-page__card-link"
+                href="https://virtual.metaassets.asia/exhibitions/LiChienYi"
+                aria-label="開啟 3D 展間：粉彩光景"
+                
+                  target="_blank"
+                  rel="noopener noreferrer"
+                
+              >
+                <span class="pw-exhibition-page__media">
+                  <img
+                    class="pw-exhibition-page__image"
+                    src="https://placehold.co/1200x675/f3eee5/6f665c?text=PASTEL+EXHIBITION"
+                    alt="粉彩光景展覽主視覺"
+                    loading="lazy"
+                    decoding="async"
+                  >
+                  <!-- 先隱藏不顯示 -->
+                  <span class="pw-exhibition-page__media-badge">
+                    3DVR
+                  </span>
+                </span>
+
+                <span class="pw-exhibition-page__card-body">
+                  <!-- 先隱藏不顯示
+                  <span class="pw-exhibition-page__artist">
+                    示範藝術人
+                  </span>
+ -->
+                  <h3 class="pw-exhibition-page__title">
+                    粉彩光景
+                  </h3>
+
+                  <span class="pw-exhibition-page__description">
+                    柔和色層交疊出光影與空間，呈現粉彩媒材的細膩質感。
+                  </span>
+                </span>
+              </a>
+            </article>
+          </li>
+
+          <li class="pw-exhibition-page__item">
+            <article class="pw-exhibition-page__card">
+              <a
+                class="pw-exhibition-page__card-link"
+                href="https://virtual.metaassets.asia/exhibitions/LiChienYi"
+                aria-label="開啟 3D 展間：城市之間"
+                
+                  target="_blank"
+                  rel="noopener noreferrer"
+                
+              >
+                <span class="pw-exhibition-page__media">
+                  <img
+                    class="pw-exhibition-page__image"
+                    src="https://placehold.co/1200x675/e7e7e7/555555?text=URBAN+EXHIBITION"
+                    alt="城市之間展覽主視覺"
+                    loading="lazy"
+                    decoding="async"
+                  >
+                  <!-- 先隱藏不顯示 -->
+                  <span class="pw-exhibition-page__media-badge">
+                    3DVR
+                  </span>
+                </span>
+
+                <span class="pw-exhibition-page__card-body">
+                  <!-- 先隱藏不顯示 
+                  <span class="pw-exhibition-page__artist">
+                    示範藝術人
+                  </span>
+-->
+                  <h3 class="pw-exhibition-page__title">
+                    城市之間
+                  </h3>
+
+                  <span class="pw-exhibition-page__description">
+                    以攝影與複合媒材記錄城市移動、建築表面與日常片段。
+                  </span>
+                </span>
+              </a>
+            </article>
+          </li>
+        </ul>
+
+        
+          <nav
+            class="pw-pagination pw-exhibition-page__pagination"
+            aria-label="藝術個展分頁"
+          >
+            <span
+              class="pw-pagination__control pw-pagination__control--prev pw-pagination__control--disabled"
+              aria-label="上一頁"
+              aria-disabled="true"
+            >
+              ‹
+            </span>
+
+            <a
+              class="pw-pagination__item pw-pagination__item--active"
+              href="?type=solo&amp;category=all&page=1"
+              aria-label="第 1 頁"
+              aria-current="page"
+            >
+              1
+            </a>
+
+            <a
+              class="pw-pagination__item"
+              href="?type=solo&amp;category=all&page=2"
+              aria-label="前往第 2 頁"
+            >
+              2
+            </a>
+
+            <a
+              class="pw-pagination__item"
+              href="?type=solo&amp;category=all&page=3"
+              aria-label="前往第 3 頁"
+            >
+              3
+            </a>
+
+            <span
+              class="pw-pagination__ellipsis"
+              aria-hidden="true"
+            >
+              …
+            </span>
+
+            <a
+              class="pw-pagination__item"
+              href="?type=solo&amp;category=all&page=24"
+              aria-label="前往第 24 頁"
+            >
+              24
+            </a>
+
+            <a
+              class="pw-pagination__control pw-pagination__control--next"
+              href="?type=solo&amp;category=all&page=2"
+              aria-label="下一頁"
+            >
+              ›
+            </a>
+          </nav>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+      <!-- 團體聯展：進入協會首頁 -->
+      
+
+<section
+  class="pw-exhibition-page__panel"
+  id="exhibition-group-panel"
+  role="tabpanel"
+  aria-labelledby="exhibition-group-tab"
+  tabindex="0"
+  data-pw-tab-panel="group"
+  data-pw-exhibition-panel="group"
+  hidden
+>
+  <div class="pw-section pw-exhibition-page__panel-header">
+    <div class="pw-container">
+      <div class="pw-inner pw-exhibition-page__panel-header-inner">
+        
+          <div
+            class="pw-category-scroll pw-exhibition-page__category-scroll"
+            data-pw-category-scroll
+            data-pw-exhibition-category-scroll
+          >
+            <button
+              class="pw-icon-btn pw-exhibition-page__category-control pw-exhibition-page__category-control--prev"
+              type="button"
+              aria-label="查看上一組展演分類"
+              data-pw-category-scroll-prev
+            >
+              <span aria-hidden="true">‹</span>
+            </button>
+
+            <div
+              class="pw-category-scroll__rail pw-exhibition-page__category-rail"
+              data-pw-category-scroll-rail
+            >
+              
+                <button
+                  class="pw-chip pw-category-scroll__button pw-exhibition-page__category is-active"
+                  type="button"
+                  aria-pressed="true"
+                  data-pw-category-scroll-item
+                  data-pw-exhibition-category="all"
+                  data-heading-en="ALL EXHIBITIONS"
+                  data-heading-zh="全部展演"
+                >
+                  全部
+                </button>
+              
+                <button
+                  class="pw-chip pw-category-scroll__button pw-exhibition-page__category "
+                  type="button"
+                  aria-pressed="false"
+                  data-pw-category-scroll-item
+                  data-pw-exhibition-category="oil-painting"
+                  data-heading-en="OIL PAINTING"
+                  data-heading-zh="油彩藝術"
+                >
+                  油彩藝術
+                </button>
+              
+                <button
+                  class="pw-chip pw-category-scroll__button pw-exhibition-page__category "
+                  type="button"
+                  aria-pressed="false"
+                  data-pw-category-scroll-item
+                  data-pw-exhibition-category="ink-art"
+                  data-heading-en="INK ART"
+                  data-heading-zh="水墨藝術"
+                >
+                  水墨藝術
+                </button>
+              
+                <button
+                  class="pw-chip pw-category-scroll__button pw-exhibition-page__category "
+                  type="button"
+                  aria-pressed="false"
+                  data-pw-category-scroll-item
+                  data-pw-exhibition-category="pastel"
+                  data-heading-en="PASTEL ART"
+                  data-heading-zh="粉彩藝術"
+                >
+                  粉彩藝術
+                </button>
+              
+                <button
+                  class="pw-chip pw-category-scroll__button pw-exhibition-page__category "
+                  type="button"
+                  aria-pressed="false"
+                  data-pw-category-scroll-item
+                  data-pw-exhibition-category="photography"
+                  data-heading-en="PHOTOGRAPHY"
+                  data-heading-zh="攝影藝術"
+                >
+                  攝影藝術
+                </button>
+              
+                <button
+                  class="pw-chip pw-category-scroll__button pw-exhibition-page__category "
+                  type="button"
+                  aria-pressed="false"
+                  data-pw-category-scroll-item
+                  data-pw-exhibition-category="sculpture"
+                  data-heading-en="SCULPTURE"
+                  data-heading-zh="雕塑藝術"
+                >
+                  雕塑藝術
+                </button>
+              
+                <button
+                  class="pw-chip pw-category-scroll__button pw-exhibition-page__category "
+                  type="button"
+                  aria-pressed="false"
+                  data-pw-category-scroll-item
+                  data-pw-exhibition-category="digital-art"
+                  data-heading-en="DIGITAL ART"
+                  data-heading-zh="數位藝術"
+                >
+                  數位藝術
+                </button>
+              
+                <button
+                  class="pw-chip pw-category-scroll__button pw-exhibition-page__category "
+                  type="button"
+                  aria-pressed="false"
+                  data-pw-category-scroll-item
+                  data-pw-exhibition-category="mixed-media"
+                  data-heading-en="MIXED MEDIA"
+                  data-heading-zh="複合媒材"
+                >
+                  複合媒材
+                </button>
+              
+                <button
+                  class="pw-chip pw-category-scroll__button pw-exhibition-page__category "
+                  type="button"
+                  aria-pressed="false"
+                  data-pw-category-scroll-item
+                  data-pw-exhibition-category="installation"
+                  data-heading-en="INSTALLATION ART"
+                  data-heading-zh="裝置藝術"
+                >
+                  裝置藝術
+                </button>
+              
+            </div>
+
+            <button
+              class="pw-icon-btn pw-exhibition-page__category-control pw-exhibition-page__category-control--next"
+              type="button"
+              aria-label="查看下一組展演分類"
+              data-pw-category-scroll-next
+            >
+              <span aria-hidden="true">›</span>
+            </button>
+          </div>
+        
+
+        <header
+          class="pw-accent-heading pw-accent-heading--page pw-exhibition-page__heading"
+        >
+          <h2
+            class="pw-accent-heading__title"
+            id="exhibition-group-panel-title"
+            data-pw-exhibition-heading-en
+          >
+            GROUP EXHIBITION
+          </h2>
+
+          <p
+            class="pw-accent-heading__subtitle"
+            data-pw-exhibition-heading-zh
+          >
+            團體聯展
+          </p>
+        </header>
+      </div>
+    </div>
+  </div>
+
+  <div class="pw-section pw-exhibition-page__results">
+    <div class="pw-container">
+      <div class="pw-inner pw-exhibition-page__results-inner">
+        <!--
+          React Clean 交付用的基本卡片 DOM。
+
+          預覽版切換次分類時，
+          pw-exhibition-page.js 只替換此 ul 內容。
+
+          卡片目的地由 cardDestination 決定。
+        -->
+        <ul
+          class="pw-exhibition-page__list"
+          aria-labelledby="exhibition-group-panel-title"
+          data-pw-exhibition-list
+        >
+          <li class="pw-exhibition-page__item">
+            <article class="pw-exhibition-page__card is-featured">
+              <a
+                class="pw-exhibition-page__card-link"
+                href="./pw-association-page.html"
+                aria-label="前往協會首頁：李健儀油畫創作展"
+                
+              >
+                <span class="pw-exhibition-page__media">
+                  <img
+                    class="pw-exhibition-page__image"
+                    src="https://cdn.metaassets.asia/exhibitions/banner_55_20251212073814.jpg"
+                    alt="李健儀油畫創作展主視覺"
+                    loading="lazy"
+                    decoding="async"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                  >
+                  <!-- 先隱藏不顯示 -->
+                  <span class="pw-exhibition-page__media-badge">
+                    協會首頁
+                  </span>
+                </span>
+
+                <span class="pw-exhibition-page__card-body">
+                  <!-- 先隱藏不顯示 
+                  <span class="pw-exhibition-page__artist">
+                    李健儀
+                  </span>
+-->
+                  <h3 class="pw-exhibition-page__title">
+                    李健儀油畫創作展
+                  </h3>
+
+                  <span class="pw-exhibition-page__description">
+                    以油彩探索文化記憶與生命經驗，呈現完整的線上展演內容。
+                  </span>
+                </span>
+              </a>
+            </article>
+          </li>
+
+          <li class="pw-exhibition-page__item">
+            <article class="pw-exhibition-page__card">
+              <a
+                class="pw-exhibition-page__card-link"
+                href="./pw-association-page.html"
+                aria-label="前往協會首頁：粉彩光景"
+                
+              >
+                <span class="pw-exhibition-page__media">
+                  <img
+                    class="pw-exhibition-page__image"
+                    src="https://placehold.co/1200x675/f3eee5/6f665c?text=PASTEL+EXHIBITION"
+                    alt="粉彩光景展覽主視覺"
+                    loading="lazy"
+                    decoding="async"
+                  >
+                  <!-- 先隱藏不顯示 -->
+                  <span class="pw-exhibition-page__media-badge">
+                    協會首頁
+                  </span>
+                </span>
+
+                <span class="pw-exhibition-page__card-body">
+                  <!-- 先隱藏不顯示
+                  <span class="pw-exhibition-page__artist">
+                    示範藝術人
+                  </span>
+ -->
+                  <h3 class="pw-exhibition-page__title">
+                    粉彩光景
+                  </h3>
+
+                  <span class="pw-exhibition-page__description">
+                    柔和色層交疊出光影與空間，呈現粉彩媒材的細膩質感。
+                  </span>
+                </span>
+              </a>
+            </article>
+          </li>
+
+          <li class="pw-exhibition-page__item">
+            <article class="pw-exhibition-page__card">
+              <a
+                class="pw-exhibition-page__card-link"
+                href="./pw-association-page.html"
+                aria-label="前往協會首頁：城市之間"
+                
+              >
+                <span class="pw-exhibition-page__media">
+                  <img
+                    class="pw-exhibition-page__image"
+                    src="https://placehold.co/1200x675/e7e7e7/555555?text=URBAN+EXHIBITION"
+                    alt="城市之間展覽主視覺"
+                    loading="lazy"
+                    decoding="async"
+                  >
+                  <!-- 先隱藏不顯示 -->
+                  <span class="pw-exhibition-page__media-badge">
+                    協會首頁
+                  </span>
+                </span>
+
+                <span class="pw-exhibition-page__card-body">
+                  <!-- 先隱藏不顯示 
+                  <span class="pw-exhibition-page__artist">
+                    示範藝術人
+                  </span>
+-->
+                  <h3 class="pw-exhibition-page__title">
+                    城市之間
+                  </h3>
+
+                  <span class="pw-exhibition-page__description">
+                    以攝影與複合媒材記錄城市移動、建築表面與日常片段。
+                  </span>
+                </span>
+              </a>
+            </article>
+          </li>
+        </ul>
+
+        
+          <nav
+            class="pw-pagination pw-exhibition-page__pagination"
+            aria-label="團體聯展分頁"
+          >
+            <span
+              class="pw-pagination__control pw-pagination__control--prev pw-pagination__control--disabled"
+              aria-label="上一頁"
+              aria-disabled="true"
+            >
+              ‹
+            </span>
+
+            <a
+              class="pw-pagination__item pw-pagination__item--active"
+              href="?type=group&amp;category=all&page=1"
+              aria-label="第 1 頁"
+              aria-current="page"
+            >
+              1
+            </a>
+
+            <a
+              class="pw-pagination__item"
+              href="?type=group&amp;category=all&page=2"
+              aria-label="前往第 2 頁"
+            >
+              2
+            </a>
+
+            <a
+              class="pw-pagination__item"
+              href="?type=group&amp;category=all&page=3"
+              aria-label="前往第 3 頁"
+            >
+              3
+            </a>
+
+            <span
+              class="pw-pagination__ellipsis"
+              aria-hidden="true"
+            >
+              …
+            </span>
+
+            <a
+              class="pw-pagination__item"
+              href="?type=group&amp;category=all&page=12"
+              aria-label="前往第 12 頁"
+            >
+              12
+            </a>
+
+            <a
+              class="pw-pagination__control pw-pagination__control--next"
+              href="?type=group&amp;category=all&page=2"
+              aria-label="下一頁"
+            >
+              ›
+            </a>
+          </nav>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+      <!-- 藝文特展：進入機構首頁 -->
+      
+
+<section
+  class="pw-exhibition-page__panel"
+  id="exhibition-fair-panel"
+  role="tabpanel"
+  aria-labelledby="exhibition-fair-tab"
+  tabindex="0"
+  data-pw-tab-panel="fair"
+  data-pw-exhibition-panel="fair"
+  hidden
+>
+  <div class="pw-section pw-exhibition-page__panel-header">
+    <div class="pw-container">
+      <div class="pw-inner pw-exhibition-page__panel-header-inner">
+        
+          <div
+            class="pw-category-scroll pw-exhibition-page__category-scroll"
+            data-pw-category-scroll
+            data-pw-exhibition-category-scroll
+          >
+            <button
+              class="pw-icon-btn pw-exhibition-page__category-control pw-exhibition-page__category-control--prev"
+              type="button"
+              aria-label="查看上一組展演分類"
+              data-pw-category-scroll-prev
+            >
+              <span aria-hidden="true">‹</span>
+            </button>
+
+            <div
+              class="pw-category-scroll__rail pw-exhibition-page__category-rail"
+              data-pw-category-scroll-rail
+            >
+              
+                <button
+                  class="pw-chip pw-category-scroll__button pw-exhibition-page__category is-active"
+                  type="button"
+                  aria-pressed="true"
+                  data-pw-category-scroll-item
+                  data-pw-exhibition-category="all"
+                  data-heading-en="ALL EXHIBITIONS"
+                  data-heading-zh="全部展演"
+                >
+                  全部
+                </button>
+              
+                <button
+                  class="pw-chip pw-category-scroll__button pw-exhibition-page__category "
+                  type="button"
+                  aria-pressed="false"
+                  data-pw-category-scroll-item
+                  data-pw-exhibition-category="oil-painting"
+                  data-heading-en="OIL PAINTING"
+                  data-heading-zh="油彩藝術"
+                >
+                  油彩藝術
+                </button>
+              
+                <button
+                  class="pw-chip pw-category-scroll__button pw-exhibition-page__category "
+                  type="button"
+                  aria-pressed="false"
+                  data-pw-category-scroll-item
+                  data-pw-exhibition-category="ink-art"
+                  data-heading-en="INK ART"
+                  data-heading-zh="水墨藝術"
+                >
+                  水墨藝術
+                </button>
+              
+                <button
+                  class="pw-chip pw-category-scroll__button pw-exhibition-page__category "
+                  type="button"
+                  aria-pressed="false"
+                  data-pw-category-scroll-item
+                  data-pw-exhibition-category="pastel"
+                  data-heading-en="PASTEL ART"
+                  data-heading-zh="粉彩藝術"
+                >
+                  粉彩藝術
+                </button>
+              
+                <button
+                  class="pw-chip pw-category-scroll__button pw-exhibition-page__category "
+                  type="button"
+                  aria-pressed="false"
+                  data-pw-category-scroll-item
+                  data-pw-exhibition-category="photography"
+                  data-heading-en="PHOTOGRAPHY"
+                  data-heading-zh="攝影藝術"
+                >
+                  攝影藝術
+                </button>
+              
+                <button
+                  class="pw-chip pw-category-scroll__button pw-exhibition-page__category "
+                  type="button"
+                  aria-pressed="false"
+                  data-pw-category-scroll-item
+                  data-pw-exhibition-category="sculpture"
+                  data-heading-en="SCULPTURE"
+                  data-heading-zh="雕塑藝術"
+                >
+                  雕塑藝術
+                </button>
+              
+                <button
+                  class="pw-chip pw-category-scroll__button pw-exhibition-page__category "
+                  type="button"
+                  aria-pressed="false"
+                  data-pw-category-scroll-item
+                  data-pw-exhibition-category="digital-art"
+                  data-heading-en="DIGITAL ART"
+                  data-heading-zh="數位藝術"
+                >
+                  數位藝術
+                </button>
+              
+                <button
+                  class="pw-chip pw-category-scroll__button pw-exhibition-page__category "
+                  type="button"
+                  aria-pressed="false"
+                  data-pw-category-scroll-item
+                  data-pw-exhibition-category="mixed-media"
+                  data-heading-en="MIXED MEDIA"
+                  data-heading-zh="複合媒材"
+                >
+                  複合媒材
+                </button>
+              
+                <button
+                  class="pw-chip pw-category-scroll__button pw-exhibition-page__category "
+                  type="button"
+                  aria-pressed="false"
+                  data-pw-category-scroll-item
+                  data-pw-exhibition-category="installation"
+                  data-heading-en="INSTALLATION ART"
+                  data-heading-zh="裝置藝術"
+                >
+                  裝置藝術
+                </button>
+              
+            </div>
+
+            <button
+              class="pw-icon-btn pw-exhibition-page__category-control pw-exhibition-page__category-control--next"
+              type="button"
+              aria-label="查看下一組展演分類"
+              data-pw-category-scroll-next
+            >
+              <span aria-hidden="true">›</span>
+            </button>
+          </div>
+        
+
+        <header
+          class="pw-accent-heading pw-accent-heading--page pw-exhibition-page__heading"
+        >
+          <h2
+            class="pw-accent-heading__title"
+            id="exhibition-fair-panel-title"
+            data-pw-exhibition-heading-en
+          >
+            ART FAIR
+          </h2>
+
+          <p
+            class="pw-accent-heading__subtitle"
+            data-pw-exhibition-heading-zh
+          >
+            藝文特展
+          </p>
+        </header>
+      </div>
+    </div>
+  </div>
+
+  <div class="pw-section pw-exhibition-page__results">
+    <div class="pw-container">
+      <div class="pw-inner pw-exhibition-page__results-inner">
+        <!--
+          React Clean 交付用的基本卡片 DOM。
+
+          預覽版切換次分類時，
+          pw-exhibition-page.js 只替換此 ul 內容。
+
+          卡片目的地由 cardDestination 決定。
+        -->
+        <ul
+          class="pw-exhibition-page__list"
+          aria-labelledby="exhibition-fair-panel-title"
+          data-pw-exhibition-list
+        >
+          <li class="pw-exhibition-page__item">
+            <article class="pw-exhibition-page__card is-featured">
+              <a
+                class="pw-exhibition-page__card-link"
+                href="./pw-institution-page.html"
+                aria-label="前往機構首頁：李健儀油畫創作展"
+                
+              >
+                <span class="pw-exhibition-page__media">
+                  <img
+                    class="pw-exhibition-page__image"
+                    src="https://cdn.metaassets.asia/exhibitions/banner_55_20251212073814.jpg"
+                    alt="李健儀油畫創作展主視覺"
+                    loading="lazy"
+                    decoding="async"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                  >
+                  <!-- 先隱藏不顯示 -->
+                  <span class="pw-exhibition-page__media-badge">
+                    機構首頁
+                  </span>
+                </span>
+
+                <span class="pw-exhibition-page__card-body">
+                  <!-- 先隱藏不顯示 
+                  <span class="pw-exhibition-page__artist">
+                    李健儀
+                  </span>
+-->
+                  <h3 class="pw-exhibition-page__title">
+                    李健儀油畫創作展
+                  </h3>
+
+                  <span class="pw-exhibition-page__description">
+                    以油彩探索文化記憶與生命經驗，呈現完整的線上展演內容。
+                  </span>
+                </span>
+              </a>
+            </article>
+          </li>
+
+          <li class="pw-exhibition-page__item">
+            <article class="pw-exhibition-page__card">
+              <a
+                class="pw-exhibition-page__card-link"
+                href="./pw-institution-page.html"
+                aria-label="前往機構首頁：粉彩光景"
+                
+              >
+                <span class="pw-exhibition-page__media">
+                  <img
+                    class="pw-exhibition-page__image"
+                    src="https://placehold.co/1200x675/f3eee5/6f665c?text=PASTEL+EXHIBITION"
+                    alt="粉彩光景展覽主視覺"
+                    loading="lazy"
+                    decoding="async"
+                  >
+                  <!-- 先隱藏不顯示 -->
+                  <span class="pw-exhibition-page__media-badge">
+                    機構首頁
+                  </span>
+                </span>
+
+                <span class="pw-exhibition-page__card-body">
+                  <!-- 先隱藏不顯示
+                  <span class="pw-exhibition-page__artist">
+                    示範藝術人
+                  </span>
+ -->
+                  <h3 class="pw-exhibition-page__title">
+                    粉彩光景
+                  </h3>
+
+                  <span class="pw-exhibition-page__description">
+                    柔和色層交疊出光影與空間，呈現粉彩媒材的細膩質感。
+                  </span>
+                </span>
+              </a>
+            </article>
+          </li>
+
+          <li class="pw-exhibition-page__item">
+            <article class="pw-exhibition-page__card">
+              <a
+                class="pw-exhibition-page__card-link"
+                href="./pw-institution-page.html"
+                aria-label="前往機構首頁：城市之間"
+                
+              >
+                <span class="pw-exhibition-page__media">
+                  <img
+                    class="pw-exhibition-page__image"
+                    src="https://placehold.co/1200x675/e7e7e7/555555?text=URBAN+EXHIBITION"
+                    alt="城市之間展覽主視覺"
+                    loading="lazy"
+                    decoding="async"
+                  >
+                  <!-- 先隱藏不顯示 -->
+                  <span class="pw-exhibition-page__media-badge">
+                    機構首頁
+                  </span>
+                </span>
+
+                <span class="pw-exhibition-page__card-body">
+                  <!-- 先隱藏不顯示 
+                  <span class="pw-exhibition-page__artist">
+                    示範藝術人
+                  </span>
+-->
+                  <h3 class="pw-exhibition-page__title">
+                    城市之間
+                  </h3>
+
+                  <span class="pw-exhibition-page__description">
+                    以攝影與複合媒材記錄城市移動、建築表面與日常片段。
+                  </span>
+                </span>
+              </a>
+            </article>
+          </li>
+        </ul>
+
+        
+          <nav
+            class="pw-pagination pw-exhibition-page__pagination"
+            aria-label="藝文特展分頁"
+          >
+            <span
+              class="pw-pagination__control pw-pagination__control--prev pw-pagination__control--disabled"
+              aria-label="上一頁"
+              aria-disabled="true"
+            >
+              ‹
+            </span>
+
+            <a
+              class="pw-pagination__item pw-pagination__item--active"
+              href="?type=fair&amp;category=all&page=1"
+              aria-label="第 1 頁"
+              aria-current="page"
+            >
+              1
+            </a>
+
+            <a
+              class="pw-pagination__item"
+              href="?type=fair&amp;category=all&page=2"
+              aria-label="前往第 2 頁"
+            >
+              2
+            </a>
+
+            <a
+              class="pw-pagination__item"
+              href="?type=fair&amp;category=all&page=3"
+              aria-label="前往第 3 頁"
+            >
+              3
+            </a>
+
+            <span
+              class="pw-pagination__ellipsis"
+              aria-hidden="true"
+            >
+              …
+            </span>
+
+            <a
+              class="pw-pagination__item"
+              href="?type=fair&amp;category=all&page=8"
+              aria-label="前往第 8 頁"
+            >
+              8
+            </a>
+
+            <a
+              class="pw-pagination__control pw-pagination__control--next"
+              href="?type=fair&amp;category=all&page=2"
+              aria-label="下一頁"
+            >
+              ›
+            </a>
+          </nav>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+      <!-- 藏家收藏間：直接進入 3DVR 展間 -->
+      
+
+<section
+  class="pw-exhibition-page__panel"
+  id="exhibition-curated-panel"
+  role="tabpanel"
+  aria-labelledby="exhibition-curated-tab"
+  tabindex="0"
+  data-pw-tab-panel="curated"
+  data-pw-exhibition-panel="curated"
+  hidden
+>
+  <div class="pw-section pw-exhibition-page__panel-header">
+    <div class="pw-container">
+      <div class="pw-inner pw-exhibition-page__panel-header-inner">
+        
+          <div
+            class="pw-category-scroll pw-exhibition-page__category-scroll"
+            data-pw-category-scroll
+            data-pw-exhibition-category-scroll
+          >
+            <button
+              class="pw-icon-btn pw-exhibition-page__category-control pw-exhibition-page__category-control--prev"
+              type="button"
+              aria-label="查看上一組展演分類"
+              data-pw-category-scroll-prev
+            >
+              <span aria-hidden="true">‹</span>
+            </button>
+
+            <div
+              class="pw-category-scroll__rail pw-exhibition-page__category-rail"
+              data-pw-category-scroll-rail
+            >
+              
+                <button
+                  class="pw-chip pw-category-scroll__button pw-exhibition-page__category is-active"
+                  type="button"
+                  aria-pressed="true"
+                  data-pw-category-scroll-item
+                  data-pw-exhibition-category="all"
+                  data-heading-en="ALL EXHIBITIONS"
+                  data-heading-zh="全部展演"
+                >
+                  全部
+                </button>
+              
+                <button
+                  class="pw-chip pw-category-scroll__button pw-exhibition-page__category "
+                  type="button"
+                  aria-pressed="false"
+                  data-pw-category-scroll-item
+                  data-pw-exhibition-category="oil-painting"
+                  data-heading-en="OIL PAINTING"
+                  data-heading-zh="油彩藝術"
+                >
+                  油彩藝術
+                </button>
+              
+                <button
+                  class="pw-chip pw-category-scroll__button pw-exhibition-page__category "
+                  type="button"
+                  aria-pressed="false"
+                  data-pw-category-scroll-item
+                  data-pw-exhibition-category="ink-art"
+                  data-heading-en="INK ART"
+                  data-heading-zh="水墨藝術"
+                >
+                  水墨藝術
+                </button>
+              
+                <button
+                  class="pw-chip pw-category-scroll__button pw-exhibition-page__category "
+                  type="button"
+                  aria-pressed="false"
+                  data-pw-category-scroll-item
+                  data-pw-exhibition-category="pastel"
+                  data-heading-en="PASTEL ART"
+                  data-heading-zh="粉彩藝術"
+                >
+                  粉彩藝術
+                </button>
+              
+                <button
+                  class="pw-chip pw-category-scroll__button pw-exhibition-page__category "
+                  type="button"
+                  aria-pressed="false"
+                  data-pw-category-scroll-item
+                  data-pw-exhibition-category="photography"
+                  data-heading-en="PHOTOGRAPHY"
+                  data-heading-zh="攝影藝術"
+                >
+                  攝影藝術
+                </button>
+              
+                <button
+                  class="pw-chip pw-category-scroll__button pw-exhibition-page__category "
+                  type="button"
+                  aria-pressed="false"
+                  data-pw-category-scroll-item
+                  data-pw-exhibition-category="sculpture"
+                  data-heading-en="SCULPTURE"
+                  data-heading-zh="雕塑藝術"
+                >
+                  雕塑藝術
+                </button>
+              
+                <button
+                  class="pw-chip pw-category-scroll__button pw-exhibition-page__category "
+                  type="button"
+                  aria-pressed="false"
+                  data-pw-category-scroll-item
+                  data-pw-exhibition-category="digital-art"
+                  data-heading-en="DIGITAL ART"
+                  data-heading-zh="數位藝術"
+                >
+                  數位藝術
+                </button>
+              
+                <button
+                  class="pw-chip pw-category-scroll__button pw-exhibition-page__category "
+                  type="button"
+                  aria-pressed="false"
+                  data-pw-category-scroll-item
+                  data-pw-exhibition-category="mixed-media"
+                  data-heading-en="MIXED MEDIA"
+                  data-heading-zh="複合媒材"
+                >
+                  複合媒材
+                </button>
+              
+                <button
+                  class="pw-chip pw-category-scroll__button pw-exhibition-page__category "
+                  type="button"
+                  aria-pressed="false"
+                  data-pw-category-scroll-item
+                  data-pw-exhibition-category="installation"
+                  data-heading-en="INSTALLATION ART"
+                  data-heading-zh="裝置藝術"
+                >
+                  裝置藝術
+                </button>
+              
+            </div>
+
+            <button
+              class="pw-icon-btn pw-exhibition-page__category-control pw-exhibition-page__category-control--next"
+              type="button"
+              aria-label="查看下一組展演分類"
+              data-pw-category-scroll-next
+            >
+              <span aria-hidden="true">›</span>
+            </button>
+          </div>
+        
+
+        <header
+          class="pw-accent-heading pw-accent-heading--page pw-exhibition-page__heading"
+        >
+          <h2
+            class="pw-accent-heading__title"
+            id="exhibition-curated-panel-title"
+            data-pw-exhibition-heading-en
+          >
+            CURATED EXHIBITION
+          </h2>
+
+          <p
+            class="pw-accent-heading__subtitle"
+            data-pw-exhibition-heading-zh
+          >
+            藏家收藏間
+          </p>
+        </header>
+      </div>
+    </div>
+  </div>
+
+  <div class="pw-section pw-exhibition-page__results">
+    <div class="pw-container">
+      <div class="pw-inner pw-exhibition-page__results-inner">
+        <!--
+          React Clean 交付用的基本卡片 DOM。
+
+          預覽版切換次分類時，
+          pw-exhibition-page.js 只替換此 ul 內容。
+
+          卡片目的地由 cardDestination 決定。
+        -->
+        <ul
+          class="pw-exhibition-page__list"
+          aria-labelledby="exhibition-curated-panel-title"
+          data-pw-exhibition-list
+        >
+          <li class="pw-exhibition-page__item">
+            <article class="pw-exhibition-page__card is-featured">
+              <a
+                class="pw-exhibition-page__card-link"
+                href="https://virtual.metaassets.asia/exhibitions/LiChienYi"
+                aria-label="開啟 3D 展間：李健儀油畫創作展"
+                
+                  target="_blank"
+                  rel="noopener noreferrer"
+                
+              >
+                <span class="pw-exhibition-page__media">
+                  <img
+                    class="pw-exhibition-page__image"
+                    src="https://cdn.metaassets.asia/exhibitions/banner_55_20251212073814.jpg"
+                    alt="李健儀油畫創作展主視覺"
+                    loading="lazy"
+                    decoding="async"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                  >
+                  <!-- 先隱藏不顯示 -->
+                  <span class="pw-exhibition-page__media-badge">
+                    3DVR
+                  </span>
+                </span>
+
+                <span class="pw-exhibition-page__card-body">
+                  <!-- 先隱藏不顯示 
+                  <span class="pw-exhibition-page__artist">
+                    李健儀
+                  </span>
+-->
+                  <h3 class="pw-exhibition-page__title">
+                    李健儀油畫創作展
+                  </h3>
+
+                  <span class="pw-exhibition-page__description">
+                    以油彩探索文化記憶與生命經驗，呈現完整的線上展演內容。
+                  </span>
+                </span>
+              </a>
+            </article>
+          </li>
+
+          <li class="pw-exhibition-page__item">
+            <article class="pw-exhibition-page__card">
+              <a
+                class="pw-exhibition-page__card-link"
+                href="https://virtual.metaassets.asia/exhibitions/LiChienYi"
+                aria-label="開啟 3D 展間：粉彩光景"
+                
+                  target="_blank"
+                  rel="noopener noreferrer"
+                
+              >
+                <span class="pw-exhibition-page__media">
+                  <img
+                    class="pw-exhibition-page__image"
+                    src="https://placehold.co/1200x675/f3eee5/6f665c?text=PASTEL+EXHIBITION"
+                    alt="粉彩光景展覽主視覺"
+                    loading="lazy"
+                    decoding="async"
+                  >
+                  <!-- 先隱藏不顯示 -->
+                  <span class="pw-exhibition-page__media-badge">
+                    3DVR
+                  </span>
+                </span>
+
+                <span class="pw-exhibition-page__card-body">
+                  <!-- 先隱藏不顯示
+                  <span class="pw-exhibition-page__artist">
+                    示範藝術人
+                  </span>
+ -->
+                  <h3 class="pw-exhibition-page__title">
+                    粉彩光景
+                  </h3>
+
+                  <span class="pw-exhibition-page__description">
+                    柔和色層交疊出光影與空間，呈現粉彩媒材的細膩質感。
+                  </span>
+                </span>
+              </a>
+            </article>
+          </li>
+
+          <li class="pw-exhibition-page__item">
+            <article class="pw-exhibition-page__card">
+              <a
+                class="pw-exhibition-page__card-link"
+                href="https://virtual.metaassets.asia/exhibitions/LiChienYi"
+                aria-label="開啟 3D 展間：城市之間"
+                
+                  target="_blank"
+                  rel="noopener noreferrer"
+                
+              >
+                <span class="pw-exhibition-page__media">
+                  <img
+                    class="pw-exhibition-page__image"
+                    src="https://placehold.co/1200x675/e7e7e7/555555?text=URBAN+EXHIBITION"
+                    alt="城市之間展覽主視覺"
+                    loading="lazy"
+                    decoding="async"
+                  >
+                  <!-- 先隱藏不顯示 -->
+                  <span class="pw-exhibition-page__media-badge">
+                    3DVR
+                  </span>
+                </span>
+
+                <span class="pw-exhibition-page__card-body">
+                  <!-- 先隱藏不顯示 
+                  <span class="pw-exhibition-page__artist">
+                    示範藝術人
+                  </span>
+-->
+                  <h3 class="pw-exhibition-page__title">
+                    城市之間
+                  </h3>
+
+                  <span class="pw-exhibition-page__description">
+                    以攝影與複合媒材記錄城市移動、建築表面與日常片段。
+                  </span>
+                </span>
+              </a>
+            </article>
+          </li>
+        </ul>
+
+        
+          <nav
+            class="pw-pagination pw-exhibition-page__pagination"
+            aria-label="藏家收藏間分頁"
+          >
+            <span
+              class="pw-pagination__control pw-pagination__control--prev pw-pagination__control--disabled"
+              aria-label="上一頁"
+              aria-disabled="true"
+            >
+              ‹
+            </span>
+
+            <a
+              class="pw-pagination__item pw-pagination__item--active"
+              href="?type=curated&amp;category=all&page=1"
+              aria-label="第 1 頁"
+              aria-current="page"
+            >
+              1
+            </a>
+
+            <a
+              class="pw-pagination__item"
+              href="?type=curated&amp;category=all&page=2"
+              aria-label="前往第 2 頁"
+            >
+              2
+            </a>
+
+            <a
+              class="pw-pagination__item"
+              href="?type=curated&amp;category=all&page=3"
+              aria-label="前往第 3 頁"
+            >
+              3
+            </a>
+
+            <span
+              class="pw-pagination__ellipsis"
+              aria-hidden="true"
+            >
+              …
+            </span>
+
+            <a
+              class="pw-pagination__item"
+              href="?type=curated&amp;category=all&page=10"
+              aria-label="前往第 10 頁"
+            >
+              10
+            </a>
+
+            <a
+              class="pw-pagination__control pw-pagination__control--next"
+              href="?type=curated&amp;category=all&page=2"
+              aria-label="下一頁"
+            >
+              ›
+            </a>
+          </nav>
+        
+      </div>
+    </div>
+  </div>
+</section>
+    </div>
+
+    <!-- 推薦個展：此區不隨上方頁籤隱藏 -->
+    <section
+      class="pw-section pw-exhibition-page__recommended"
+      aria-labelledby="exhibition-recommended-title"
+    >
+      <div
+        class="pw-section-divider pw-exhibition-page__recommended-divider"
+        aria-hidden="true"
+      ></div>
+
+      <div class="pw-container">
+        <div class="pw-inner pw-exhibition-page__recommended-inner">
+          <div
+            class="pw-section-heading pw-exhibition-page__recommended-heading"
+          >
+            <h2
+              class="pw-section-heading__title"
+              id="exhibition-recommended-title"
+            >
+              推薦個展
+            </h2>
+          </div>
+
+          <ul class="pw-exhibition-page__recommended-list">
+            <li class="pw-exhibition-page__recommended-item">
+              <article class="pw-exhibition-page__card is-featured">
+                <a
+                  class="pw-exhibition-page__card-link"
+                  href="https://virtual.metaassets.asia/exhibitions/LiChienYi"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="開啟 3D 展間：李健儀油畫創作展"
+                >
+                  <span class="pw-exhibition-page__media">
+                    <img
+                      class="pw-exhibition-page__image"
+                      src="https://cdn.metaassets.asia/exhibitions/banner_55_20251212073814.jpg"
+                      alt="李健儀油畫創作展主視覺"
+                      loading="lazy"
+                      decoding="async"
+                      referrerpolicy="strict-origin-when-cross-origin"
+                    >
+                    <!-- 3DVR 先隱藏不顯 -->
+                    <span class="pw-exhibition-page__media-badge">
+                      3DVR
+                    </span>
+                  </span>
+
+                  <span class="pw-exhibition-page__card-body">
+                    <h3 class="pw-exhibition-page__title">
+                      李健儀油畫創作展
+                    </h3>
+
+                    <span class="pw-exhibition-page__description">
+                      以油彩探索文化記憶與生命經驗，透過線上 3D 展間觀看作品。
+                    </span>
+                  </span>
+                </a>
+              </article>
+            </li>
+
+            <li class="pw-exhibition-page__recommended-item">
+              <article class="pw-exhibition-page__card">
+                <a
+                  class="pw-exhibition-page__card-link"
+                  href="#"
+                  aria-label="開啟 3D 展間：粉彩光景"
+                >
+                  <span class="pw-exhibition-page__media">
+                    <img
+                      class="pw-exhibition-page__image"
+                      src="https://placehold.co/1200x675/f3eee5/6f665c?text=PASTEL+EXHIBITION"
+                      alt="粉彩光景展覽主視覺"
+                      loading="lazy"
+                      decoding="async"
+                    >
+                    <!-- 3DVR 先隱藏不顯示 -->
+                    <span class="pw-exhibition-page__media-badge">
+                      3DVR
+                    </span>
+                  </span>
+
+                  <span class="pw-exhibition-page__card-body">
+                    <h3 class="pw-exhibition-page__title">
+                      粉彩光景
+                    </h3>
+
+                    <span class="pw-exhibition-page__description">
+                      柔和色層交疊出光影與空間，呈現粉彩媒材的細膩質感。
+                    </span>
+                  </span>
+                </a>
+              </article>
+            </li>
+
+            <li class="pw-exhibition-page__recommended-item">
+              <article class="pw-exhibition-page__card">
+                <a
+                  class="pw-exhibition-page__card-link"
+                  href="#"
+                  aria-label="開啟 3D 展間：城市之間"
+                >
+                  <span class="pw-exhibition-page__media">
+                    <img
+                      class="pw-exhibition-page__image"
+                      src="https://placehold.co/1200x675/e7e7e7/555555?text=URBAN+EXHIBITION"
+                      alt="城市之間展覽主視覺"
+                      loading="lazy"
+                      decoding="async"
+                    >
+                    <!-- 3DVR 先隱藏不顯示 -->
+                    <span class="pw-exhibition-page__media-badge">
+                      3DVR
+                    </span>
+                  </span>
+
+                  <span class="pw-exhibition-page__card-body">
+                    <h3 class="pw-exhibition-page__title">
+                      城市之間
+                    </h3>
+
+                    <span class="pw-exhibition-page__description">
+                      以攝影與複合媒材記錄城市移動、建築表面與日常片段。
+                    </span>
+                  </span>
+                </a>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+
+
+  <!-- 分隔線 -->
+<div class="pw-section-divider" aria-hidden="true"></div>
+
+<!-- 加入我們 -->
+<!-- ACT 區塊 -->
+<!-- Action CTA -->
+<section class="pw-section pw-act" aria-labelledby="pw-act-title">
+ 
+  <div class="pw-container">
+    <div class="pw-inner pw-act__inner">
+      <h2 id="pw-act-title" class="pw-act__title">
+        申請 3DVR 線上藝廊
+      </h2>
+
+      <ul class="pw-act__stats" aria-label="平台數據">
+        <li class="pw-act__stat">
+          <strong class="pw-act__number">815</strong>
+          <span class="pw-act__label">ARTIST</span>
+        </li>
+
+        <li class="pw-act__stat">
+          <strong class="pw-act__number">4527</strong>
+          <span class="pw-act__label">ARTWORK</span>
+        </li>
+
+        <li class="pw-act__stat">
+          <strong class="pw-act__number">225</strong>
+          <span class="pw-act__label">3DVR</span>
+        </li>
+      </ul>
+
+      <p class="pw-act__lead">
+        讓世界看見你的作品，立即申請 3DVR 線上藝廊
+      </p>
+
+      <div class="pw-act__actions" aria-label="申請行動">
+  <a
+    class="pw-btn pw-btn--secondary pw-act__button"
+    href="./pw-sales-page.html"
+  >
+    開啟你的全球藝術展示空間
+  </a>
+<!--
+  <a
+    class="pw-btn pw-btn--primary pw-act__button"
+    href="./pw-join-us.html"
+  >
+    加入波翼
+  </a>
+  -->
+</div>
+    </div>
+  </div>
+</section>
+
+
+
+</main>
+
+
+<!-- Footer -->
+<footer class="pw-footer">
+  <div class="pw-container">
+    <div class="pw-inner pw-footer__inner">
+      <!-- Footer 左側 -->
+      <div class="pw-footer__aside">
+        <a
+          class="pw-footer__logo-link"
+          href="./index.html"
+          aria-label="POST WINGS 波翼藝術首頁"
+        >
+          <img
+            class="pw-footer__logo"
+            src="./img/logo.png"
+            alt="POST WINGS 波翼藝術"
+          />
+        </a>
+
+        <div class="pw-footer__meta">
+          <!-- 社群連結 -->
+          <ul class="pw-footer__social-list" aria-label="社群連結">
+            <li class="pw-footer__social-item">
+              <a
+                class="pw-footer__social-link"
+                href="https://www.facebook.com/61556203757989/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+              >
+                <img
+                  class="pw-footer__social-icon"
+                  src="./img/pw-icon-fb.png"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </a>
+            </li>
+
+            <li class="pw-footer__social-item">
+              <a
+                class="pw-footer__social-link"
+                href="https://lin.ee/Fo8Miwj"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LINE"
+              >
+                <img
+                  class="pw-footer__social-icon"
+                  src="./img/pw-icon-line.png"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </a>
+            </li>
+
+            <li class="pw-footer__social-item">
+              <a
+                class="pw-footer__social-link"
+                href="https://www.instagram.com/postwingsart/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+              >
+                <img
+                  class="pw-footer__social-icon"
+                  src="./img/pw-icon-ig.png"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </a>
+            </li>
+
+            <li class="pw-footer__social-item">
+              <a
+                class="pw-footer__social-link"
+                href="https://www.youtube.com/@POSTWINGS-sm4gl"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="YouTube"
+              >
+                <img
+                  class="pw-footer__social-icon"
+                  src="./img/pw-icon-youtube.png"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </a>
+            </li>
+          </ul>
+
+          <!-- 聯絡資料 -->
+          <address class="pw-footer__contact">
+            <h2 class="pw-footer__contact-title">聯絡我們</h2>
+
+            <a
+              class="pw-footer__contact-link"
+              href="mailto:service@metaassets.com.tw"
+            >
+              service@metaassets.com.tw
+            </a>
+
+            <a class="pw-footer__contact-link" href="tel:0930257803">
+              0930-257-803
+            </a>
+
+            <p class="pw-footer__contact-text">
+              台北市中山區建國北路二段3巷37號B1
+            </p>
+          </address>
+
+          <p class="pw-footer__copyright">
+            Copyright © 2026 元宇宙資產股份有限公司 版權所有
+          </p>
+        </div>
+      </div>
+
+
+<!-- Footer 右側導覽 -->
+<nav class="pw-footer__nav" aria-label="頁尾導覽">
+  <!-- 左欄：藝術資產聯盟、合作夥伴 -->
+  <div class="pw-footer__nav-column">
+    <!-- 藝術資產聯盟 -->
+    <div
+      class="pw-footer__nav-group"
+      aria-labelledby="footer-alliance-title"
+    >
+      <h2
+        id="footer-alliance-title"
+        class="pw-footer__nav-title"
+      >
+        藝術資產聯盟
+      </h2>
+
+      <ul class="pw-footer__nav-list">
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://www.bossmen.com/zh-TW/index/index.html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            博士門 Bossmen
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="http://www.easicolor.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            宣城科技 Easicolor
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://uprint.com.tw/about/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            布萊特 uPrint
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://ones-digital.com/zh/首頁/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            加伊創意科技 ONES
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- 合作夥伴 -->
+    <div
+      class="pw-footer__nav-group"
+      aria-labelledby="footer-partner-title"
+    >
+      <h2
+        id="footer-partner-title"
+        class="pw-footer__nav-title"
+      >
+        合作夥伴
+      </h2>
+
+      <ul class="pw-footer__nav-list">
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://www.facebook.com/100068823486807/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            寶佳潭美藝廊
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://www.facebook.com/100085289444712/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LIVE ART SPACE
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://art.kje-event.com.tw/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            台灣藝術博覽會
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://www.facebook.com/61578254614082/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            藝創生活節
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 右欄：合作學協會、平台入口 -->
+  <div class="pw-footer__nav-column">
+    <!-- 合作學協會 -->
+    <div
+      class="pw-footer__nav-group"
+      aria-labelledby="footer-association-title"
+    >
+      <h2
+        id="footer-association-title"
+        class="pw-footer__nav-title"
+      >
+        合作學協會
+      </h2>
+
+      <ul class="pw-footer__nav-list">
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://www.facebook.com/groups/909701919139272/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            中華文創學會
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://www.facebook.com/ccfa.tw/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            中華文物學會
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://www.facebook.com/owlactsartssociety/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            貓頭鷹藝術協會
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://www.facebook.com/maak1987/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            高雄市現代畫學會
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://www.twpapat.org/home/index.php"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            台灣粉彩藝術推廣協會
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://www.panasiaart.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            泛亞藝術聯盟
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://www.facebook.com/100063719484960/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            台北市西畫女畫家畫會
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://www.txsia.org.tw/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            台灣 XR 智能產業發展協會
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- 平台入口 -->
+    <div
+      class="pw-footer__nav-group"
+      aria-labelledby="footer-platform-title"
+    >
+      <h2
+        id="footer-platform-title"
+        class="pw-footer__nav-title"
+      >
+        平台入口
+      </h2>
+
+      <ul class="pw-footer__nav-list">
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://virtual.metaassets.asia/manage/login"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            藝術家後台
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a class="pw-footer__nav-link" href="./pw-service-terms-page.html">
+            服務條款
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a class="pw-footer__nav-link" href="./pw-privacy-policy-page.html">
+            隱私政策
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+  <a
+    class="pw-footer__nav-link"
+    href="./pw-faq-page.html"
+  >
+    常見問題
+  </a>
+</li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating Actions -->
+<div class="pw-floating-actions" aria-label="快速操作">
+  <ul class="pw-floating-actions__list">
+    <li class="pw-floating-actions__item">
+      <button
+        class="pw-floating-actions__button pw-floating-actions__button--to-top"
+        type="button"
+        data-pw-back-to-top
+        aria-label="回到頁面頂端"
+      >
+        <img
+          class="pw-floating-actions__icon"
+          src="./img/pw-icon-gotop.png"
+          alt=""
+          aria-hidden="true"
+        />
+      </button>
+    </li>
+  </ul>
+</div>
+
+
+  <!-- 全站共用 JS：Header、Back to top -->
+  <script type="module" src="./js/pw-enhance.js"></script>
+
+  
+    <!-- 頁面專用 JS -->
+    <script type="module" src="./js/pw-exhibition-page.js"></script>
+  
+
+
+<!-- 關閉 HTML -->
+</body>
+</html>

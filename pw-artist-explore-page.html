@@ -1,0 +1,4071 @@
+
+
+<head>
+  <title>POST WINGS | 波翼藝術</title>
+
+  <!-- 正式上線請更換GA4代碼 -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-VTZNRHLELH"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-VTZNRHLELH");
+  </script>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta
+    name="keywords"
+    content="POST WINGS, 波翼藝術, 虛擬展間, 當代藝術, Web3.0"
+  />
+  <meta
+    name="description"
+    content="波翼藝術專注於當代藝術市場 Web3.0 虛實整合服務。"
+  />
+
+  <link rel="apple-touch-icon" href="./img/apple-touch-icon.png" />
+  <link rel="icon" href="./img/favicon.ico" />
+
+  <meta property="og:url" content="https://www.postwings.art/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="POST WINGS 波翼藝術 | 藝術資產管理服務" />
+  <meta
+    property="og:description"
+    content="POST WINGS 波翼藝術專注於藝術展覽、授權、虛擬實境展間與 Web3.0 藝術服務。"
+  />
+  <meta
+    property="og:image"
+    content="https://www.postwings.art/img/og-image.jpg"
+  />
+
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+
+<body class="pw-site" data-build="designer-preview">
+<header class="pw-site-header" data-pw-header>
+  <div class="pw-container pw-site-header__inner">
+    <!-- LOGO -->
+    <a
+      class="pw-site-header__brand"
+      href="./index.html"
+      aria-label="回到 POST WINGS 首頁"
+    >
+      <img src="./img/logo.png" class="pw-site-header__logo" alt="POST WINGS" />
+    </a>
+
+    <!-- 大版主選單 -->
+    <nav class="pw-site-header__nav" aria-label="主要選單">
+      <button
+        class="pw-btn pw-site-header__nav-toggle"
+        type="button"
+        aria-controls="pw-header-menu-panel"
+        aria-expanded="false"
+        data-pw-toggle="menu"
+        data-pw-menu-key="exhibitions"
+      >
+        線上展演
+      </button>
+
+      <button
+        class="pw-btn pw-site-header__nav-toggle"
+        type="button"
+        aria-controls="pw-header-menu-panel"
+        aria-expanded="false"
+        data-pw-toggle="menu"
+        data-pw-menu-key="artists"
+      >
+        探索藝術人
+      </button>
+
+      <button
+        class="pw-btn pw-site-header__nav-toggle"
+        type="button"
+        aria-controls="pw-header-menu-panel"
+        aria-expanded="false"
+        data-pw-toggle="menu"
+        data-pw-menu-key="people"
+      >
+        翼見人物
+      </button>
+
+      <button
+        class="pw-btn pw-site-header__nav-toggle"
+        type="button"
+        aria-controls="pw-header-menu-panel"
+        aria-expanded="false"
+        data-pw-toggle="menu"
+        data-pw-menu-key="news"
+      >
+        波翼快訊
+      </button>
+
+      <!-- 加入我們：直接連結，不打開次選單 -->
+      <a class="pw-btn pw-site-header__nav-link" href="./pw-join-us.html">
+        加入我們
+      </a>
+    </nav>
+
+    <!-- 右側按鈕 -->
+    <div class="pw-site-header__actions">
+      <!-- 大版搜尋 toggle；小版隱藏 -->
+      <button
+        id="pw-search-toggle"
+        class="pw-site-header__icon-btn pw-site-header__icon-btn--search"
+        type="button"
+        aria-label="開啟搜尋"
+        aria-controls="pw-header-search-panel"
+        aria-expanded="false"
+        data-pw-toggle="search"
+      >
+        <img src="./img/pw-icon-search.png" alt="" />
+      </button>
+
+      <!-- 小版 menu toggle；大版預設隱藏 -->
+      <button
+        id="pw-menu-toggle"
+        class="pw-site-header__icon-btn pw-site-header__icon-btn--menu"
+        type="button"
+        aria-label="開啟選單"
+        aria-controls="pw-header-menu-panel"
+        aria-expanded="false"
+        data-pw-toggle="menu"
+      >
+        <img src="./img/pw-icon-menu.png" alt="" />
+      </button>
+
+      <!-- 語言 toggle -->
+      <div
+        class="pw-site-header__action-item pw-site-header__action-item--lang"
+      >
+        <button
+          id="pw-lang-toggle"
+          class="pw-site-header__icon-btn pw-site-header__icon-btn--lang"
+          type="button"
+          aria-label="切換語言"
+          aria-controls="pw-header-lang-panel"
+          aria-expanded="false"
+          data-pw-toggle="lang"
+        >
+          <img src="./img/pw-icon-lang.png" alt="" />
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 搜尋區塊 -->
+  <div
+    id="pw-header-search-panel"
+    class="pw-site-header__search-panel"
+    aria-hidden="true"
+    data-pw-panel="search"
+  >
+    <div class="pw-container">
+      <form
+        class="pw-site-header__search-form"
+        action="./pw-search-page.html"
+        method="get"
+        role="search"
+      >
+        <label
+          class="pw-site-header__icon-btn pw-sr-only"
+          for="pw-header-search-input"
+        >
+          <img src="./img/pw-icon-search.png" alt="" />
+        </label>
+
+        <input
+          id="pw-header-search-input"
+          class="pw-site-header__search-input"
+          type="search"
+          name="keyword"
+          placeholder="請輸入藝術家名字、創作媒材"
+        />
+      </form>
+    </div>
+  </div>
+
+  <!-- 展開選單 -->
+  <div
+    id="pw-header-menu-panel"
+    class="pw-site-header__menu-panel"
+    aria-hidden="true"
+    data-pw-panel="menu"
+  >
+    <div class="pw-container pw-site-header__menu-inner">
+      <nav class="pw-site-header__menu-grid" aria-label="展開選單">
+        <!-- 線上展演 -->
+        <div
+          class="pw-site-header__menu-group"
+          data-pw-menu-group="exhibitions"
+        >
+          <span class="pw-site-header__menu-title"> 線上展演 </span>
+
+          <a
+            class="pw-site-header__menu-link"
+            href="./pw-exhibition-page.html?tab=solo"
+          >
+            藝術個展
+          </a>
+
+          <a
+            class="pw-site-header__menu-link"
+            href="./pw-exhibition-page.html?tab=group"
+          >
+            團體聯展
+          </a>
+
+          <a
+            class="pw-site-header__menu-link"
+            href="./pw-exhibition-page.html?tab=fair"
+          >
+            藝文特展
+          </a>
+
+          <a
+            class="pw-site-header__menu-link"
+            href="./pw-exhibition-page.html?tab=curated"
+          >
+            藏家收藏間
+          </a>
+        </div>
+
+        <!-- 探索藝術人 -->
+        <div class="pw-site-header__menu-group" data-pw-menu-group="artists">
+          <span class="pw-site-header__menu-title"> 探索藝術人 </span>
+
+          <a
+            class="pw-site-header__menu-link"
+            href="./pw-artist-explore-page.html?tab=masters"
+          >
+            藝術大師
+          </a>
+
+          <a
+            class="pw-site-header__menu-link"
+            href="./pw-artist-explore-page.html?tab=creators"
+          >
+            創藝人物
+          </a>
+
+          <a
+            class="pw-site-header__menu-link"
+            href="./pw-artist-explore-page.html?tab=organizations"
+          >
+            藝術團體
+          </a>
+
+          <a
+            class="pw-site-header__menu-link"
+            href="./pw-artist-explore-page.html?tab=institutions"
+          >
+            藝術機構
+          </a>
+        </div>
+
+        <!-- 翼見人物 -->
+        <div class="pw-site-header__menu-group" data-pw-menu-group="people">
+          <span class="pw-site-header__menu-title"> 翼見人物 </span>
+
+          <a
+            class="pw-site-header__menu-link"
+            href="./pw-wing-people-page.html?tab=shorts"
+          >
+            短影音
+          </a>
+
+          <a
+            class="pw-site-header__menu-link"
+            href="./pw-wing-people-page.html?tab=interview"
+          >
+            專 訪
+          </a>
+        </div>
+
+        <!-- 波翼快訊 -->
+        <div class="pw-site-header__menu-group" data-pw-menu-group="news">
+          <span class="pw-site-header__menu-title"> 波翼快訊 </span>
+
+          <a class="pw-site-header__menu-link" href="./pw-wing-news-page.html">
+            平面新聞
+          </a>
+        </div>
+      </nav>
+
+      <!-- 小版底部 CTA -->
+      <div class="pw-site-header__menu-cta">
+        <div class="pw-btn-wrap">
+          <a
+            class="pw-site-header__menu-cta-link"
+            href="https://www.postwings.art/service"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            建立3D展間
+          </a>
+
+          <a class="pw-site-header__menu-cta-link" href="./pw-join-us.html">
+            加入我們
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 語言選單 -->
+  <div
+    id="pw-header-lang-panel"
+    class="pw-site-header__lang-panel"
+    aria-hidden="true"
+    data-pw-panel="lang"
+  >
+    <a
+      class="pw-site-header__lang-link pw-site-header__lang-link--active"
+      href="#!"
+      aria-current="true"
+    >
+      中 文
+    </a>
+
+    <a class="pw-site-header__lang-link" href="#!"> English </a>
+
+    <a class="pw-site-header__lang-link" href="#!"> 日本語 </a>
+
+    <a class="pw-site-header__lang-link" href="#!"> 한국어 </a>
+
+    <a class="pw-site-header__lang-link" href="#!"> Español </a>
+
+    <a class="pw-site-header__lang-link" href="#!"> Français </a>
+
+    <a class="pw-site-header__lang-link" href="#!"> Deutsch </a>
+  </div>
+</header>
+
+
+<main class="pw-main">
+  <div
+    class="pw-artist-explore-page"
+    data-pw-artist-explore-page
+  >
+    <h1 class="pw-artist-explore-page__sr-only">
+      探索藝術人
+    </h1>
+
+    <div
+      class="pw-artist-explore-page__tabs-layout"
+      data-pw-tabs
+      data-pw-artist-explore-tabs
+    >
+      <!-- 第一層：探索藝術人主分類 -->
+      <section
+        class="
+          pw-section
+          pw-artist-explore-page__navigation
+        "
+        aria-label="探索藝術人分類"
+      >
+        <div class="pw-container">
+          <div
+            class="
+              pw-inner
+              pw-artist-explore-page__navigation-inner
+            "
+          >
+            <div
+              class="
+                pw-category-tabs
+                pw-artist-explore-page__tabs
+              "
+              role="tablist"
+              aria-label="探索藝術人內容分類"
+            >
+              <button
+                class="
+                  pw-category-tabs__button
+                  pw-artist-explore-page__tab
+                  is-active
+                "
+                id="artist-explore-masters-tab"
+                type="button"
+                role="tab"
+                aria-selected="true"
+                aria-controls="artist-explore-masters-panel"
+                tabindex="0"
+                data-pw-tab-trigger="masters"
+              >
+                藝術大師
+              </button>
+
+              <button
+                class="
+                  pw-category-tabs__button
+                  pw-artist-explore-page__tab
+                "
+                id="artist-explore-creators-tab"
+                type="button"
+                role="tab"
+                aria-selected="false"
+                aria-controls="artist-explore-creators-panel"
+                tabindex="-1"
+                data-pw-tab-trigger="creators"
+              >
+                創藝人物
+              </button>
+
+              <button
+                class="
+                  pw-category-tabs__button
+                  pw-artist-explore-page__tab
+                "
+                id="artist-explore-organizations-tab"
+                type="button"
+                role="tab"
+                aria-selected="false"
+                aria-controls="artist-explore-organizations-panel"
+                tabindex="-1"
+                data-pw-tab-trigger="organizations"
+              >
+                藝術團體
+              </button>
+
+              <button
+                class="
+                  pw-category-tabs__button
+                  pw-artist-explore-page__tab
+                "
+                id="artist-explore-institutions-tab"
+                type="button"
+                role="tab"
+                aria-selected="false"
+                aria-controls="artist-explore-institutions-panel"
+                tabindex="-1"
+                data-pw-tab-trigger="institutions"
+              >
+                藝術機構
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 藝術大師 -->
+      
+
+<section
+  class="pw-artist-explore-page__panel"
+  id="artist-explore-masters-panel"
+  role="tabpanel"
+  aria-labelledby="artist-explore-masters-tab"
+  tabindex="0"
+  data-pw-tab-panel="masters"
+  data-pw-artist-explore-panel="masters"
+  
+>
+  <!-- 分類與頁面標題 -->
+  <div
+    class="
+      pw-section
+      pw-artist-explore-page__panel-header
+    "
+  >
+    <div class="pw-container">
+      <div
+        class="
+          pw-inner
+          pw-artist-explore-page__panel-header-inner
+        "
+      >
+        
+          <div
+            class="
+              pw-category-scroll
+              pw-artist-explore-page__category-scroll
+            "
+            data-pw-category-scroll
+            data-pw-artist-category-scroll
+          >
+            <button
+              class="
+                pw-icon-btn
+                pw-artist-explore-page__category-control
+                pw-artist-explore-page__category-control--prev
+              "
+              type="button"
+              aria-label="查看上一組藝術分類"
+              data-pw-category-scroll-prev
+            >
+              <span aria-hidden="true">‹</span>
+            </button>
+
+            <div
+              class="
+                pw-category-scroll__rail
+                pw-artist-explore-page__category-rail
+              "
+              data-pw-category-scroll-rail
+            >
+              
+                <button
+                  class="
+                    pw-chip
+                    pw-category-scroll__button
+                    pw-artist-explore-page__category
+                    
+                  "
+                  type="button"
+                  aria-pressed="false"
+                  data-pw-category-scroll-item
+                  data-pw-artist-category="surrealism"
+                  data-heading-en="SURREALISM"
+                  data-heading-zh="超現實"
+                >
+                  超現實
+                </button>
+              
+                <button
+                  class="
+                    pw-chip
+                    pw-category-scroll__button
+                    pw-artist-explore-page__category
+                    
+                  "
+                  type="button"
+                  aria-pressed="false"
+                  data-pw-category-scroll-item
+                  data-pw-artist-category="ai-generative"
+                  data-heading-en="AI GENERATIVE ART"
+                  data-heading-zh="AI 生成式"
+                >
+                  AI 生成式
+                </button>
+              
+                <button
+                  class="
+                    pw-chip
+                    pw-category-scroll__button
+                    pw-artist-explore-page__category
+                    is-active
+                  "
+                  type="button"
+                  aria-pressed="true"
+                  data-pw-category-scroll-item
+                  data-pw-artist-category="figurative"
+                  data-heading-en="FIGURATIVE ART"
+                  data-heading-zh="具象藝術"
+                >
+                  具象藝術
+                </button>
+              
+                <button
+                  class="
+                    pw-chip
+                    pw-category-scroll__button
+                    pw-artist-explore-page__category
+                    
+                  "
+                  type="button"
+                  aria-pressed="false"
+                  data-pw-category-scroll-item
+                  data-pw-artist-category="pastel"
+                  data-heading-en="PASTEL ART"
+                  data-heading-zh="粉彩藝術"
+                >
+                  粉彩藝術
+                </button>
+              
+                <button
+                  class="
+                    pw-chip
+                    pw-category-scroll__button
+                    pw-artist-explore-page__category
+                    
+                  "
+                  type="button"
+                  aria-pressed="false"
+                  data-pw-category-scroll-item
+                  data-pw-artist-category="abstract"
+                  data-heading-en="ABSTRACT ART"
+                  data-heading-zh="抽象藝術"
+                >
+                  抽象藝術
+                </button>
+              
+                <button
+                  class="
+                    pw-chip
+                    pw-category-scroll__button
+                    pw-artist-explore-page__category
+                    
+                  "
+                  type="button"
+                  aria-pressed="false"
+                  data-pw-category-scroll-item
+                  data-pw-artist-category="expressionism"
+                  data-heading-en="EXPRESSIONISM"
+                  data-heading-zh="表現主義"
+                >
+                  表現主義
+                </button>
+              
+                <button
+                  class="
+                    pw-chip
+                    pw-category-scroll__button
+                    pw-artist-explore-page__category
+                    
+                  "
+                  type="button"
+                  aria-pressed="false"
+                  data-pw-category-scroll-item
+                  data-pw-artist-category="three-dimensional"
+                  data-heading-en="THREE-DIMENSIONAL ART"
+                  data-heading-zh="立體藝術"
+                >
+                  立體藝術
+                </button>
+              
+                <button
+                  class="
+                    pw-chip
+                    pw-category-scroll__button
+                    pw-artist-explore-page__category
+                    
+                  "
+                  type="button"
+                  aria-pressed="false"
+                  data-pw-category-scroll-item
+                  data-pw-artist-category="installation"
+                  data-heading-en="INSTALLATION ART"
+                  data-heading-zh="裝置藝術"
+                >
+                  裝置藝術
+                </button>
+              
+                <button
+                  class="
+                    pw-chip
+                    pw-category-scroll__button
+                    pw-artist-explore-page__category
+                    
+                  "
+                  type="button"
+                  aria-pressed="false"
+                  data-pw-category-scroll-item
+                  data-pw-artist-category="oil-painting"
+                  data-heading-en="OIL PAINTING"
+                  data-heading-zh="油彩藝術"
+                >
+                  油彩藝術
+                </button>
+              
+            </div>
+
+            <button
+              class="
+                pw-icon-btn
+                pw-artist-explore-page__category-control
+                pw-artist-explore-page__category-control--next
+              "
+              type="button"
+              aria-label="查看下一組藝術分類"
+              data-pw-category-scroll-next
+            >
+              <span aria-hidden="true">›</span>
+            </button>
+          </div>
+        
+
+        <header
+          class="
+            pw-accent-heading
+            pw-accent-heading--page
+            pw-artist-explore-page__heading
+          "
+        >
+          <h2
+            class="pw-accent-heading__title"
+            id="artist-explore-masters-panel-title"
+            data-pw-artist-heading-en
+          >
+            FIGURATIVE ART
+          </h2>
+
+          <p
+            class="pw-accent-heading__subtitle"
+            data-pw-artist-heading-zh
+          >
+            具象藝術
+          </p>
+        </header>
+      </div>
+    </div>
+  </div>
+
+  <div
+  class="
+    pw-category-divider
+    pw-artist-explore-page__divider
+  "
+  aria-hidden="true"
+></div>
+
+  <!-- 卡片列表 -->
+  <div
+    class="
+      pw-section
+      pw-artist-explore-page__results
+    "
+  >
+    <div class="pw-container">
+      <div
+        class="
+          pw-inner
+          pw-artist-explore-page__results-inner
+        "
+      >
+        
+          <ul
+            class="pw-artist-explore-page__list"
+            aria-labelledby="artist-explore-masters-panel-title"
+            data-pw-artist-explore-list
+          >
+            
+              <li class="pw-artist-explore-page__item">
+                <article
+                  class="
+                    pw-artist-explore-page__card
+                    is-featured
+                    pw-artist-explore-page__card--grayscale
+                  "
+                >
+                  <a
+                    class="pw-artist-explore-page__card-link"
+                    href="./pw-artist-page.html?id=12"
+                    aria-label="查看林嘉文詳細資料"
+                  >
+                    <span class="pw-artist-explore-page__media">
+                      <img
+                        class="pw-artist-explore-page__image"
+                        src="https://cdn.metaassets.asia/artists/avatar_12_20230224020147.jpg"
+                        alt="林嘉文"
+                        loading="lazy"
+                        decoding="async"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                      >
+                    </span>
+
+                    <h3 class="pw-artist-explore-page__name">
+                      林嘉文
+                    </h3>
+                  </a>
+                </article>
+              </li>
+            
+              <li class="pw-artist-explore-page__item">
+                <article
+                  class="
+                    pw-artist-explore-page__card
+                    
+                    pw-artist-explore-page__card--grayscale
+                  "
+                >
+                  <a
+                    class="pw-artist-explore-page__card-link"
+                    href="./pw-artist-page.html?id=2"
+                    aria-label="查看林宏信詳細資料"
+                  >
+                    <span class="pw-artist-explore-page__media">
+                      <img
+                        class="pw-artist-explore-page__image"
+                        src="https://cdn.metaassets.asia/artists/avatar_2_20230223093241.jpg"
+                        alt="林宏信"
+                        loading="lazy"
+                        decoding="async"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                      >
+                    </span>
+
+                    <h3 class="pw-artist-explore-page__name">
+                      林宏信
+                    </h3>
+                  </a>
+                </article>
+              </li>
+            
+              <li class="pw-artist-explore-page__item">
+                <article
+                  class="
+                    pw-artist-explore-page__card
+                    
+                    pw-artist-explore-page__card--grayscale
+                  "
+                >
+                  <a
+                    class="pw-artist-explore-page__card-link"
+                    href="./pw-artist-page.html?id=3"
+                    aria-label="查看金莉詳細資料"
+                  >
+                    <span class="pw-artist-explore-page__media">
+                      <img
+                        class="pw-artist-explore-page__image"
+                        src="https://cdn.metaassets.asia/artists/avatar_3_20240627041500.jpg"
+                        alt="金莉"
+                        loading="lazy"
+                        decoding="async"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                      >
+                    </span>
+
+                    <h3 class="pw-artist-explore-page__name">
+                      金莉
+                    </h3>
+                  </a>
+                </article>
+              </li>
+            
+              <li class="pw-artist-explore-page__item">
+                <article
+                  class="
+                    pw-artist-explore-page__card
+                    
+                    pw-artist-explore-page__card--grayscale
+                  "
+                >
+                  <a
+                    class="pw-artist-explore-page__card-link"
+                    href="./pw-artist-page.html?id=5"
+                    aria-label="查看胡朝聰詳細資料"
+                  >
+                    <span class="pw-artist-explore-page__media">
+                      <img
+                        class="pw-artist-explore-page__image"
+                        src="https://cdn.metaassets.asia/artists/avatar_5_20230223094839.jpg"
+                        alt="胡朝聰"
+                        loading="lazy"
+                        decoding="async"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                      >
+                    </span>
+
+                    <h3 class="pw-artist-explore-page__name">
+                      胡朝聰
+                    </h3>
+                  </a>
+                </article>
+              </li>
+            
+              <li class="pw-artist-explore-page__item">
+                <article
+                  class="
+                    pw-artist-explore-page__card
+                    
+                    pw-artist-explore-page__card--grayscale
+                  "
+                >
+                  <a
+                    class="pw-artist-explore-page__card-link"
+                    href="./pw-artist-page.html?id=501"
+                    aria-label="查看陳景容詳細資料"
+                  >
+                    <span class="pw-artist-explore-page__media">
+                      <img
+                        class="pw-artist-explore-page__image"
+                        src="https://cdn.metaassets.asia/artists/avatar_2_20230223093241.jpg"
+                        alt="陳景容"
+                        loading="lazy"
+                        decoding="async"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                      >
+                    </span>
+
+                    <h3 class="pw-artist-explore-page__name">
+                      陳景容
+                    </h3>
+                  </a>
+                </article>
+              </li>
+            
+              <li class="pw-artist-explore-page__item">
+                <article
+                  class="
+                    pw-artist-explore-page__card
+                    
+                    pw-artist-explore-page__card--grayscale
+                  "
+                >
+                  <a
+                    class="pw-artist-explore-page__card-link"
+                    href="./pw-artist-page.html?id=502"
+                    aria-label="查看楊識宏詳細資料"
+                  >
+                    <span class="pw-artist-explore-page__media">
+                      <img
+                        class="pw-artist-explore-page__image"
+                        src="https://cdn.metaassets.asia/artists/avatar_3_20240627041500.jpg"
+                        alt="楊識宏"
+                        loading="lazy"
+                        decoding="async"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                      >
+                    </span>
+
+                    <h3 class="pw-artist-explore-page__name">
+                      楊識宏
+                    </h3>
+                  </a>
+                </article>
+              </li>
+            
+              <li class="pw-artist-explore-page__item">
+                <article
+                  class="
+                    pw-artist-explore-page__card
+                    
+                    pw-artist-explore-page__card--grayscale
+                  "
+                >
+                  <a
+                    class="pw-artist-explore-page__card-link"
+                    href="./pw-artist-page.html?id=503"
+                    aria-label="查看李錫奇詳細資料"
+                  >
+                    <span class="pw-artist-explore-page__media">
+                      <img
+                        class="pw-artist-explore-page__image"
+                        src="https://cdn.metaassets.asia/artists/avatar_5_20230223094839.jpg"
+                        alt="李錫奇"
+                        loading="lazy"
+                        decoding="async"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                      >
+                    </span>
+
+                    <h3 class="pw-artist-explore-page__name">
+                      李錫奇
+                    </h3>
+                  </a>
+                </article>
+              </li>
+            
+              <li class="pw-artist-explore-page__item">
+                <article
+                  class="
+                    pw-artist-explore-page__card
+                    
+                    pw-artist-explore-page__card--grayscale
+                  "
+                >
+                  <a
+                    class="pw-artist-explore-page__card-link"
+                    href="./pw-artist-page.html?id=504"
+                    aria-label="查看廖修平詳細資料"
+                  >
+                    <span class="pw-artist-explore-page__media">
+                      <img
+                        class="pw-artist-explore-page__image"
+                        src="https://cdn.metaassets.asia/artists/avatar_7_20230223094042.jpg"
+                        alt="廖修平"
+                        loading="lazy"
+                        decoding="async"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                      >
+                    </span>
+
+                    <h3 class="pw-artist-explore-page__name">
+                      廖修平
+                    </h3>
+                  </a>
+                </article>
+              </li>
+            
+              <li class="pw-artist-explore-page__item">
+                <article
+                  class="
+                    pw-artist-explore-page__card
+                    
+                    pw-artist-explore-page__card--grayscale
+                  "
+                >
+                  <a
+                    class="pw-artist-explore-page__card-link"
+                    href="./pw-artist-page.html?id=505"
+                    aria-label="查看席德進詳細資料"
+                  >
+                    <span class="pw-artist-explore-page__media">
+                      <img
+                        class="pw-artist-explore-page__image"
+                        src="https://cdn.metaassets.asia/artists/avatar_12_20230224020147.jpg"
+                        alt="席德進"
+                        loading="lazy"
+                        decoding="async"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                      >
+                    </span>
+
+                    <h3 class="pw-artist-explore-page__name">
+                      席德進
+                    </h3>
+                  </a>
+                </article>
+              </li>
+            
+              <li class="pw-artist-explore-page__item">
+                <article
+                  class="
+                    pw-artist-explore-page__card
+                    
+                    pw-artist-explore-page__card--grayscale
+                  "
+                >
+                  <a
+                    class="pw-artist-explore-page__card-link"
+                    href="./pw-artist-page.html?id=506"
+                    aria-label="查看林惺嶽詳細資料"
+                  >
+                    <span class="pw-artist-explore-page__media">
+                      <img
+                        class="pw-artist-explore-page__image"
+                        src="https://cdn.metaassets.asia/artists/avatar_2_20230223093241.jpg"
+                        alt="林惺嶽"
+                        loading="lazy"
+                        decoding="async"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                      >
+                    </span>
+
+                    <h3 class="pw-artist-explore-page__name">
+                      林惺嶽
+                    </h3>
+                  </a>
+                </article>
+              </li>
+            
+              <li class="pw-artist-explore-page__item">
+                <article
+                  class="
+                    pw-artist-explore-page__card
+                    
+                    pw-artist-explore-page__card--grayscale
+                  "
+                >
+                  <a
+                    class="pw-artist-explore-page__card-link"
+                    href="./pw-artist-page.html?id=507"
+                    aria-label="查看郭東榮詳細資料"
+                  >
+                    <span class="pw-artist-explore-page__media">
+                      <img
+                        class="pw-artist-explore-page__image"
+                        src="https://cdn.metaassets.asia/artists/avatar_3_20240627041500.jpg"
+                        alt="郭東榮"
+                        loading="lazy"
+                        decoding="async"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                      >
+                    </span>
+
+                    <h3 class="pw-artist-explore-page__name">
+                      郭東榮
+                    </h3>
+                  </a>
+                </article>
+              </li>
+            
+              <li class="pw-artist-explore-page__item">
+                <article
+                  class="
+                    pw-artist-explore-page__card
+                    
+                    pw-artist-explore-page__card--grayscale
+                  "
+                >
+                  <a
+                    class="pw-artist-explore-page__card-link"
+                    href="./pw-artist-page.html?id=508"
+                    aria-label="查看顧重光詳細資料"
+                  >
+                    <span class="pw-artist-explore-page__media">
+                      <img
+                        class="pw-artist-explore-page__image"
+                        src="https://cdn.metaassets.asia/artists/avatar_5_20230223094839.jpg"
+                        alt="顧重光"
+                        loading="lazy"
+                        decoding="async"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                      >
+                    </span>
+
+                    <h3 class="pw-artist-explore-page__name">
+                      顧重光
+                    </h3>
+                  </a>
+                </article>
+              </li>
+            
+              <li class="pw-artist-explore-page__item">
+                <article
+                  class="
+                    pw-artist-explore-page__card
+                    
+                    pw-artist-explore-page__card--grayscale
+                  "
+                >
+                  <a
+                    class="pw-artist-explore-page__card-link"
+                    href="./pw-artist-page.html?id=509"
+                    aria-label="查看李義弘詳細資料"
+                  >
+                    <span class="pw-artist-explore-page__media">
+                      <img
+                        class="pw-artist-explore-page__image"
+                        src="https://cdn.metaassets.asia/artists/avatar_7_20230223094042.jpg"
+                        alt="李義弘"
+                        loading="lazy"
+                        decoding="async"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                      >
+                    </span>
+
+                    <h3 class="pw-artist-explore-page__name">
+                      李義弘
+                    </h3>
+                  </a>
+                </article>
+              </li>
+            
+              <li class="pw-artist-explore-page__item">
+                <article
+                  class="
+                    pw-artist-explore-page__card
+                    
+                    pw-artist-explore-page__card--grayscale
+                  "
+                >
+                  <a
+                    class="pw-artist-explore-page__card-link"
+                    href="./pw-artist-page.html?id=510"
+                    aria-label="查看袁金塔詳細資料"
+                  >
+                    <span class="pw-artist-explore-page__media">
+                      <img
+                        class="pw-artist-explore-page__image"
+                        src="https://cdn.metaassets.asia/artists/avatar_12_20230224020147.jpg"
+                        alt="袁金塔"
+                        loading="lazy"
+                        decoding="async"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                      >
+                    </span>
+
+                    <h3 class="pw-artist-explore-page__name">
+                      袁金塔
+                    </h3>
+                  </a>
+                </article>
+              </li>
+            
+              <li class="pw-artist-explore-page__item">
+                <article
+                  class="
+                    pw-artist-explore-page__card
+                    
+                    pw-artist-explore-page__card--grayscale
+                  "
+                >
+                  <a
+                    class="pw-artist-explore-page__card-link"
+                    href="./pw-artist-page.html?id=511"
+                    aria-label="查看陳銀輝詳細資料"
+                  >
+                    <span class="pw-artist-explore-page__media">
+                      <img
+                        class="pw-artist-explore-page__image"
+                        src="https://cdn.metaassets.asia/artists/avatar_2_20230223093241.jpg"
+                        alt="陳銀輝"
+                        loading="lazy"
+                        decoding="async"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                      >
+                    </span>
+
+                    <h3 class="pw-artist-explore-page__name">
+                      陳銀輝
+                    </h3>
+                  </a>
+                </article>
+              </li>
+            
+          </ul>
+        
+
+        
+          <nav
+            class="
+              pw-pagination
+              pw-artist-explore-page__pagination
+            "
+            aria-label="具象藝術分頁"
+          >
+            <span
+              class="
+                pw-pagination__control
+                pw-pagination__control--prev
+                pw-pagination__control--disabled
+              "
+              aria-label="上一頁"
+              aria-disabled="true"
+            >
+              ‹
+            </span>
+
+            <a
+              class="
+                pw-pagination__item
+                pw-pagination__item--active
+              "
+              href="?type=masters&amp;category=figurative&page=1"
+              aria-label="第 1 頁"
+              aria-current="page"
+            >
+              1
+            </a>
+
+            <a
+              class="pw-pagination__item"
+              href="?type=masters&amp;category=figurative&page=2"
+              aria-label="前往第 2 頁"
+            >
+              2
+            </a>
+
+            <a
+              class="pw-pagination__item"
+              href="?type=masters&amp;category=figurative&page=3"
+              aria-label="前往第 3 頁"
+            >
+              3
+            </a>
+
+
+            <span
+              class="pw-pagination__ellipsis"
+              aria-hidden="true"
+            >
+              …
+            </span>
+
+            <a
+              class="pw-pagination__item"
+              href="?type=masters&amp;category=figurative&page=134"
+              aria-label="前往第 134 頁"
+            >
+              134
+            </a>
+
+            <a
+              class="
+                pw-pagination__control
+                pw-pagination__control--next
+              "
+              href="?type=masters&amp;category=figurative&page=2"
+              aria-label="下一頁"
+            >
+              ›
+            </a>
+          </nav>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+      <!-- 創藝人物 -->
+      
+
+<section
+  class="pw-artist-explore-page__panel"
+  id="artist-explore-creators-panel"
+  role="tabpanel"
+  aria-labelledby="artist-explore-creators-tab"
+  tabindex="0"
+  data-pw-tab-panel="creators"
+  data-pw-artist-explore-panel="creators"
+  hidden
+>
+  <!-- 分類與頁面標題 -->
+  <div
+    class="
+      pw-section
+      pw-artist-explore-page__panel-header
+    "
+  >
+    <div class="pw-container">
+      <div
+        class="
+          pw-inner
+          pw-artist-explore-page__panel-header-inner
+        "
+      >
+        
+          <div
+            class="
+              pw-category-scroll
+              pw-artist-explore-page__category-scroll
+            "
+            data-pw-category-scroll
+            data-pw-artist-category-scroll
+          >
+            <button
+              class="
+                pw-icon-btn
+                pw-artist-explore-page__category-control
+                pw-artist-explore-page__category-control--prev
+              "
+              type="button"
+              aria-label="查看上一組藝術分類"
+              data-pw-category-scroll-prev
+            >
+              <span aria-hidden="true">‹</span>
+            </button>
+
+            <div
+              class="
+                pw-category-scroll__rail
+                pw-artist-explore-page__category-rail
+              "
+              data-pw-category-scroll-rail
+            >
+              
+                <button
+                  class="
+                    pw-chip
+                    pw-category-scroll__button
+                    pw-artist-explore-page__category
+                    
+                  "
+                  type="button"
+                  aria-pressed="false"
+                  data-pw-category-scroll-item
+                  data-pw-artist-category="surrealism"
+                  data-heading-en="SURREALISM"
+                  data-heading-zh="超現實"
+                >
+                  超現實
+                </button>
+              
+                <button
+                  class="
+                    pw-chip
+                    pw-category-scroll__button
+                    pw-artist-explore-page__category
+                    
+                  "
+                  type="button"
+                  aria-pressed="false"
+                  data-pw-category-scroll-item
+                  data-pw-artist-category="ai-generative"
+                  data-heading-en="AI GENERATIVE ART"
+                  data-heading-zh="AI 生成式"
+                >
+                  AI 生成式
+                </button>
+              
+                <button
+                  class="
+                    pw-chip
+                    pw-category-scroll__button
+                    pw-artist-explore-page__category
+                    is-active
+                  "
+                  type="button"
+                  aria-pressed="true"
+                  data-pw-category-scroll-item
+                  data-pw-artist-category="figurative"
+                  data-heading-en="FIGURATIVE ART"
+                  data-heading-zh="具象藝術"
+                >
+                  具象藝術
+                </button>
+              
+                <button
+                  class="
+                    pw-chip
+                    pw-category-scroll__button
+                    pw-artist-explore-page__category
+                    
+                  "
+                  type="button"
+                  aria-pressed="false"
+                  data-pw-category-scroll-item
+                  data-pw-artist-category="pastel"
+                  data-heading-en="PASTEL ART"
+                  data-heading-zh="粉彩藝術"
+                >
+                  粉彩藝術
+                </button>
+              
+                <button
+                  class="
+                    pw-chip
+                    pw-category-scroll__button
+                    pw-artist-explore-page__category
+                    
+                  "
+                  type="button"
+                  aria-pressed="false"
+                  data-pw-category-scroll-item
+                  data-pw-artist-category="abstract"
+                  data-heading-en="ABSTRACT ART"
+                  data-heading-zh="抽象藝術"
+                >
+                  抽象藝術
+                </button>
+              
+                <button
+                  class="
+                    pw-chip
+                    pw-category-scroll__button
+                    pw-artist-explore-page__category
+                    
+                  "
+                  type="button"
+                  aria-pressed="false"
+                  data-pw-category-scroll-item
+                  data-pw-artist-category="expressionism"
+                  data-heading-en="EXPRESSIONISM"
+                  data-heading-zh="表現主義"
+                >
+                  表現主義
+                </button>
+              
+                <button
+                  class="
+                    pw-chip
+                    pw-category-scroll__button
+                    pw-artist-explore-page__category
+                    
+                  "
+                  type="button"
+                  aria-pressed="false"
+                  data-pw-category-scroll-item
+                  data-pw-artist-category="three-dimensional"
+                  data-heading-en="THREE-DIMENSIONAL ART"
+                  data-heading-zh="立體藝術"
+                >
+                  立體藝術
+                </button>
+              
+                <button
+                  class="
+                    pw-chip
+                    pw-category-scroll__button
+                    pw-artist-explore-page__category
+                    
+                  "
+                  type="button"
+                  aria-pressed="false"
+                  data-pw-category-scroll-item
+                  data-pw-artist-category="installation"
+                  data-heading-en="INSTALLATION ART"
+                  data-heading-zh="裝置藝術"
+                >
+                  裝置藝術
+                </button>
+              
+                <button
+                  class="
+                    pw-chip
+                    pw-category-scroll__button
+                    pw-artist-explore-page__category
+                    
+                  "
+                  type="button"
+                  aria-pressed="false"
+                  data-pw-category-scroll-item
+                  data-pw-artist-category="oil-painting"
+                  data-heading-en="OIL PAINTING"
+                  data-heading-zh="油彩藝術"
+                >
+                  油彩藝術
+                </button>
+              
+            </div>
+
+            <button
+              class="
+                pw-icon-btn
+                pw-artist-explore-page__category-control
+                pw-artist-explore-page__category-control--next
+              "
+              type="button"
+              aria-label="查看下一組藝術分類"
+              data-pw-category-scroll-next
+            >
+              <span aria-hidden="true">›</span>
+            </button>
+          </div>
+        
+
+        <header
+          class="
+            pw-accent-heading
+            pw-accent-heading--page
+            pw-artist-explore-page__heading
+          "
+        >
+          <h2
+            class="pw-accent-heading__title"
+            id="artist-explore-creators-panel-title"
+            data-pw-artist-heading-en
+          >
+            FIGURATIVE ART
+          </h2>
+
+          <p
+            class="pw-accent-heading__subtitle"
+            data-pw-artist-heading-zh
+          >
+            具象藝術
+          </p>
+        </header>
+      </div>
+    </div>
+  </div>
+
+  <div
+  class="
+    pw-category-divider
+    pw-artist-explore-page__divider
+  "
+  aria-hidden="true"
+></div>
+
+  <!-- 卡片列表 -->
+  <div
+    class="
+      pw-section
+      pw-artist-explore-page__results
+    "
+  >
+    <div class="pw-container">
+      <div
+        class="
+          pw-inner
+          pw-artist-explore-page__results-inner
+        "
+      >
+        
+          <ul
+            class="pw-artist-explore-page__list"
+            aria-labelledby="artist-explore-creators-panel-title"
+            data-pw-artist-explore-list
+          >
+            
+              <li class="pw-artist-explore-page__item">
+                <article
+                  class="
+                    pw-artist-explore-page__card
+                    is-featured
+                    pw-artist-explore-page__card--grayscale
+                  "
+                >
+                  <a
+                    class="pw-artist-explore-page__card-link"
+                    href="./pw-artist-page.html?id=7"
+                    aria-label="查看吳政翰詳細資料"
+                  >
+                    <span class="pw-artist-explore-page__media">
+                      <img
+                        class="pw-artist-explore-page__image"
+                        src="https://cdn.metaassets.asia/artists/avatar_7_20230223094042.jpg"
+                        alt="吳政翰"
+                        loading="lazy"
+                        decoding="async"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                      >
+                    </span>
+
+                    <h3 class="pw-artist-explore-page__name">
+                      吳政翰
+                    </h3>
+                  </a>
+                </article>
+              </li>
+            
+              <li class="pw-artist-explore-page__item">
+                <article
+                  class="
+                    pw-artist-explore-page__card
+                    
+                    pw-artist-explore-page__card--grayscale
+                  "
+                >
+                  <a
+                    class="pw-artist-explore-page__card-link"
+                    href="./pw-artist-page.html?id=101"
+                    aria-label="查看陳凱森詳細資料"
+                  >
+                    <span class="pw-artist-explore-page__media">
+                      <img
+                        class="pw-artist-explore-page__image"
+                        src="https://cdn.metaassets.asia/artists/avatar_12_20230224020147.jpg"
+                        alt="陳凱森"
+                        loading="lazy"
+                        decoding="async"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                      >
+                    </span>
+
+                    <h3 class="pw-artist-explore-page__name">
+                      陳凱森
+                    </h3>
+                  </a>
+                </article>
+              </li>
+            
+              <li class="pw-artist-explore-page__item">
+                <article
+                  class="
+                    pw-artist-explore-page__card
+                    
+                    pw-artist-explore-page__card--grayscale
+                  "
+                >
+                  <a
+                    class="pw-artist-explore-page__card-link"
+                    href="./pw-artist-page.html?id=102"
+                    aria-label="查看潘蓬彬詳細資料"
+                  >
+                    <span class="pw-artist-explore-page__media">
+                      <img
+                        class="pw-artist-explore-page__image"
+                        src="https://cdn.metaassets.asia/artists/avatar_2_20230223093241.jpg"
+                        alt="潘蓬彬"
+                        loading="lazy"
+                        decoding="async"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                      >
+                    </span>
+
+                    <h3 class="pw-artist-explore-page__name">
+                      潘蓬彬
+                    </h3>
+                  </a>
+                </article>
+              </li>
+            
+              <li class="pw-artist-explore-page__item">
+                <article
+                  class="
+                    pw-artist-explore-page__card
+                    
+                    pw-artist-explore-page__card--grayscale
+                  "
+                >
+                  <a
+                    class="pw-artist-explore-page__card-link"
+                    href="./pw-artist-page.html?id=103"
+                    aria-label="查看劉洋哲詳細資料"
+                  >
+                    <span class="pw-artist-explore-page__media">
+                      <img
+                        class="pw-artist-explore-page__image"
+                        src="https://cdn.metaassets.asia/artists/avatar_3_20240627041500.jpg"
+                        alt="劉洋哲"
+                        loading="lazy"
+                        decoding="async"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                      >
+                    </span>
+
+                    <h3 class="pw-artist-explore-page__name">
+                      劉洋哲
+                    </h3>
+                  </a>
+                </article>
+              </li>
+            
+              <li class="pw-artist-explore-page__item">
+                <article
+                  class="
+                    pw-artist-explore-page__card
+                    
+                    pw-artist-explore-page__card--grayscale
+                  "
+                >
+                  <a
+                    class="pw-artist-explore-page__card-link"
+                    href="./pw-artist-page.html?id=601"
+                    aria-label="查看林育正詳細資料"
+                  >
+                    <span class="pw-artist-explore-page__media">
+                      <img
+                        class="pw-artist-explore-page__image"
+                        src="https://cdn.metaassets.asia/artists/avatar_3_20240627041500.jpg"
+                        alt="林育正"
+                        loading="lazy"
+                        decoding="async"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                      >
+                    </span>
+
+                    <h3 class="pw-artist-explore-page__name">
+                      林育正
+                    </h3>
+                  </a>
+                </article>
+              </li>
+            
+              <li class="pw-artist-explore-page__item">
+                <article
+                  class="
+                    pw-artist-explore-page__card
+                    
+                    pw-artist-explore-page__card--grayscale
+                  "
+                >
+                  <a
+                    class="pw-artist-explore-page__card-link"
+                    href="./pw-artist-page.html?id=602"
+                    aria-label="查看周孟曄詳細資料"
+                  >
+                    <span class="pw-artist-explore-page__media">
+                      <img
+                        class="pw-artist-explore-page__image"
+                        src="https://cdn.metaassets.asia/artists/avatar_5_20230223094839.jpg"
+                        alt="周孟曄"
+                        loading="lazy"
+                        decoding="async"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                      >
+                    </span>
+
+                    <h3 class="pw-artist-explore-page__name">
+                      周孟曄
+                    </h3>
+                  </a>
+                </article>
+              </li>
+            
+              <li class="pw-artist-explore-page__item">
+                <article
+                  class="
+                    pw-artist-explore-page__card
+                    
+                    pw-artist-explore-page__card--grayscale
+                  "
+                >
+                  <a
+                    class="pw-artist-explore-page__card-link"
+                    href="./pw-artist-page.html?id=603"
+                    aria-label="查看張庭甄詳細資料"
+                  >
+                    <span class="pw-artist-explore-page__media">
+                      <img
+                        class="pw-artist-explore-page__image"
+                        src="https://cdn.metaassets.asia/artists/avatar_7_20230223094042.jpg"
+                        alt="張庭甄"
+                        loading="lazy"
+                        decoding="async"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                      >
+                    </span>
+
+                    <h3 class="pw-artist-explore-page__name">
+                      張庭甄
+                    </h3>
+                  </a>
+                </article>
+              </li>
+            
+              <li class="pw-artist-explore-page__item">
+                <article
+                  class="
+                    pw-artist-explore-page__card
+                    
+                    pw-artist-explore-page__card--grayscale
+                  "
+                >
+                  <a
+                    class="pw-artist-explore-page__card-link"
+                    href="./pw-artist-page.html?id=604"
+                    aria-label="查看蘇柏欽詳細資料"
+                  >
+                    <span class="pw-artist-explore-page__media">
+                      <img
+                        class="pw-artist-explore-page__image"
+                        src="https://cdn.metaassets.asia/artists/avatar_12_20230224020147.jpg"
+                        alt="蘇柏欽"
+                        loading="lazy"
+                        decoding="async"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                      >
+                    </span>
+
+                    <h3 class="pw-artist-explore-page__name">
+                      蘇柏欽
+                    </h3>
+                  </a>
+                </article>
+              </li>
+            
+              <li class="pw-artist-explore-page__item">
+                <article
+                  class="
+                    pw-artist-explore-page__card
+                    
+                    pw-artist-explore-page__card--grayscale
+                  "
+                >
+                  <a
+                    class="pw-artist-explore-page__card-link"
+                    href="./pw-artist-page.html?id=605"
+                    aria-label="查看王俞晴詳細資料"
+                  >
+                    <span class="pw-artist-explore-page__media">
+                      <img
+                        class="pw-artist-explore-page__image"
+                        src="https://cdn.metaassets.asia/artists/avatar_2_20230223093241.jpg"
+                        alt="王俞晴"
+                        loading="lazy"
+                        decoding="async"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                      >
+                    </span>
+
+                    <h3 class="pw-artist-explore-page__name">
+                      王俞晴
+                    </h3>
+                  </a>
+                </article>
+              </li>
+            
+              <li class="pw-artist-explore-page__item">
+                <article
+                  class="
+                    pw-artist-explore-page__card
+                    
+                    pw-artist-explore-page__card--grayscale
+                  "
+                >
+                  <a
+                    class="pw-artist-explore-page__card-link"
+                    href="./pw-artist-page.html?id=606"
+                    aria-label="查看許家維詳細資料"
+                  >
+                    <span class="pw-artist-explore-page__media">
+                      <img
+                        class="pw-artist-explore-page__image"
+                        src="https://cdn.metaassets.asia/artists/avatar_3_20240627041500.jpg"
+                        alt="許家維"
+                        loading="lazy"
+                        decoding="async"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                      >
+                    </span>
+
+                    <h3 class="pw-artist-explore-page__name">
+                      許家維
+                    </h3>
+                  </a>
+                </article>
+              </li>
+            
+              <li class="pw-artist-explore-page__item">
+                <article
+                  class="
+                    pw-artist-explore-page__card
+                    
+                    pw-artist-explore-page__card--grayscale
+                  "
+                >
+                  <a
+                    class="pw-artist-explore-page__card-link"
+                    href="./pw-artist-page.html?id=607"
+                    aria-label="查看黃柏勳詳細資料"
+                  >
+                    <span class="pw-artist-explore-page__media">
+                      <img
+                        class="pw-artist-explore-page__image"
+                        src="https://cdn.metaassets.asia/artists/avatar_5_20230223094839.jpg"
+                        alt="黃柏勳"
+                        loading="lazy"
+                        decoding="async"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                      >
+                    </span>
+
+                    <h3 class="pw-artist-explore-page__name">
+                      黃柏勳
+                    </h3>
+                  </a>
+                </article>
+              </li>
+            
+              <li class="pw-artist-explore-page__item">
+                <article
+                  class="
+                    pw-artist-explore-page__card
+                    
+                    pw-artist-explore-page__card--grayscale
+                  "
+                >
+                  <a
+                    class="pw-artist-explore-page__card-link"
+                    href="./pw-artist-page.html?id=608"
+                    aria-label="查看葉子奇詳細資料"
+                  >
+                    <span class="pw-artist-explore-page__media">
+                      <img
+                        class="pw-artist-explore-page__image"
+                        src="https://cdn.metaassets.asia/artists/avatar_7_20230223094042.jpg"
+                        alt="葉子奇"
+                        loading="lazy"
+                        decoding="async"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                      >
+                    </span>
+
+                    <h3 class="pw-artist-explore-page__name">
+                      葉子奇
+                    </h3>
+                  </a>
+                </article>
+              </li>
+            
+              <li class="pw-artist-explore-page__item">
+                <article
+                  class="
+                    pw-artist-explore-page__card
+                    
+                    pw-artist-explore-page__card--grayscale
+                  "
+                >
+                  <a
+                    class="pw-artist-explore-page__card-link"
+                    href="./pw-artist-page.html?id=609"
+                    aria-label="查看陳芷昀詳細資料"
+                  >
+                    <span class="pw-artist-explore-page__media">
+                      <img
+                        class="pw-artist-explore-page__image"
+                        src="https://cdn.metaassets.asia/artists/avatar_12_20230224020147.jpg"
+                        alt="陳芷昀"
+                        loading="lazy"
+                        decoding="async"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                      >
+                    </span>
+
+                    <h3 class="pw-artist-explore-page__name">
+                      陳芷昀
+                    </h3>
+                  </a>
+                </article>
+              </li>
+            
+              <li class="pw-artist-explore-page__item">
+                <article
+                  class="
+                    pw-artist-explore-page__card
+                    
+                    pw-artist-explore-page__card--grayscale
+                  "
+                >
+                  <a
+                    class="pw-artist-explore-page__card-link"
+                    href="./pw-artist-page.html?id=610"
+                    aria-label="查看蔡孟哲詳細資料"
+                  >
+                    <span class="pw-artist-explore-page__media">
+                      <img
+                        class="pw-artist-explore-page__image"
+                        src="https://cdn.metaassets.asia/artists/avatar_2_20230223093241.jpg"
+                        alt="蔡孟哲"
+                        loading="lazy"
+                        decoding="async"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                      >
+                    </span>
+
+                    <h3 class="pw-artist-explore-page__name">
+                      蔡孟哲
+                    </h3>
+                  </a>
+                </article>
+              </li>
+            
+              <li class="pw-artist-explore-page__item">
+                <article
+                  class="
+                    pw-artist-explore-page__card
+                    
+                    pw-artist-explore-page__card--grayscale
+                  "
+                >
+                  <a
+                    class="pw-artist-explore-page__card-link"
+                    href="./pw-artist-page.html?id=611"
+                    aria-label="查看鄭雅文詳細資料"
+                  >
+                    <span class="pw-artist-explore-page__media">
+                      <img
+                        class="pw-artist-explore-page__image"
+                        src="https://cdn.metaassets.asia/artists/avatar_3_20240627041500.jpg"
+                        alt="鄭雅文"
+                        loading="lazy"
+                        decoding="async"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                      >
+                    </span>
+
+                    <h3 class="pw-artist-explore-page__name">
+                      鄭雅文
+                    </h3>
+                  </a>
+                </article>
+              </li>
+            
+              <li class="pw-artist-explore-page__item">
+                <article
+                  class="
+                    pw-artist-explore-page__card
+                    
+                    pw-artist-explore-page__card--grayscale
+                  "
+                >
+                  <a
+                    class="pw-artist-explore-page__card-link"
+                    href="./pw-artist-page.html?id=612"
+                    aria-label="查看羅心怡詳細資料"
+                  >
+                    <span class="pw-artist-explore-page__media">
+                      <img
+                        class="pw-artist-explore-page__image"
+                        src="https://cdn.metaassets.asia/artists/avatar_5_20230223094839.jpg"
+                        alt="羅心怡"
+                        loading="lazy"
+                        decoding="async"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                      >
+                    </span>
+
+                    <h3 class="pw-artist-explore-page__name">
+                      羅心怡
+                    </h3>
+                  </a>
+                </article>
+              </li>
+            
+          </ul>
+        
+
+        
+          <nav
+            class="
+              pw-pagination
+              pw-artist-explore-page__pagination
+            "
+            aria-label="具象藝術分頁"
+          >
+            <span
+              class="
+                pw-pagination__control
+                pw-pagination__control--prev
+                pw-pagination__control--disabled
+              "
+              aria-label="上一頁"
+              aria-disabled="true"
+            >
+              ‹
+            </span>
+
+            <a
+              class="
+                pw-pagination__item
+                pw-pagination__item--active
+              "
+              href="?type=creators&amp;category=figurative&page=1"
+              aria-label="第 1 頁"
+              aria-current="page"
+            >
+              1
+            </a>
+
+            <a
+              class="pw-pagination__item"
+              href="?type=creators&amp;category=figurative&page=2"
+              aria-label="前往第 2 頁"
+            >
+              2
+            </a>
+
+            <a
+              class="pw-pagination__item"
+              href="?type=creators&amp;category=figurative&page=3"
+              aria-label="前往第 3 頁"
+            >
+              3
+            </a>
+
+
+            <span
+              class="pw-pagination__ellipsis"
+              aria-hidden="true"
+            >
+              …
+            </span>
+
+            <a
+              class="pw-pagination__item"
+              href="?type=creators&amp;category=figurative&page=134"
+              aria-label="前往第 134 頁"
+            >
+              134
+            </a>
+
+            <a
+              class="
+                pw-pagination__control
+                pw-pagination__control--next
+              "
+              href="?type=creators&amp;category=figurative&page=2"
+              aria-label="下一頁"
+            >
+              ›
+            </a>
+          </nav>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+      <!-- 藝術團體 -->
+      
+
+<section
+  class="pw-artist-explore-page__panel"
+  id="artist-explore-organizations-panel"
+  role="tabpanel"
+  aria-labelledby="artist-explore-organizations-tab"
+  tabindex="0"
+  data-pw-tab-panel="organizations"
+  data-pw-artist-explore-panel="organizations"
+  hidden
+>
+  <!-- 分類與頁面標題 -->
+  <div
+    class="
+      pw-section
+      pw-artist-explore-page__panel-header
+    "
+  >
+    <div class="pw-container">
+      <div
+        class="
+          pw-inner
+          pw-artist-explore-page__panel-header-inner
+        "
+      >
+        
+
+        <header
+          class="
+            pw-accent-heading
+            pw-accent-heading--page
+            pw-artist-explore-page__heading
+          "
+        >
+          <h2
+            class="pw-accent-heading__title"
+            id="artist-explore-organizations-panel-title"
+            data-pw-artist-heading-en
+          >
+            ARTS ORGANIZATION
+          </h2>
+
+          <p
+            class="pw-accent-heading__subtitle"
+            data-pw-artist-heading-zh
+          >
+            藝術團體
+          </p>
+        </header>
+      </div>
+    </div>
+  </div>
+
+  <div
+  class="
+    pw-category-divider
+    pw-artist-explore-page__divider
+  "
+  aria-hidden="true"
+></div>
+
+  <!-- 卡片列表 -->
+  <div
+    class="
+      pw-section
+      pw-artist-explore-page__results
+    "
+  >
+    <div class="pw-container">
+      <div
+        class="
+          pw-inner
+          pw-artist-explore-page__results-inner
+        "
+      >
+        
+          <ul
+            class="pw-artist-explore-page__list"
+            aria-labelledby="artist-explore-organizations-panel-title"
+            data-pw-artist-explore-list
+          >
+            
+              <li class="pw-artist-explore-page__item">
+                <article
+                  class="
+                    pw-artist-explore-page__card
+                    is-featured
+                    pw-artist-explore-page__card--grayscale
+                  "
+                >
+                  <a
+                    class="pw-artist-explore-page__card-link"
+                    href="./pw-association-detail-page.html?id=1"
+                    aria-label="查看中華文創協會詳細資料"
+                  >
+                    <span class="pw-artist-explore-page__media">
+                      <img
+                        class="pw-artist-explore-page__image"
+                        src="https://cdn.metaassets.asia/artists/avatar_12_20230224020147.jpg"
+                        alt="中華文創協會"
+                        loading="lazy"
+                        decoding="async"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                      >
+                    </span>
+
+                    <h3 class="pw-artist-explore-page__name">
+                      中華文創協會
+                    </h3>
+                  </a>
+                </article>
+              </li>
+            
+              <li class="pw-artist-explore-page__item">
+                <article
+                  class="
+                    pw-artist-explore-page__card
+                    
+                    pw-artist-explore-page__card--grayscale
+                  "
+                >
+                  <a
+                    class="pw-artist-explore-page__card-link"
+                    href="./pw-association-detail-page.html?id=2"
+                    aria-label="查看台灣藝術資產聯盟詳細資料"
+                  >
+                    <span class="pw-artist-explore-page__media">
+                      <img
+                        class="pw-artist-explore-page__image"
+                        src="https://cdn.metaassets.asia/artists/avatar_2_20230223093241.jpg"
+                        alt="台灣藝術資產聯盟"
+                        loading="lazy"
+                        decoding="async"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                      >
+                    </span>
+
+                    <h3 class="pw-artist-explore-page__name">
+                      台灣藝術資產聯盟
+                    </h3>
+                  </a>
+                </article>
+              </li>
+            
+              <li class="pw-artist-explore-page__item">
+                <article
+                  class="
+                    pw-artist-explore-page__card
+                    
+                    pw-artist-explore-page__card--grayscale
+                  "
+                >
+                  <a
+                    class="pw-artist-explore-page__card-link"
+                    href="./pw-association-detail-page.html?id=3"
+                    aria-label="查看第15屆亞洲藝術博覽會大展詳細資料"
+                  >
+                    <span class="pw-artist-explore-page__media">
+                      <img
+                        class="pw-artist-explore-page__image"
+                        src="https://cdn.metaassets.asia/artists/avatar_3_20240627041500.jpg"
+                        alt="第15屆亞洲藝術博覽會大展"
+                        loading="lazy"
+                        decoding="async"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                      >
+                    </span>
+
+                    <h3 class="pw-artist-explore-page__name">
+                      第15屆亞洲藝術博覽會大展
+                    </h3>
+                  </a>
+                </article>
+              </li>
+            
+              <li class="pw-artist-explore-page__item">
+                <article
+                  class="
+                    pw-artist-explore-page__card
+                    
+                    pw-artist-explore-page__card--grayscale
+                  "
+                >
+                  <a
+                    class="pw-artist-explore-page__card-link"
+                    href="./pw-association-detail-page.html?id=4"
+                    aria-label="查看台灣藝術推廣協會詳細資料"
+                  >
+                    <span class="pw-artist-explore-page__media">
+                      <img
+                        class="pw-artist-explore-page__image"
+                        src="https://cdn.metaassets.asia/artists/avatar_5_20230223094839.jpg"
+                        alt="台灣藝術推廣協會"
+                        loading="lazy"
+                        decoding="async"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                      >
+                    </span>
+
+                    <h3 class="pw-artist-explore-page__name">
+                      台灣藝術推廣協會
+                    </h3>
+                  </a>
+                </article>
+              </li>
+            
+              <li class="pw-artist-explore-page__item">
+                <article
+                  class="
+                    pw-artist-explore-page__card
+                    
+                    pw-artist-explore-page__card--grayscale
+                  "
+                >
+                  <a
+                    class="pw-artist-explore-page__card-link"
+                    href="./pw-association-detail-page.html?id=701"
+                    aria-label="查看台灣當代藝術協會詳細資料"
+                  >
+                    <span class="pw-artist-explore-page__media">
+                      <img
+                        class="pw-artist-explore-page__image"
+                        src="https://cdn.metaassets.asia/artists/avatar_5_20230223094839.jpg"
+                        alt="台灣當代藝術協會"
+                        loading="lazy"
+                        decoding="async"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                      >
+                    </span>
+
+                    <h3 class="pw-artist-explore-page__name">
+                      台灣當代藝術協會
+                    </h3>
+                  </a>
+                </article>
+              </li>
+            
+              <li class="pw-artist-explore-page__item">
+                <article
+                  class="
+                    pw-artist-explore-page__card
+                    
+                    pw-artist-explore-page__card--grayscale
+                  "
+                >
+                  <a
+                    class="pw-artist-explore-page__card-link"
+                    href="./pw-association-detail-page.html?id=702"
+                    aria-label="查看中華視覺藝術聯盟詳細資料"
+                  >
+                    <span class="pw-artist-explore-page__media">
+                      <img
+                        class="pw-artist-explore-page__image"
+                        src="https://cdn.metaassets.asia/artists/avatar_7_20230223094042.jpg"
+                        alt="中華視覺藝術聯盟"
+                        loading="lazy"
+                        decoding="async"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                      >
+                    </span>
+
+                    <h3 class="pw-artist-explore-page__name">
+                      中華視覺藝術聯盟
+                    </h3>
+                  </a>
+                </article>
+              </li>
+            
+              <li class="pw-artist-explore-page__item">
+                <article
+                  class="
+                    pw-artist-explore-page__card
+                    
+                    pw-artist-explore-page__card--grayscale
+                  "
+                >
+                  <a
+                    class="pw-artist-explore-page__card-link"
+                    href="./pw-association-detail-page.html?id=703"
+                    aria-label="查看亞洲新媒體藝術協會詳細資料"
+                  >
+                    <span class="pw-artist-explore-page__media">
+                      <img
+                        class="pw-artist-explore-page__image"
+                        src="https://cdn.metaassets.asia/artists/avatar_12_20230224020147.jpg"
+                        alt="亞洲新媒體藝術協會"
+                        loading="lazy"
+                        decoding="async"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                      >
+                    </span>
+
+                    <h3 class="pw-artist-explore-page__name">
+                      亞洲新媒體藝術協會
+                    </h3>
+                  </a>
+                </article>
+              </li>
+            
+              <li class="pw-artist-explore-page__item">
+                <article
+                  class="
+                    pw-artist-explore-page__card
+                    
+                    pw-artist-explore-page__card--grayscale
+                  "
+                >
+                  <a
+                    class="pw-artist-explore-page__card-link"
+                    href="./pw-association-detail-page.html?id=704"
+                    aria-label="查看台灣雕塑藝術學會詳細資料"
+                  >
+                    <span class="pw-artist-explore-page__media">
+                      <img
+                        class="pw-artist-explore-page__image"
+                        src="https://cdn.metaassets.asia/artists/avatar_2_20230223093241.jpg"
+                        alt="台灣雕塑藝術學會"
+                        loading="lazy"
+                        decoding="async"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                      >
+                    </span>
+
+                    <h3 class="pw-artist-explore-page__name">
+                      台灣雕塑藝術學會
+                    </h3>
+                  </a>
+                </article>
+              </li>
+            
+              <li class="pw-artist-explore-page__item">
+                <article
+                  class="
+                    pw-artist-explore-page__card
+                    
+                    pw-artist-explore-page__card--grayscale
+                  "
+                >
+                  <a
+                    class="pw-artist-explore-page__card-link"
+                    href="./pw-association-detail-page.html?id=705"
+                    aria-label="查看中華攝影藝術協會詳細資料"
+                  >
+                    <span class="pw-artist-explore-page__media">
+                      <img
+                        class="pw-artist-explore-page__image"
+                        src="https://cdn.metaassets.asia/artists/avatar_3_20240627041500.jpg"
+                        alt="中華攝影藝術協會"
+                        loading="lazy"
+                        decoding="async"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                      >
+                    </span>
+
+                    <h3 class="pw-artist-explore-page__name">
+                      中華攝影藝術協會
+                    </h3>
+                  </a>
+                </article>
+              </li>
+            
+              <li class="pw-artist-explore-page__item">
+                <article
+                  class="
+                    pw-artist-explore-page__card
+                    
+                    pw-artist-explore-page__card--grayscale
+                  "
+                >
+                  <a
+                    class="pw-artist-explore-page__card-link"
+                    href="./pw-association-detail-page.html?id=706"
+                    aria-label="查看台灣青年藝術家聯盟詳細資料"
+                  >
+                    <span class="pw-artist-explore-page__media">
+                      <img
+                        class="pw-artist-explore-page__image"
+                        src="https://cdn.metaassets.asia/artists/avatar_5_20230223094839.jpg"
+                        alt="台灣青年藝術家聯盟"
+                        loading="lazy"
+                        decoding="async"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                      >
+                    </span>
+
+                    <h3 class="pw-artist-explore-page__name">
+                      台灣青年藝術家聯盟
+                    </h3>
+                  </a>
+                </article>
+              </li>
+            
+              <li class="pw-artist-explore-page__item">
+                <article
+                  class="
+                    pw-artist-explore-page__card
+                    
+                    pw-artist-explore-page__card--grayscale
+                  "
+                >
+                  <a
+                    class="pw-artist-explore-page__card-link"
+                    href="./pw-association-detail-page.html?id=707"
+                    aria-label="查看東方水墨藝術學會詳細資料"
+                  >
+                    <span class="pw-artist-explore-page__media">
+                      <img
+                        class="pw-artist-explore-page__image"
+                        src="https://cdn.metaassets.asia/artists/avatar_7_20230223094042.jpg"
+                        alt="東方水墨藝術學會"
+                        loading="lazy"
+                        decoding="async"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                      >
+                    </span>
+
+                    <h3 class="pw-artist-explore-page__name">
+                      東方水墨藝術學會
+                    </h3>
+                  </a>
+                </article>
+              </li>
+            
+              <li class="pw-artist-explore-page__item">
+                <article
+                  class="
+                    pw-artist-explore-page__card
+                    
+                    pw-artist-explore-page__card--grayscale
+                  "
+                >
+                  <a
+                    class="pw-artist-explore-page__card-link"
+                    href="./pw-association-detail-page.html?id=708"
+                    aria-label="查看國際粉彩藝術協會詳細資料"
+                  >
+                    <span class="pw-artist-explore-page__media">
+                      <img
+                        class="pw-artist-explore-page__image"
+                        src="https://cdn.metaassets.asia/artists/avatar_12_20230224020147.jpg"
+                        alt="國際粉彩藝術協會"
+                        loading="lazy"
+                        decoding="async"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                      >
+                    </span>
+
+                    <h3 class="pw-artist-explore-page__name">
+                      國際粉彩藝術協會
+                    </h3>
+                  </a>
+                </article>
+              </li>
+            
+              <li class="pw-artist-explore-page__item">
+                <article
+                  class="
+                    pw-artist-explore-page__card
+                    
+                    pw-artist-explore-page__card--grayscale
+                  "
+                >
+                  <a
+                    class="pw-artist-explore-page__card-link"
+                    href="./pw-association-detail-page.html?id=709"
+                    aria-label="查看台灣公共藝術協會詳細資料"
+                  >
+                    <span class="pw-artist-explore-page__media">
+                      <img
+                        class="pw-artist-explore-page__image"
+                        src="https://cdn.metaassets.asia/artists/avatar_2_20230223093241.jpg"
+                        alt="台灣公共藝術協會"
+                        loading="lazy"
+                        decoding="async"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                      >
+                    </span>
+
+                    <h3 class="pw-artist-explore-page__name">
+                      台灣公共藝術協會
+                    </h3>
+                  </a>
+                </article>
+              </li>
+            
+              <li class="pw-artist-explore-page__item">
+                <article
+                  class="
+                    pw-artist-explore-page__card
+                    
+                    pw-artist-explore-page__card--grayscale
+                  "
+                >
+                  <a
+                    class="pw-artist-explore-page__card-link"
+                    href="./pw-association-detail-page.html?id=710"
+                    aria-label="查看華人裝置藝術聯盟詳細資料"
+                  >
+                    <span class="pw-artist-explore-page__media">
+                      <img
+                        class="pw-artist-explore-page__image"
+                        src="https://cdn.metaassets.asia/artists/avatar_3_20240627041500.jpg"
+                        alt="華人裝置藝術聯盟"
+                        loading="lazy"
+                        decoding="async"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                      >
+                    </span>
+
+                    <h3 class="pw-artist-explore-page__name">
+                      華人裝置藝術聯盟
+                    </h3>
+                  </a>
+                </article>
+              </li>
+            
+              <li class="pw-artist-explore-page__item">
+                <article
+                  class="
+                    pw-artist-explore-page__card
+                    
+                    pw-artist-explore-page__card--grayscale
+                  "
+                >
+                  <a
+                    class="pw-artist-explore-page__card-link"
+                    href="./pw-association-detail-page.html?id=711"
+                    aria-label="查看台灣藝術教育推廣學會詳細資料"
+                  >
+                    <span class="pw-artist-explore-page__media">
+                      <img
+                        class="pw-artist-explore-page__image"
+                        src="https://cdn.metaassets.asia/artists/avatar_5_20230223094839.jpg"
+                        alt="台灣藝術教育推廣學會"
+                        loading="lazy"
+                        decoding="async"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                      >
+                    </span>
+
+                    <h3 class="pw-artist-explore-page__name">
+                      台灣藝術教育推廣學會
+                    </h3>
+                  </a>
+                </article>
+              </li>
+            
+              <li class="pw-artist-explore-page__item">
+                <article
+                  class="
+                    pw-artist-explore-page__card
+                    
+                    pw-artist-explore-page__card--grayscale
+                  "
+                >
+                  <a
+                    class="pw-artist-explore-page__card-link"
+                    href="./pw-association-detail-page.html?id=712"
+                    aria-label="查看中華藝術收藏協會詳細資料"
+                  >
+                    <span class="pw-artist-explore-page__media">
+                      <img
+                        class="pw-artist-explore-page__image"
+                        src="https://cdn.metaassets.asia/artists/avatar_7_20230223094042.jpg"
+                        alt="中華藝術收藏協會"
+                        loading="lazy"
+                        decoding="async"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                      >
+                    </span>
+
+                    <h3 class="pw-artist-explore-page__name">
+                      中華藝術收藏協會
+                    </h3>
+                  </a>
+                </article>
+              </li>
+            
+              <li class="pw-artist-explore-page__item">
+                <article
+                  class="
+                    pw-artist-explore-page__card
+                    
+                    pw-artist-explore-page__card--grayscale
+                  "
+                >
+                  <a
+                    class="pw-artist-explore-page__card-link"
+                    href="./pw-association-detail-page.html?id=713"
+                    aria-label="查看亞洲跨域藝術聯盟詳細資料"
+                  >
+                    <span class="pw-artist-explore-page__media">
+                      <img
+                        class="pw-artist-explore-page__image"
+                        src="https://cdn.metaassets.asia/artists/avatar_12_20230224020147.jpg"
+                        alt="亞洲跨域藝術聯盟"
+                        loading="lazy"
+                        decoding="async"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                      >
+                    </span>
+
+                    <h3 class="pw-artist-explore-page__name">
+                      亞洲跨域藝術聯盟
+                    </h3>
+                  </a>
+                </article>
+              </li>
+            
+          </ul>
+        
+
+        
+          <nav
+            class="
+              pw-pagination
+              pw-artist-explore-page__pagination
+            "
+            aria-label="藝術團體分頁"
+          >
+            <span
+              class="
+                pw-pagination__control
+                pw-pagination__control--prev
+                pw-pagination__control--disabled
+              "
+              aria-label="上一頁"
+              aria-disabled="true"
+            >
+              ‹
+            </span>
+
+            <a
+              class="
+                pw-pagination__item
+                pw-pagination__item--active
+              "
+              href="?type=organizations&page=1"
+              aria-label="第 1 頁"
+              aria-current="page"
+            >
+              1
+            </a>
+
+            <a
+              class="pw-pagination__item"
+              href="?type=organizations&page=2"
+              aria-label="前往第 2 頁"
+            >
+              2
+            </a>
+
+            <a
+              class="pw-pagination__item"
+              href="?type=organizations&page=3"
+              aria-label="前往第 3 頁"
+            >
+              3
+            </a>
+
+
+            <span
+              class="pw-pagination__ellipsis"
+              aria-hidden="true"
+            >
+              …
+            </span>
+
+            <a
+              class="pw-pagination__item"
+              href="?type=organizations&page=134"
+              aria-label="前往第 134 頁"
+            >
+              134
+            </a>
+
+            <a
+              class="
+                pw-pagination__control
+                pw-pagination__control--next
+              "
+              href="?type=organizations&page=2"
+              aria-label="下一頁"
+            >
+              ›
+            </a>
+          </nav>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+      <!-- 藝術機構 -->
+      
+
+<section
+  class="pw-artist-explore-page__panel"
+  id="artist-explore-institutions-panel"
+  role="tabpanel"
+  aria-labelledby="artist-explore-institutions-tab"
+  tabindex="0"
+  data-pw-tab-panel="institutions"
+  data-pw-artist-explore-panel="institutions"
+  hidden
+>
+  <!-- 分類與頁面標題 -->
+  <div
+    class="
+      pw-section
+      pw-artist-explore-page__panel-header
+    "
+  >
+    <div class="pw-container">
+      <div
+        class="
+          pw-inner
+          pw-artist-explore-page__panel-header-inner
+        "
+      >
+        
+
+        <header
+          class="
+            pw-accent-heading
+            pw-accent-heading--page
+            pw-artist-explore-page__heading
+          "
+        >
+          <h2
+            class="pw-accent-heading__title"
+            id="artist-explore-institutions-panel-title"
+            data-pw-artist-heading-en
+          >
+            ART INSTITUTIONS
+          </h2>
+
+          <p
+            class="pw-accent-heading__subtitle"
+            data-pw-artist-heading-zh
+          >
+            藝術機構
+          </p>
+        </header>
+      </div>
+    </div>
+  </div>
+
+  <div
+  class="
+    pw-category-divider
+    pw-artist-explore-page__divider
+  "
+  aria-hidden="true"
+></div>
+
+  <!-- 卡片列表 -->
+  <div
+    class="
+      pw-section
+      pw-artist-explore-page__results
+    "
+  >
+    <div class="pw-container">
+      <div
+        class="
+          pw-inner
+          pw-artist-explore-page__results-inner
+        "
+      >
+        
+          <ul
+            class="pw-artist-explore-page__list"
+            aria-labelledby="artist-explore-institutions-panel-title"
+            data-pw-artist-explore-list
+          >
+            
+              <li class="pw-artist-explore-page__item">
+                <article
+                  class="
+                    pw-artist-explore-page__card
+                    is-featured
+                    
+                  "
+                >
+                  <a
+                    class="pw-artist-explore-page__card-link"
+                    href="./pw-institution-detail-page.html?id=1"
+                    aria-label="查看澳光智慧藝廊詳細資料"
+                  >
+                    <span class="pw-artist-explore-page__media">
+                      <img
+                        class="pw-artist-explore-page__image"
+                        src="https://placehold.co/640x640/e8e8e8/555555?text=ART+INSTITUTION"
+                        alt="澳光智慧藝廊"
+                        loading="lazy"
+                        decoding="async"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                      >
+                    </span>
+
+                    <h3 class="pw-artist-explore-page__name">
+                      澳光智慧藝廊
+                    </h3>
+                  </a>
+                </article>
+              </li>
+            
+              <li class="pw-artist-explore-page__item">
+                <article
+                  class="
+                    pw-artist-explore-page__card
+                    
+                    
+                  "
+                >
+                  <a
+                    class="pw-artist-explore-page__card-link"
+                    href="./pw-institution-detail-page.html?id=2"
+                    aria-label="查看蛋捲藝術空間詳細資料"
+                  >
+                    <span class="pw-artist-explore-page__media">
+                      <img
+                        class="pw-artist-explore-page__image"
+                        src="https://placehold.co/640x640/e8e8e8/555555?text=ART+SPACE"
+                        alt="蛋捲藝術空間"
+                        loading="lazy"
+                        decoding="async"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                      >
+                    </span>
+
+                    <h3 class="pw-artist-explore-page__name">
+                      蛋捲藝術空間
+                    </h3>
+                  </a>
+                </article>
+              </li>
+            
+              <li class="pw-artist-explore-page__item">
+                <article
+                  class="
+                    pw-artist-explore-page__card
+                    
+                    
+                  "
+                >
+                  <a
+                    class="pw-artist-explore-page__card-link"
+                    href="./pw-institution-detail-page.html?id=3"
+                    aria-label="查看原住民族藝術基金會詳細資料"
+                  >
+                    <span class="pw-artist-explore-page__media">
+                      <img
+                        class="pw-artist-explore-page__image"
+                        src="https://placehold.co/640x640/e8e8e8/555555?text=ART+FOUNDATION"
+                        alt="原住民族藝術基金會"
+                        loading="lazy"
+                        decoding="async"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                      >
+                    </span>
+
+                    <h3 class="pw-artist-explore-page__name">
+                      原住民族藝術基金會
+                    </h3>
+                  </a>
+                </article>
+              </li>
+            
+              <li class="pw-artist-explore-page__item">
+                <article
+                  class="
+                    pw-artist-explore-page__card
+                    
+                    
+                  "
+                >
+                  <a
+                    class="pw-artist-explore-page__card-link"
+                    href="./pw-institution-detail-page.html?id=4"
+                    aria-label="查看波翼藝術藝廊詳細資料"
+                  >
+                    <span class="pw-artist-explore-page__media">
+                      <img
+                        class="pw-artist-explore-page__image"
+                        src="https://placehold.co/640x640/e8e8e8/555555?text=ART+GALLERY"
+                        alt="波翼藝術藝廊"
+                        loading="lazy"
+                        decoding="async"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                      >
+                    </span>
+
+                    <h3 class="pw-artist-explore-page__name">
+                      波翼藝術藝廊
+                    </h3>
+                  </a>
+                </article>
+              </li>
+            
+              <li class="pw-artist-explore-page__item">
+                <article
+                  class="
+                    pw-artist-explore-page__card
+                    
+                    
+                  "
+                >
+                  <a
+                    class="pw-artist-explore-page__card-link"
+                    href="./pw-institution-detail-page.html?id=801"
+                    aria-label="查看光域當代藝術中心詳細資料"
+                  >
+                    <span class="pw-artist-explore-page__media">
+                      <img
+                        class="pw-artist-explore-page__image"
+                        src="https://placehold.co/640x640/e8e8e8/555555?text=ART+SPACE"
+                        alt="光域當代藝術中心"
+                        loading="lazy"
+                        decoding="async"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                      >
+                    </span>
+
+                    <h3 class="pw-artist-explore-page__name">
+                      光域當代藝術中心
+                    </h3>
+                  </a>
+                </article>
+              </li>
+            
+              <li class="pw-artist-explore-page__item">
+                <article
+                  class="
+                    pw-artist-explore-page__card
+                    
+                    
+                  "
+                >
+                  <a
+                    class="pw-artist-explore-page__card-link"
+                    href="./pw-institution-detail-page.html?id=802"
+                    aria-label="查看白境藝術空間詳細資料"
+                  >
+                    <span class="pw-artist-explore-page__media">
+                      <img
+                        class="pw-artist-explore-page__image"
+                        src="https://placehold.co/640x640/e8e8e8/555555?text=ART+FOUNDATION"
+                        alt="白境藝術空間"
+                        loading="lazy"
+                        decoding="async"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                      >
+                    </span>
+
+                    <h3 class="pw-artist-explore-page__name">
+                      白境藝術空間
+                    </h3>
+                  </a>
+                </article>
+              </li>
+            
+              <li class="pw-artist-explore-page__item">
+                <article
+                  class="
+                    pw-artist-explore-page__card
+                    
+                    
+                  "
+                >
+                  <a
+                    class="pw-artist-explore-page__card-link"
+                    href="./pw-institution-detail-page.html?id=803"
+                    aria-label="查看城市美術館詳細資料"
+                  >
+                    <span class="pw-artist-explore-page__media">
+                      <img
+                        class="pw-artist-explore-page__image"
+                        src="https://placehold.co/640x640/e8e8e8/555555?text=ART+GALLERY"
+                        alt="城市美術館"
+                        loading="lazy"
+                        decoding="async"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                      >
+                    </span>
+
+                    <h3 class="pw-artist-explore-page__name">
+                      城市美術館
+                    </h3>
+                  </a>
+                </article>
+              </li>
+            
+              <li class="pw-artist-explore-page__item">
+                <article
+                  class="
+                    pw-artist-explore-page__card
+                    
+                    
+                  "
+                >
+                  <a
+                    class="pw-artist-explore-page__card-link"
+                    href="./pw-institution-detail-page.html?id=804"
+                    aria-label="查看新視野藝術基金會詳細資料"
+                  >
+                    <span class="pw-artist-explore-page__media">
+                      <img
+                        class="pw-artist-explore-page__image"
+                        src="https://placehold.co/640x640/e8e8e8/555555?text=ART+INSTITUTION"
+                        alt="新視野藝術基金會"
+                        loading="lazy"
+                        decoding="async"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                      >
+                    </span>
+
+                    <h3 class="pw-artist-explore-page__name">
+                      新視野藝術基金會
+                    </h3>
+                  </a>
+                </article>
+              </li>
+            
+              <li class="pw-artist-explore-page__item">
+                <article
+                  class="
+                    pw-artist-explore-page__card
+                    
+                    
+                  "
+                >
+                  <a
+                    class="pw-artist-explore-page__card-link"
+                    href="./pw-institution-detail-page.html?id=805"
+                    aria-label="查看島嶼文化藝術中心詳細資料"
+                  >
+                    <span class="pw-artist-explore-page__media">
+                      <img
+                        class="pw-artist-explore-page__image"
+                        src="https://placehold.co/640x640/e8e8e8/555555?text=ART+SPACE"
+                        alt="島嶼文化藝術中心"
+                        loading="lazy"
+                        decoding="async"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                      >
+                    </span>
+
+                    <h3 class="pw-artist-explore-page__name">
+                      島嶼文化藝術中心
+                    </h3>
+                  </a>
+                </article>
+              </li>
+            
+              <li class="pw-artist-explore-page__item">
+                <article
+                  class="
+                    pw-artist-explore-page__card
+                    
+                    
+                  "
+                >
+                  <a
+                    class="pw-artist-explore-page__card-link"
+                    href="./pw-institution-detail-page.html?id=806"
+                    aria-label="查看東岸當代藝廊詳細資料"
+                  >
+                    <span class="pw-artist-explore-page__media">
+                      <img
+                        class="pw-artist-explore-page__image"
+                        src="https://placehold.co/640x640/e8e8e8/555555?text=ART+FOUNDATION"
+                        alt="東岸當代藝廊"
+                        loading="lazy"
+                        decoding="async"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                      >
+                    </span>
+
+                    <h3 class="pw-artist-explore-page__name">
+                      東岸當代藝廊
+                    </h3>
+                  </a>
+                </article>
+              </li>
+            
+              <li class="pw-artist-explore-page__item">
+                <article
+                  class="
+                    pw-artist-explore-page__card
+                    
+                    
+                  "
+                >
+                  <a
+                    class="pw-artist-explore-page__card-link"
+                    href="./pw-institution-detail-page.html?id=807"
+                    aria-label="查看森之藝術空間詳細資料"
+                  >
+                    <span class="pw-artist-explore-page__media">
+                      <img
+                        class="pw-artist-explore-page__image"
+                        src="https://placehold.co/640x640/e8e8e8/555555?text=ART+GALLERY"
+                        alt="森之藝術空間"
+                        loading="lazy"
+                        decoding="async"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                      >
+                    </span>
+
+                    <h3 class="pw-artist-explore-page__name">
+                      森之藝術空間
+                    </h3>
+                  </a>
+                </article>
+              </li>
+            
+              <li class="pw-artist-explore-page__item">
+                <article
+                  class="
+                    pw-artist-explore-page__card
+                    
+                    
+                  "
+                >
+                  <a
+                    class="pw-artist-explore-page__card-link"
+                    href="./pw-institution-detail-page.html?id=808"
+                    aria-label="查看拾光藝術中心詳細資料"
+                  >
+                    <span class="pw-artist-explore-page__media">
+                      <img
+                        class="pw-artist-explore-page__image"
+                        src="https://placehold.co/640x640/e8e8e8/555555?text=ART+INSTITUTION"
+                        alt="拾光藝術中心"
+                        loading="lazy"
+                        decoding="async"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                      >
+                    </span>
+
+                    <h3 class="pw-artist-explore-page__name">
+                      拾光藝術中心
+                    </h3>
+                  </a>
+                </article>
+              </li>
+            
+              <li class="pw-artist-explore-page__item">
+                <article
+                  class="
+                    pw-artist-explore-page__card
+                    
+                    
+                  "
+                >
+                  <a
+                    class="pw-artist-explore-page__card-link"
+                    href="./pw-institution-detail-page.html?id=809"
+                    aria-label="查看亞洲數位藝術館詳細資料"
+                  >
+                    <span class="pw-artist-explore-page__media">
+                      <img
+                        class="pw-artist-explore-page__image"
+                        src="https://placehold.co/640x640/e8e8e8/555555?text=ART+SPACE"
+                        alt="亞洲數位藝術館"
+                        loading="lazy"
+                        decoding="async"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                      >
+                    </span>
+
+                    <h3 class="pw-artist-explore-page__name">
+                      亞洲數位藝術館
+                    </h3>
+                  </a>
+                </article>
+              </li>
+            
+              <li class="pw-artist-explore-page__item">
+                <article
+                  class="
+                    pw-artist-explore-page__card
+                    
+                    
+                  "
+                >
+                  <a
+                    class="pw-artist-explore-page__card-link"
+                    href="./pw-institution-detail-page.html?id=810"
+                    aria-label="查看浮光藝術實驗室詳細資料"
+                  >
+                    <span class="pw-artist-explore-page__media">
+                      <img
+                        class="pw-artist-explore-page__image"
+                        src="https://placehold.co/640x640/e8e8e8/555555?text=ART+FOUNDATION"
+                        alt="浮光藝術實驗室"
+                        loading="lazy"
+                        decoding="async"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                      >
+                    </span>
+
+                    <h3 class="pw-artist-explore-page__name">
+                      浮光藝術實驗室
+                    </h3>
+                  </a>
+                </article>
+              </li>
+            
+              <li class="pw-artist-explore-page__item">
+                <article
+                  class="
+                    pw-artist-explore-page__card
+                    
+                    
+                  "
+                >
+                  <a
+                    class="pw-artist-explore-page__card-link"
+                    href="./pw-institution-detail-page.html?id=811"
+                    aria-label="查看山海美學文化館詳細資料"
+                  >
+                    <span class="pw-artist-explore-page__media">
+                      <img
+                        class="pw-artist-explore-page__image"
+                        src="https://placehold.co/640x640/e8e8e8/555555?text=ART+GALLERY"
+                        alt="山海美學文化館"
+                        loading="lazy"
+                        decoding="async"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                      >
+                    </span>
+
+                    <h3 class="pw-artist-explore-page__name">
+                      山海美學文化館
+                    </h3>
+                  </a>
+                </article>
+              </li>
+            
+              <li class="pw-artist-explore-page__item">
+                <article
+                  class="
+                    pw-artist-explore-page__card
+                    
+                    
+                  "
+                >
+                  <a
+                    class="pw-artist-explore-page__card-link"
+                    href="./pw-institution-detail-page.html?id=812"
+                    aria-label="查看青田藝術基地詳細資料"
+                  >
+                    <span class="pw-artist-explore-page__media">
+                      <img
+                        class="pw-artist-explore-page__image"
+                        src="https://placehold.co/640x640/e8e8e8/555555?text=ART+INSTITUTION"
+                        alt="青田藝術基地"
+                        loading="lazy"
+                        decoding="async"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                      >
+                    </span>
+
+                    <h3 class="pw-artist-explore-page__name">
+                      青田藝術基地
+                    </h3>
+                  </a>
+                </article>
+              </li>
+            
+              <li class="pw-artist-explore-page__item">
+                <article
+                  class="
+                    pw-artist-explore-page__card
+                    
+                    
+                  "
+                >
+                  <a
+                    class="pw-artist-explore-page__card-link"
+                    href="./pw-institution-detail-page.html?id=813"
+                    aria-label="查看無界當代藝術空間詳細資料"
+                  >
+                    <span class="pw-artist-explore-page__media">
+                      <img
+                        class="pw-artist-explore-page__image"
+                        src="https://placehold.co/640x640/e8e8e8/555555?text=ART+SPACE"
+                        alt="無界當代藝術空間"
+                        loading="lazy"
+                        decoding="async"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                      >
+                    </span>
+
+                    <h3 class="pw-artist-explore-page__name">
+                      無界當代藝術空間
+                    </h3>
+                  </a>
+                </article>
+              </li>
+            
+              <li class="pw-artist-explore-page__item">
+                <article
+                  class="
+                    pw-artist-explore-page__card
+                    
+                    
+                  "
+                >
+                  <a
+                    class="pw-artist-explore-page__card-link"
+                    href="./pw-institution-detail-page.html?id=814"
+                    aria-label="查看城市藝術典藏中心詳細資料"
+                  >
+                    <span class="pw-artist-explore-page__media">
+                      <img
+                        class="pw-artist-explore-page__image"
+                        src="https://placehold.co/640x640/e8e8e8/555555?text=ART+FOUNDATION"
+                        alt="城市藝術典藏中心"
+                        loading="lazy"
+                        decoding="async"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                      >
+                    </span>
+
+                    <h3 class="pw-artist-explore-page__name">
+                      城市藝術典藏中心
+                    </h3>
+                  </a>
+                </article>
+              </li>
+            
+          </ul>
+        
+
+        
+          <nav
+            class="
+              pw-pagination
+              pw-artist-explore-page__pagination
+            "
+            aria-label="藝術機構分頁"
+          >
+            <span
+              class="
+                pw-pagination__control
+                pw-pagination__control--prev
+                pw-pagination__control--disabled
+              "
+              aria-label="上一頁"
+              aria-disabled="true"
+            >
+              ‹
+            </span>
+
+            <a
+              class="
+                pw-pagination__item
+                pw-pagination__item--active
+              "
+              href="?type=institutions&page=1"
+              aria-label="第 1 頁"
+              aria-current="page"
+            >
+              1
+            </a>
+
+            <a
+              class="pw-pagination__item"
+              href="?type=institutions&page=2"
+              aria-label="前往第 2 頁"
+            >
+              2
+            </a>
+
+            <a
+              class="pw-pagination__item"
+              href="?type=institutions&page=3"
+              aria-label="前往第 3 頁"
+            >
+              3
+            </a>
+
+
+            <span
+              class="pw-pagination__ellipsis"
+              aria-hidden="true"
+            >
+              …
+            </span>
+
+            <a
+              class="pw-pagination__item"
+              href="?type=institutions&page=134"
+              aria-label="前往第 134 頁"
+            >
+              134
+            </a>
+
+            <a
+              class="
+                pw-pagination__control
+                pw-pagination__control--next
+              "
+              href="?type=institutions&page=2"
+              aria-label="下一頁"
+            >
+              ›
+            </a>
+          </nav>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+    </div>
+  </div>
+
+
+
+
+  <!-- 分隔線 -->
+<div class="pw-section-divider" aria-hidden="true"></div>
+
+<!-- 加入我們 -->
+<!-- ACT 區塊 -->
+<!-- Action CTA -->
+<section class="pw-section pw-act" aria-labelledby="pw-act-title">
+ 
+  <div class="pw-container">
+    <div class="pw-inner pw-act__inner">
+      <h2 id="pw-act-title" class="pw-act__title">
+        申請 3DVR 線上藝廊
+      </h2>
+
+      <ul class="pw-act__stats" aria-label="平台數據">
+        <li class="pw-act__stat">
+          <strong class="pw-act__number">815</strong>
+          <span class="pw-act__label">ARTIST</span>
+        </li>
+
+        <li class="pw-act__stat">
+          <strong class="pw-act__number">4527</strong>
+          <span class="pw-act__label">ARTWORK</span>
+        </li>
+
+        <li class="pw-act__stat">
+          <strong class="pw-act__number">225</strong>
+          <span class="pw-act__label">3DVR</span>
+        </li>
+      </ul>
+
+      <p class="pw-act__lead">
+        讓世界看見你的作品，立即申請 3DVR 線上藝廊
+      </p>
+
+      <div class="pw-act__actions" aria-label="申請行動">
+  <a
+    class="pw-btn pw-btn--secondary pw-act__button"
+    href="./pw-sales-page.html"
+  >
+    開啟你的全球藝術展示空間
+  </a>
+<!--
+  <a
+    class="pw-btn pw-btn--primary pw-act__button"
+    href="./pw-join-us.html"
+  >
+    加入波翼
+  </a>
+  -->
+</div>
+    </div>
+  </div>
+</section>
+
+
+
+</main>
+
+
+<!-- Footer -->
+<footer class="pw-footer">
+  <div class="pw-container">
+    <div class="pw-inner pw-footer__inner">
+      <!-- Footer 左側 -->
+      <div class="pw-footer__aside">
+        <a
+          class="pw-footer__logo-link"
+          href="./index.html"
+          aria-label="POST WINGS 波翼藝術首頁"
+        >
+          <img
+            class="pw-footer__logo"
+            src="./img/logo.png"
+            alt="POST WINGS 波翼藝術"
+          />
+        </a>
+
+        <div class="pw-footer__meta">
+          <!-- 社群連結 -->
+          <ul class="pw-footer__social-list" aria-label="社群連結">
+            <li class="pw-footer__social-item">
+              <a
+                class="pw-footer__social-link"
+                href="https://www.facebook.com/61556203757989/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+              >
+                <img
+                  class="pw-footer__social-icon"
+                  src="./img/pw-icon-fb.png"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </a>
+            </li>
+
+            <li class="pw-footer__social-item">
+              <a
+                class="pw-footer__social-link"
+                href="https://lin.ee/Fo8Miwj"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LINE"
+              >
+                <img
+                  class="pw-footer__social-icon"
+                  src="./img/pw-icon-line.png"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </a>
+            </li>
+
+            <li class="pw-footer__social-item">
+              <a
+                class="pw-footer__social-link"
+                href="https://www.instagram.com/postwingsart/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+              >
+                <img
+                  class="pw-footer__social-icon"
+                  src="./img/pw-icon-ig.png"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </a>
+            </li>
+
+            <li class="pw-footer__social-item">
+              <a
+                class="pw-footer__social-link"
+                href="https://www.youtube.com/@POSTWINGS-sm4gl"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="YouTube"
+              >
+                <img
+                  class="pw-footer__social-icon"
+                  src="./img/pw-icon-youtube.png"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </a>
+            </li>
+          </ul>
+
+          <!-- 聯絡資料 -->
+          <address class="pw-footer__contact">
+            <h2 class="pw-footer__contact-title">聯絡我們</h2>
+
+            <a
+              class="pw-footer__contact-link"
+              href="mailto:service@metaassets.com.tw"
+            >
+              service@metaassets.com.tw
+            </a>
+
+            <a class="pw-footer__contact-link" href="tel:0930257803">
+              0930-257-803
+            </a>
+
+            <p class="pw-footer__contact-text">
+              台北市中山區建國北路二段3巷37號B1
+            </p>
+          </address>
+
+          <p class="pw-footer__copyright">
+            Copyright © 2026 元宇宙資產股份有限公司 版權所有
+          </p>
+        </div>
+      </div>
+
+
+<!-- Footer 右側導覽 -->
+<nav class="pw-footer__nav" aria-label="頁尾導覽">
+  <!-- 左欄：藝術資產聯盟、合作夥伴 -->
+  <div class="pw-footer__nav-column">
+    <!-- 藝術資產聯盟 -->
+    <div
+      class="pw-footer__nav-group"
+      aria-labelledby="footer-alliance-title"
+    >
+      <h2
+        id="footer-alliance-title"
+        class="pw-footer__nav-title"
+      >
+        藝術資產聯盟
+      </h2>
+
+      <ul class="pw-footer__nav-list">
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://www.bossmen.com/zh-TW/index/index.html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            博士門 Bossmen
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="http://www.easicolor.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            宣城科技 Easicolor
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://uprint.com.tw/about/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            布萊特 uPrint
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://ones-digital.com/zh/首頁/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            加伊創意科技 ONES
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- 合作夥伴 -->
+    <div
+      class="pw-footer__nav-group"
+      aria-labelledby="footer-partner-title"
+    >
+      <h2
+        id="footer-partner-title"
+        class="pw-footer__nav-title"
+      >
+        合作夥伴
+      </h2>
+
+      <ul class="pw-footer__nav-list">
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://www.facebook.com/100068823486807/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            寶佳潭美藝廊
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://www.facebook.com/100085289444712/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LIVE ART SPACE
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://art.kje-event.com.tw/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            台灣藝術博覽會
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://www.facebook.com/61578254614082/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            藝創生活節
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 右欄：合作學協會、平台入口 -->
+  <div class="pw-footer__nav-column">
+    <!-- 合作學協會 -->
+    <div
+      class="pw-footer__nav-group"
+      aria-labelledby="footer-association-title"
+    >
+      <h2
+        id="footer-association-title"
+        class="pw-footer__nav-title"
+      >
+        合作學協會
+      </h2>
+
+      <ul class="pw-footer__nav-list">
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://www.facebook.com/groups/909701919139272/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            中華文創學會
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://www.facebook.com/ccfa.tw/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            中華文物學會
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://www.facebook.com/owlactsartssociety/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            貓頭鷹藝術協會
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://www.facebook.com/maak1987/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            高雄市現代畫學會
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://www.twpapat.org/home/index.php"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            台灣粉彩藝術推廣協會
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://www.panasiaart.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            泛亞藝術聯盟
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://www.facebook.com/100063719484960/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            台北市西畫女畫家畫會
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://www.txsia.org.tw/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            台灣 XR 智能產業發展協會
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- 平台入口 -->
+    <div
+      class="pw-footer__nav-group"
+      aria-labelledby="footer-platform-title"
+    >
+      <h2
+        id="footer-platform-title"
+        class="pw-footer__nav-title"
+      >
+        平台入口
+      </h2>
+
+      <ul class="pw-footer__nav-list">
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://virtual.metaassets.asia/manage/login"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            藝術家後台
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a class="pw-footer__nav-link" href="./pw-service-terms-page.html">
+            服務條款
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a class="pw-footer__nav-link" href="./pw-privacy-policy-page.html">
+            隱私政策
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+  <a
+    class="pw-footer__nav-link"
+    href="./pw-faq-page.html"
+  >
+    常見問題
+  </a>
+</li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating Actions -->
+<div class="pw-floating-actions" aria-label="快速操作">
+  <ul class="pw-floating-actions__list">
+    <li class="pw-floating-actions__item">
+      <button
+        class="pw-floating-actions__button pw-floating-actions__button--to-top"
+        type="button"
+        data-pw-back-to-top
+        aria-label="回到頁面頂端"
+      >
+        <img
+          class="pw-floating-actions__icon"
+          src="./img/pw-icon-gotop.png"
+          alt=""
+          aria-hidden="true"
+        />
+      </button>
+    </li>
+  </ul>
+</div>
+
+
+  <!-- 全站共用 JS：Header、Back to top -->
+  <script type="module" src="./js/pw-enhance.js"></script>
+
+  
+    <!-- 頁面專用 JS -->
+    <script type="module" src="./js/pw-artist-explore-page.js"></script>
+  
+
+
+<!-- 關閉 HTML -->
+</body>
+</html>

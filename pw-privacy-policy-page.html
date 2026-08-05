@@ -1,0 +1,1082 @@
+<head>
+  <title>POST WINGS | 波翼藝術</title>
+
+  <!-- 正式上線請更換GA4代碼 -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-VTZNRHLELH"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-VTZNRHLELH");
+  </script>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta
+    name="keywords"
+    content="POST WINGS, 波翼藝術, 虛擬展間, 當代藝術, Web3.0"
+  />
+  <meta
+    name="description"
+    content="波翼藝術專注於當代藝術市場 Web3.0 虛實整合服務。"
+  />
+
+  <link rel="apple-touch-icon" href="./img/apple-touch-icon.png" />
+  <link rel="icon" href="./img/favicon.ico" />
+
+  <meta property="og:url" content="https://www.postwings.art/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="POST WINGS 波翼藝術 | 藝術資產管理服務" />
+  <meta
+    property="og:description"
+    content="POST WINGS 波翼藝術專注於藝術展覽、授權、虛擬實境展間與 Web3.0 藝術服務。"
+  />
+  <meta
+    property="og:image"
+    content="https://www.postwings.art/img/og-image.jpg"
+  />
+
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+
+<body class="pw-site" data-build="designer-preview">
+<header class="pw-site-header" data-pw-header>
+  <div class="pw-container pw-site-header__inner">
+    <!-- LOGO -->
+    <a
+      class="pw-site-header__brand"
+      href="./index.html"
+      aria-label="回到 POST WINGS 首頁"
+    >
+      <img src="./img/logo.png" class="pw-site-header__logo" alt="POST WINGS" />
+    </a>
+
+    <!-- 大版主選單 -->
+    <nav class="pw-site-header__nav" aria-label="主要選單">
+      <button
+        class="pw-btn pw-site-header__nav-toggle"
+        type="button"
+        aria-controls="pw-header-menu-panel"
+        aria-expanded="false"
+        data-pw-toggle="menu"
+        data-pw-menu-key="exhibitions"
+      >
+        線上展演
+      </button>
+
+      <button
+        class="pw-btn pw-site-header__nav-toggle"
+        type="button"
+        aria-controls="pw-header-menu-panel"
+        aria-expanded="false"
+        data-pw-toggle="menu"
+        data-pw-menu-key="artists"
+      >
+        探索藝術人
+      </button>
+
+      <button
+        class="pw-btn pw-site-header__nav-toggle"
+        type="button"
+        aria-controls="pw-header-menu-panel"
+        aria-expanded="false"
+        data-pw-toggle="menu"
+        data-pw-menu-key="people"
+      >
+        翼見人物
+      </button>
+
+      <button
+        class="pw-btn pw-site-header__nav-toggle"
+        type="button"
+        aria-controls="pw-header-menu-panel"
+        aria-expanded="false"
+        data-pw-toggle="menu"
+        data-pw-menu-key="news"
+      >
+        波翼快訊
+      </button>
+
+      <!-- 加入我們：直接連結，不打開次選單 -->
+      <a class="pw-btn pw-site-header__nav-link" href="./pw-join-us.html">
+        加入我們
+      </a>
+    </nav>
+
+    <!-- 右側按鈕 -->
+    <div class="pw-site-header__actions">
+      <!-- 大版搜尋 toggle；小版隱藏 -->
+      <button
+        id="pw-search-toggle"
+        class="pw-site-header__icon-btn pw-site-header__icon-btn--search"
+        type="button"
+        aria-label="開啟搜尋"
+        aria-controls="pw-header-search-panel"
+        aria-expanded="false"
+        data-pw-toggle="search"
+      >
+        <img src="./img/pw-icon-search.png" alt="" />
+      </button>
+
+      <!-- 小版 menu toggle；大版預設隱藏 -->
+      <button
+        id="pw-menu-toggle"
+        class="pw-site-header__icon-btn pw-site-header__icon-btn--menu"
+        type="button"
+        aria-label="開啟選單"
+        aria-controls="pw-header-menu-panel"
+        aria-expanded="false"
+        data-pw-toggle="menu"
+      >
+        <img src="./img/pw-icon-menu.png" alt="" />
+      </button>
+
+      <!-- 語言 toggle -->
+      <div
+        class="pw-site-header__action-item pw-site-header__action-item--lang"
+      >
+        <button
+          id="pw-lang-toggle"
+          class="pw-site-header__icon-btn pw-site-header__icon-btn--lang"
+          type="button"
+          aria-label="切換語言"
+          aria-controls="pw-header-lang-panel"
+          aria-expanded="false"
+          data-pw-toggle="lang"
+        >
+          <img src="./img/pw-icon-lang.png" alt="" />
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 搜尋區塊 -->
+  <div
+    id="pw-header-search-panel"
+    class="pw-site-header__search-panel"
+    aria-hidden="true"
+    data-pw-panel="search"
+  >
+    <div class="pw-container">
+      <form
+        class="pw-site-header__search-form"
+        action="./pw-search-page.html"
+        method="get"
+        role="search"
+      >
+        <label
+          class="pw-site-header__icon-btn pw-sr-only"
+          for="pw-header-search-input"
+        >
+          <img src="./img/pw-icon-search.png" alt="" />
+        </label>
+
+        <input
+          id="pw-header-search-input"
+          class="pw-site-header__search-input"
+          type="search"
+          name="keyword"
+          placeholder="請輸入藝術家名字、創作媒材"
+        />
+      </form>
+    </div>
+  </div>
+
+  <!-- 展開選單 -->
+  <div
+    id="pw-header-menu-panel"
+    class="pw-site-header__menu-panel"
+    aria-hidden="true"
+    data-pw-panel="menu"
+  >
+    <div class="pw-container pw-site-header__menu-inner">
+      <nav class="pw-site-header__menu-grid" aria-label="展開選單">
+        <!-- 線上展演 -->
+        <div
+          class="pw-site-header__menu-group"
+          data-pw-menu-group="exhibitions"
+        >
+          <span class="pw-site-header__menu-title"> 線上展演 </span>
+
+          <a
+            class="pw-site-header__menu-link"
+            href="./pw-exhibition-page.html?tab=solo"
+          >
+            藝術個展
+          </a>
+
+          <a
+            class="pw-site-header__menu-link"
+            href="./pw-exhibition-page.html?tab=group"
+          >
+            團體聯展
+          </a>
+
+          <a
+            class="pw-site-header__menu-link"
+            href="./pw-exhibition-page.html?tab=fair"
+          >
+            藝文特展
+          </a>
+
+          <a
+            class="pw-site-header__menu-link"
+            href="./pw-exhibition-page.html?tab=curated"
+          >
+            藏家收藏間
+          </a>
+        </div>
+
+        <!-- 探索藝術人 -->
+        <div class="pw-site-header__menu-group" data-pw-menu-group="artists">
+          <span class="pw-site-header__menu-title"> 探索藝術人 </span>
+
+          <a
+            class="pw-site-header__menu-link"
+            href="./pw-artist-explore-page.html?tab=masters"
+          >
+            藝術大師
+          </a>
+
+          <a
+            class="pw-site-header__menu-link"
+            href="./pw-artist-explore-page.html?tab=creators"
+          >
+            創藝人物
+          </a>
+
+          <a
+            class="pw-site-header__menu-link"
+            href="./pw-artist-explore-page.html?tab=organizations"
+          >
+            藝術團體
+          </a>
+
+          <a
+            class="pw-site-header__menu-link"
+            href="./pw-artist-explore-page.html?tab=institutions"
+          >
+            藝術機構
+          </a>
+        </div>
+
+        <!-- 翼見人物 -->
+        <div class="pw-site-header__menu-group" data-pw-menu-group="people">
+          <span class="pw-site-header__menu-title"> 翼見人物 </span>
+
+          <a
+            class="pw-site-header__menu-link"
+            href="./pw-wing-people-page.html?tab=shorts"
+          >
+            短影音
+          </a>
+
+          <a
+            class="pw-site-header__menu-link"
+            href="./pw-wing-people-page.html?tab=interview"
+          >
+            專 訪
+          </a>
+        </div>
+
+        <!-- 波翼快訊 -->
+        <div class="pw-site-header__menu-group" data-pw-menu-group="news">
+          <span class="pw-site-header__menu-title"> 波翼快訊 </span>
+
+          <a class="pw-site-header__menu-link" href="./pw-wing-news-page.html">
+            平面新聞
+          </a>
+        </div>
+      </nav>
+
+      <!-- 小版底部 CTA -->
+      <div class="pw-site-header__menu-cta">
+        <div class="pw-btn-wrap">
+          <a
+            class="pw-site-header__menu-cta-link"
+            href="https://www.postwings.art/service"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            建立3D展間
+          </a>
+
+          <a class="pw-site-header__menu-cta-link" href="./pw-join-us.html">
+            加入我們
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 語言選單 -->
+  <div
+    id="pw-header-lang-panel"
+    class="pw-site-header__lang-panel"
+    aria-hidden="true"
+    data-pw-panel="lang"
+  >
+    <a
+      class="pw-site-header__lang-link pw-site-header__lang-link--active"
+      href="#!"
+      aria-current="true"
+    >
+      中 文
+    </a>
+
+    <a class="pw-site-header__lang-link" href="#!"> English </a>
+
+    <a class="pw-site-header__lang-link" href="#!"> 日本語 </a>
+
+    <a class="pw-site-header__lang-link" href="#!"> 한국어 </a>
+
+    <a class="pw-site-header__lang-link" href="#!"> Español </a>
+
+    <a class="pw-site-header__lang-link" href="#!"> Français </a>
+
+    <a class="pw-site-header__lang-link" href="#!"> Deutsch </a>
+  </div>
+</header>
+
+
+<main class="pw-main">
+  <section
+    class="pw-legal-page pw-legal-page--privacy"
+    aria-labelledby="privacy-policy-page-title"
+  >
+    <h1
+      class="pw-legal-page__sr-only"
+      id="privacy-policy-page-title"
+    >
+      隱私政策
+    </h1>
+
+    
+
+<header class="pw-legal-page__category">
+  <div class="pw-container">
+    <div class="pw-legal-page__category-inner">
+
+      <!-- 固定返回首頁，不使用 history.back() -->
+      <a
+        class="pw-legal-page__back"
+        href="./index.html"
+        aria-label="返回首頁"
+        title="返回首頁"
+      >
+        <svg
+          class="pw-legal-page__back-icon"
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+        >
+          <path
+            d="M14.5 6.5 9 12l5.5 5.5"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.6"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </a>
+
+      <!--
+        這裡是不同頁面間的導覽，不是同頁切換 Tabs，
+        因此使用 nav + a，不使用 role="tablist"。
+      -->
+      <nav
+        class="pw-legal-page__nav"
+        aria-label="服務資訊導覽"
+      >
+        <ul class="pw-legal-page__nav-list">
+          
+            <li class="pw-legal-page__nav-item">
+              <a
+                class="
+                  pw-legal-page__nav-link
+                  
+                "
+                href="./pw-service-terms-page.html"
+                
+              >
+                服務條款
+              </a>
+            </li>
+          
+            <li class="pw-legal-page__nav-item">
+              <a
+                class="
+                  pw-legal-page__nav-link
+                  pw-legal-page__nav-link--active
+                "
+                href="./pw-privacy-policy-page.html"
+                
+                  aria-current="page"
+                
+              >
+                隱私政策
+              </a>
+            </li>
+          
+            <li class="pw-legal-page__nav-item">
+              <a
+                class="
+                  pw-legal-page__nav-link
+                  
+                "
+                href="./pw-faq-page.html"
+                
+              >
+                常見問題
+              </a>
+            </li>
+          
+        </ul>
+      </nav>
+
+      <!-- 保持中間導覽真正置中 -->
+      <span
+        class="pw-legal-page__category-spacer"
+        aria-hidden="true"
+      ></span>
+    </div>
+  </div>
+
+  <div
+    class="pw-category-divider pw-legal-page__divider"
+    aria-hidden="true"
+  ></div>
+</header>
+
+    <div class="pw-legal-page__content">
+      <div class="pw-container">
+        <article class="pw-legal-page__article">
+          <p class="pw-legal-page__lead">
+  歡迎您使用「元宇宙資產股份有限公司」（以下稱「本公司」或「甲方」）
+  所提供之藝術資產管理服務（以下稱「本服務」）。為保障您的個人資料及
+  隱私權，特訂定本隱私權政策如下，若您使用本服務，即視為您已充分理解
+  並同意本隱私權政策內容：
+</p>
+
+<section class="pw-legal-page__section">
+  <h2 class="pw-legal-page__heading">一、適用範圍</h2>
+
+  <p class="pw-legal-page__text">
+    本隱私權政策適用於您使用本服務時所涉及之個人資料蒐集、處理及利用行為。
+  </p>
+</section>
+
+<section class="pw-legal-page__section">
+  <h2 class="pw-legal-page__heading">二、蒐集之個人資料類型</h2>
+
+  <p class="pw-legal-page__text">本公司將蒐集您的以下個人資料：</p>
+
+  <ol class="pw-legal-page__list pw-legal-page__list--number">
+    <li class="pw-legal-page__list-item">
+      <strong class="pw-legal-page__strong">基本資料</strong>
+
+      <ul class="pw-legal-page__sublist">
+        <li>姓名、電子郵件、電話、帳號資訊</li>
+      </ul>
+    </li>
+
+    <li class="pw-legal-page__list-item">
+      <strong class="pw-legal-page__strong"> 身份驗證資料（如適用） </strong>
+
+      <ul class="pw-legal-page__sublist">
+        <li>身分證明文件、銀行帳戶資訊</li>
+      </ul>
+    </li>
+
+    <li class="pw-legal-page__list-item">
+      <strong class="pw-legal-page__strong">交易資料</strong>
+
+      <ul class="pw-legal-page__sublist">
+        <li>購買紀錄、付款資訊、交易金額</li>
+      </ul>
+    </li>
+
+    <li class="pw-legal-page__list-item">
+      <strong class="pw-legal-page__strong">技術資料</strong>
+
+      <ul class="pw-legal-page__sublist">
+        <li>IP 位址、裝置資訊、瀏覽紀錄、Cookies</li>
+      </ul>
+    </li>
+  </ol>
+</section>
+
+<section class="pw-legal-page__section">
+  <h2 class="pw-legal-page__heading">三、資料蒐集目的</h2>
+
+  <p class="pw-legal-page__text">（一）本公司蒐集您的資料，目的包括：</p>
+
+  <ul class="pw-legal-page__list pw-legal-page__list--bullet">
+    <li>提供與維護本服務</li>
+    <li>處理交易與金流</li>
+    <li>身分驗證與防詐欺</li>
+    <li>客戶服務與通知</li>
+    <li>行銷與服務優化（包含分析使用行為）</li>
+    <li>其他提供本服務相關之目的</li>
+  </ul>
+
+  <p class="pw-legal-page__text">
+    （二）若您不提供第二條所列個人資料，可能導致您無法使用本服務，
+    或本公司無法繼續正常提供本服務。
+  </p>
+</section>
+
+<section class="pw-legal-page__section">
+  <h2 class="pw-legal-page__heading">四、資料利用方式</h2>
+
+  <p class="pw-legal-page__text">
+    （一）本公司僅於蒐集目的範圍內使用您的個人資料。
+  </p>
+
+  <p class="pw-legal-page__text">（二）本公司可能將資料提供予以下第三方：</p>
+
+  <ul class="pw-legal-page__list pw-legal-page__list--bullet">
+    <li>金流服務提供者</li>
+    <li>雲端服務供應商</li>
+    <li>法律或主管機關要求之單位</li>
+  </ul>
+
+  <p class="pw-legal-page__text">
+    （三）除法令要求或經您同意外，本公司不會將資料提供予無關第三方。
+  </p>
+</section>
+
+<section class="pw-legal-page__section">
+  <h2 class="pw-legal-page__heading">五、資料保存期間</h2>
+
+  <p class="pw-legal-page__text">
+    您的個人資料將於蒐集目的存續期間內保存，或依相關法令規定保存
+    （例如交易與稅務資料）。
+  </p>
+</section>
+
+<section class="pw-legal-page__section">
+  <h2 class="pw-legal-page__heading">六、資料安全</h2>
+
+  <p class="pw-legal-page__text">
+    本公司將採取合理之技術與管理措施，以保護您的個人資料免於未經授權
+    之存取、洩漏、竄改或毀損。
+  </p>
+</section>
+
+<section class="pw-legal-page__section">
+  <h2 class="pw-legal-page__heading">七、使用者權利</h2>
+
+  <p class="pw-legal-page__text">
+    依相關法律規定，您對於個人資料享有以下權利：
+  </p>
+
+  <ul class="pw-legal-page__list pw-legal-page__list--bullet">
+    <li>查詢或請求閱覽</li>
+    <li>請求製給複製本</li>
+    <li>請求補充或更正</li>
+    <li>請求停止蒐集、處理或利用</li>
+    <li>請求刪除</li>
+  </ul>
+
+  <p class="pw-legal-page__text">您可透過客服管道提出申請。</p>
+</section>
+
+<section class="pw-legal-page__section">
+  <h2 class="pw-legal-page__heading">八、Cookies 與追蹤技術</h2>
+
+  <p class="pw-legal-page__text">
+    本服務可能使用 Cookies 與類似技術，以提升使用體驗與分析服務使用情形。
+    您可透過瀏覽器設定拒絕 Cookies，但可能影響部分功能。
+  </p>
+</section>
+
+<section class="pw-legal-page__section">
+  <h2 class="pw-legal-page__heading">九、跨境資料傳輸</h2>
+
+  <p class="pw-legal-page__text">
+    本公司可能因使用雲端服務，將您的資料傳輸至境外
+    （包含但不限於國外伺服器），本公司將於合理範圍內進行保護。
+  </p>
+</section>
+
+<section class="pw-legal-page__section">
+  <h2 class="pw-legal-page__heading">十、未成年人保護</h2>
+
+  <p class="pw-legal-page__text">
+    本服務非專為未成年人設計，如未滿法定年齡者，
+    應於法定代理人同意下使用本服務。
+  </p>
+</section>
+
+<section class="pw-legal-page__section">
+  <h2 class="pw-legal-page__heading">十一、隱私權政策之修改</h2>
+
+  <p class="pw-legal-page__text">
+    本公司保留隨時修改本政策之權利，修改後將公告於網站。
+    若您不同意相關變更，請立即告知本公司並停止使用本服務，
+    惟若您拒絕提供相關之個資，可能導致您無法使用本服務或
+    本公司無法繼續服務契約；若您繼續使用本服務，即視為您
+    已充分理解並同意本隱私權政策之變更。
+  </p>
+</section>
+
+<section class="pw-legal-page__section">
+  <h2 class="pw-legal-page__heading">十二、聯絡方式</h2>
+
+  <p class="pw-legal-page__text">
+    如您對本隱私權政策有任何疑問，請透過客服管道聯繫本公司。
+  </p>
+</section>
+
+<p class="pw-legal-page__closing">感謝您使用本服務。</p>
+
+        </article>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+</main>
+
+
+<!-- Footer -->
+<footer class="pw-footer">
+  <div class="pw-container">
+    <div class="pw-inner pw-footer__inner">
+      <!-- Footer 左側 -->
+      <div class="pw-footer__aside">
+        <a
+          class="pw-footer__logo-link"
+          href="./index.html"
+          aria-label="POST WINGS 波翼藝術首頁"
+        >
+          <img
+            class="pw-footer__logo"
+            src="./img/logo.png"
+            alt="POST WINGS 波翼藝術"
+          />
+        </a>
+
+        <div class="pw-footer__meta">
+          <!-- 社群連結 -->
+          <ul class="pw-footer__social-list" aria-label="社群連結">
+            <li class="pw-footer__social-item">
+              <a
+                class="pw-footer__social-link"
+                href="https://www.facebook.com/61556203757989/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+              >
+                <img
+                  class="pw-footer__social-icon"
+                  src="./img/pw-icon-fb.png"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </a>
+            </li>
+
+            <li class="pw-footer__social-item">
+              <a
+                class="pw-footer__social-link"
+                href="https://lin.ee/Fo8Miwj"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LINE"
+              >
+                <img
+                  class="pw-footer__social-icon"
+                  src="./img/pw-icon-line.png"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </a>
+            </li>
+
+            <li class="pw-footer__social-item">
+              <a
+                class="pw-footer__social-link"
+                href="https://www.instagram.com/postwingsart/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+              >
+                <img
+                  class="pw-footer__social-icon"
+                  src="./img/pw-icon-ig.png"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </a>
+            </li>
+
+            <li class="pw-footer__social-item">
+              <a
+                class="pw-footer__social-link"
+                href="https://www.youtube.com/@POSTWINGS-sm4gl"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="YouTube"
+              >
+                <img
+                  class="pw-footer__social-icon"
+                  src="./img/pw-icon-youtube.png"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </a>
+            </li>
+          </ul>
+
+          <!-- 聯絡資料 -->
+          <address class="pw-footer__contact">
+            <h2 class="pw-footer__contact-title">聯絡我們</h2>
+
+            <a
+              class="pw-footer__contact-link"
+              href="mailto:service@metaassets.com.tw"
+            >
+              service@metaassets.com.tw
+            </a>
+
+            <a class="pw-footer__contact-link" href="tel:0930257803">
+              0930-257-803
+            </a>
+
+            <p class="pw-footer__contact-text">
+              台北市中山區建國北路二段3巷37號B1
+            </p>
+          </address>
+
+          <p class="pw-footer__copyright">
+            Copyright © 2026 元宇宙資產股份有限公司 版權所有
+          </p>
+        </div>
+      </div>
+
+
+<!-- Footer 右側導覽 -->
+<nav class="pw-footer__nav" aria-label="頁尾導覽">
+  <!-- 左欄：藝術資產聯盟、合作夥伴 -->
+  <div class="pw-footer__nav-column">
+    <!-- 藝術資產聯盟 -->
+    <div
+      class="pw-footer__nav-group"
+      aria-labelledby="footer-alliance-title"
+    >
+      <h2
+        id="footer-alliance-title"
+        class="pw-footer__nav-title"
+      >
+        藝術資產聯盟
+      </h2>
+
+      <ul class="pw-footer__nav-list">
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://www.bossmen.com/zh-TW/index/index.html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            博士門 Bossmen
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="http://www.easicolor.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            宣城科技 Easicolor
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://uprint.com.tw/about/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            布萊特 uPrint
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://ones-digital.com/zh/首頁/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            加伊創意科技 ONES
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- 合作夥伴 -->
+    <div
+      class="pw-footer__nav-group"
+      aria-labelledby="footer-partner-title"
+    >
+      <h2
+        id="footer-partner-title"
+        class="pw-footer__nav-title"
+      >
+        合作夥伴
+      </h2>
+
+      <ul class="pw-footer__nav-list">
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://www.facebook.com/100068823486807/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            寶佳潭美藝廊
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://www.facebook.com/100085289444712/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LIVE ART SPACE
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://art.kje-event.com.tw/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            台灣藝術博覽會
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://www.facebook.com/61578254614082/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            藝創生活節
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 右欄：合作學協會、平台入口 -->
+  <div class="pw-footer__nav-column">
+    <!-- 合作學協會 -->
+    <div
+      class="pw-footer__nav-group"
+      aria-labelledby="footer-association-title"
+    >
+      <h2
+        id="footer-association-title"
+        class="pw-footer__nav-title"
+      >
+        合作學協會
+      </h2>
+
+      <ul class="pw-footer__nav-list">
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://www.facebook.com/groups/909701919139272/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            中華文創學會
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://www.facebook.com/ccfa.tw/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            中華文物學會
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://www.facebook.com/owlactsartssociety/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            貓頭鷹藝術協會
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://www.facebook.com/maak1987/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            高雄市現代畫學會
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://www.twpapat.org/home/index.php"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            台灣粉彩藝術推廣協會
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://www.panasiaart.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            泛亞藝術聯盟
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://www.facebook.com/100063719484960/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            台北市西畫女畫家畫會
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://www.txsia.org.tw/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            台灣 XR 智能產業發展協會
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- 平台入口 -->
+    <div
+      class="pw-footer__nav-group"
+      aria-labelledby="footer-platform-title"
+    >
+      <h2
+        id="footer-platform-title"
+        class="pw-footer__nav-title"
+      >
+        平台入口
+      </h2>
+
+      <ul class="pw-footer__nav-list">
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://virtual.metaassets.asia/manage/login"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            藝術家後台
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a class="pw-footer__nav-link" href="./pw-service-terms-page.html">
+            服務條款
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a class="pw-footer__nav-link" href="./pw-privacy-policy-page.html">
+            隱私政策
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+  <a
+    class="pw-footer__nav-link"
+    href="./pw-faq-page.html"
+  >
+    常見問題
+  </a>
+</li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating Actions -->
+<div class="pw-floating-actions" aria-label="快速操作">
+  <ul class="pw-floating-actions__list">
+    <li class="pw-floating-actions__item">
+      <button
+        class="pw-floating-actions__button pw-floating-actions__button--to-top"
+        type="button"
+        data-pw-back-to-top
+        aria-label="回到頁面頂端"
+      >
+        <img
+          class="pw-floating-actions__icon"
+          src="./img/pw-icon-gotop.png"
+          alt=""
+          aria-hidden="true"
+        />
+      </button>
+    </li>
+  </ul>
+</div>
+
+
+  <!-- 全站共用 JS：Header、Back to top -->
+  <script type="module" src="./js/pw-enhance.js"></script>
+
+  
+
+
+<!-- 關閉 HTML -->
+</body>
+</html>

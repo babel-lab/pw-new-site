@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="540" viewBox="0 0 720 540" role="img" aria-label="Artist placeholder 02">
+  <rect width="720" height="540" fill="#e6ded0"/>
+  <path d="M130 420 C230 160 470 160 590 420" fill="none" stroke="#211f1b" stroke-width="34" stroke-linecap="round" opacity="0.18"/>
+  <circle cx="360" cy="260" r="80" fill="#9f7a3d" opacity="0.38"/>
+  <text x="80" y="92" font-family="Arial, sans-serif" font-size="42" font-weight="700" fill="#211f1b">Artist B</text>
+</svg>
