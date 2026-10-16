@@ -1,0 +1,1078 @@
+<head>
+  <title>POST WINGS | 波翼藝術</title>
+
+  <!-- 正式上線請更換GA4代碼 -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-VTZNRHLELH"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-VTZNRHLELH");
+  </script>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta
+    name="keywords"
+    content="POST WINGS, 波翼藝術, 虛擬展間, 當代藝術, Web3.0"
+  />
+  <meta
+    name="description"
+    content="波翼藝術專注於當代藝術市場 Web3.0 虛實整合服務。"
+  />
+
+  <link rel="apple-touch-icon" href="./img/apple-touch-icon.png" />
+  <link rel="icon" href="./img/favicon.ico" />
+
+  <meta property="og:url" content="https://www.postwings.art/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="POST WINGS 波翼藝術 | 藝術資產管理服務" />
+  <meta
+    property="og:description"
+    content="POST WINGS 波翼藝術專注於藝術展覽、授權、虛擬實境展間與 Web3.0 藝術服務。"
+  />
+  <meta
+    property="og:image"
+    content="https://www.postwings.art/img/og-image.jpg"
+  />
+
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body class="pw-site" data-build="designer-preview">
+<header class="pw-site-header" data-pw-header>
+  <div class="pw-container pw-site-header__inner">
+    <!-- LOGO -->
+    <a
+      class="pw-site-header__brand"
+      href="./index.html"
+      aria-label="回到 POST WINGS 首頁"
+    >
+      <img src="./img/logo.png" class="pw-site-header__logo" alt="POST WINGS" />
+    </a>
+
+    <!-- 大版主選單 -->
+    <nav class="pw-site-header__nav" aria-label="主要選單">
+      <button
+        class="pw-btn pw-site-header__nav-toggle"
+        type="button"
+        aria-controls="pw-header-menu-panel"
+        aria-expanded="false"
+        data-pw-toggle="menu"
+        data-pw-menu-key="exhibitions"
+      >
+        線上展演
+      </button>
+
+      <button
+        class="pw-btn pw-site-header__nav-toggle"
+        type="button"
+        aria-controls="pw-header-menu-panel"
+        aria-expanded="false"
+        data-pw-toggle="menu"
+        data-pw-menu-key="artists"
+      >
+        探索藝術人
+      </button>
+
+      <button
+        class="pw-btn pw-site-header__nav-toggle"
+        type="button"
+        aria-controls="pw-header-menu-panel"
+        aria-expanded="false"
+        data-pw-toggle="menu"
+        data-pw-menu-key="people"
+      >
+        翼見人物
+      </button>
+
+      <button
+        class="pw-btn pw-site-header__nav-toggle"
+        type="button"
+        aria-controls="pw-header-menu-panel"
+        aria-expanded="false"
+        data-pw-toggle="menu"
+        data-pw-menu-key="news"
+      >
+        波翼快訊
+      </button>
+
+      <!-- 加入我們：直接連結，不打開次選單 -->
+      <a class="pw-btn pw-site-header__nav-link" href="./pw-join-us.html">
+        加入我們
+      </a>
+    </nav>
+
+    <!-- 右側按鈕 -->
+    <div class="pw-site-header__actions">
+      <!-- 大版搜尋 toggle；小版隱藏 -->
+      <button
+        id="pw-search-toggle"
+        class="pw-site-header__icon-btn pw-site-header__icon-btn--search"
+        type="button"
+        aria-label="開啟搜尋"
+        aria-controls="pw-header-search-panel"
+        aria-expanded="false"
+        data-pw-toggle="search"
+      >
+        <img src="./img/pw-icon-search.png" alt="" />
+      </button>
+
+      <!-- 小版 menu toggle；大版預設隱藏 -->
+      <button
+        id="pw-menu-toggle"
+        class="pw-site-header__icon-btn pw-site-header__icon-btn--menu"
+        type="button"
+        aria-label="開啟選單"
+        aria-controls="pw-header-menu-panel"
+        aria-expanded="false"
+        data-pw-toggle="menu"
+      >
+        <img src="./img/pw-icon-menu.png" alt="" />
+      </button>
+
+      <!-- 語言 toggle -->
+      <div
+        class="pw-site-header__action-item pw-site-header__action-item--lang"
+      >
+        <button
+          id="pw-lang-toggle"
+          class="pw-site-header__icon-btn pw-site-header__icon-btn--lang"
+          type="button"
+          aria-label="切換語言"
+          aria-controls="pw-header-lang-panel"
+          aria-expanded="false"
+          data-pw-toggle="lang"
+        >
+          <img src="./img/pw-icon-lang.png" alt="" />
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 搜尋區塊 -->
+  <div
+    id="pw-header-search-panel"
+    class="pw-site-header__search-panel"
+    aria-hidden="true"
+    data-pw-panel="search"
+  >
+    <div class="pw-container">
+      <form
+        class="pw-site-header__search-form"
+        action="./pw-search-page.html"
+        method="get"
+        role="search"
+      >
+        <label
+          class="pw-site-header__icon-btn pw-sr-only"
+          for="pw-header-search-input"
+        >
+          <img src="./img/pw-icon-search.png" alt="" />
+        </label>
+
+        <input
+          id="pw-header-search-input"
+          class="pw-site-header__search-input"
+          type="search"
+          name="keyword"
+          placeholder="請輸入藝術家名字、創作媒材"
+        />
+      </form>
+    </div>
+  </div>
+
+  <!-- 展開選單 -->
+  <div
+    id="pw-header-menu-panel"
+    class="pw-site-header__menu-panel"
+    aria-hidden="true"
+    data-pw-panel="menu"
+  >
+    <div class="pw-container pw-site-header__menu-inner">
+      <nav class="pw-site-header__menu-grid" aria-label="展開選單">
+        <!-- 線上展演 -->
+        <div
+          class="pw-site-header__menu-group"
+          data-pw-menu-group="exhibitions"
+        >
+          <span class="pw-site-header__menu-title"> 線上展演 </span>
+
+          <a
+            class="pw-site-header__menu-link"
+            href="./pw-exhibition-page.html?tab=solo"
+          >
+            藝術個展
+          </a>
+
+          <a
+            class="pw-site-header__menu-link"
+            href="./pw-exhibition-page.html?tab=group"
+          >
+            團體聯展
+          </a>
+
+          <a
+            class="pw-site-header__menu-link"
+            href="./pw-exhibition-page.html?tab=fair"
+          >
+            藝文特展
+          </a>
+
+          <a
+            class="pw-site-header__menu-link"
+            href="./pw-exhibition-page.html?tab=curated"
+          >
+            藏家收藏間
+          </a>
+        </div>
+
+        <!-- 探索藝術人 -->
+        <div class="pw-site-header__menu-group" data-pw-menu-group="artists">
+          <span class="pw-site-header__menu-title"> 探索藝術人 </span>
+
+          <a
+            class="pw-site-header__menu-link"
+            href="./pw-artist-explore-page.html?tab=masters"
+          >
+            藝術大師
+          </a>
+
+          <a
+            class="pw-site-header__menu-link"
+            href="./pw-artist-explore-page.html?tab=creators"
+          >
+            創藝人物
+          </a>
+
+          <a
+            class="pw-site-header__menu-link"
+            href="./pw-artist-explore-page.html?tab=organizations"
+          >
+            藝術團體
+          </a>
+
+          <a
+            class="pw-site-header__menu-link"
+            href="./pw-artist-explore-page.html?tab=institutions"
+          >
+            藝術機構
+          </a>
+        </div>
+
+        <!-- 翼見人物 -->
+        <div class="pw-site-header__menu-group" data-pw-menu-group="people">
+          <span class="pw-site-header__menu-title"> 翼見人物 </span>
+
+          <a
+            class="pw-site-header__menu-link"
+            href="./pw-wing-people-page.html?tab=shorts"
+          >
+            短影音
+          </a>
+
+          <a
+            class="pw-site-header__menu-link"
+            href="./pw-wing-people-page.html?tab=interview"
+          >
+            專 訪
+          </a>
+        </div>
+
+        <!-- 波翼快訊 -->
+        <div class="pw-site-header__menu-group" data-pw-menu-group="news">
+          <span class="pw-site-header__menu-title"> 波翼快訊 </span>
+
+          <a class="pw-site-header__menu-link" href="./pw-wing-news-page.html">
+            平面新聞
+          </a>
+        </div>
+      </nav>
+
+      <!-- 小版底部 CTA -->
+      <div class="pw-site-header__menu-cta">
+        <div class="pw-btn-wrap">
+          <a
+            class="pw-site-header__menu-cta-link"
+            href="https://www.postwings.art/service"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            建立3D展間
+          </a>
+
+          <a class="pw-site-header__menu-cta-link" href="./pw-join-us.html">
+            加入我們
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 語言選單 -->
+  <div
+    id="pw-header-lang-panel"
+    class="pw-site-header__lang-panel"
+    aria-hidden="true"
+    data-pw-panel="lang"
+  >
+    <a
+      class="pw-site-header__lang-link pw-site-header__lang-link--active"
+      href="#!"
+      aria-current="true"
+    >
+      中 文
+    </a>
+
+    <a class="pw-site-header__lang-link" href="#!"> English </a>
+
+    <a class="pw-site-header__lang-link" href="#!"> 日本語 </a>
+
+    <a class="pw-site-header__lang-link" href="#!"> 한국어 </a>
+
+    <a class="pw-site-header__lang-link" href="#!"> Español </a>
+
+    <a class="pw-site-header__lang-link" href="#!"> Français </a>
+
+    <a class="pw-site-header__lang-link" href="#!"> Deutsch </a>
+  </div>
+</header>
+
+
+<main class="pw-main">
+  <section class="pw-section pw-island-2027-form" aria-labelledby="pw-island-2027-form-title">
+    <div class="pw-container">
+      <div class="pw-inner pw-island-2027-form__inner">
+        <h1 class="pw-island-2027-form__title" id="pw-island-2027-form-title">2027 島嶼彼境徵件活動</h1>
+        <p class="pw-island-2027-form__desc">請填寫以下徵件資料。標示 <span class="pw-form__required" aria-hidden="true">*</span> 為必填欄位。報名成功後請加入 <a href="./pw-join-us.html" target="_blank" rel="noopener noreferrer">官方 LINE</a>。</p>
+
+        <!-- 靜態 UI 交付版：不含 JavaScript。正式送出、條件式驗證、同意書閱讀紀錄由 React／後端接手。 -->
+        <form class="pw-form pw-island-2027-form__form" method="post" enctype="multipart/form-data">
+          <section class="pw-island-2027-form__section" aria-labelledby="island-section-person">
+            <h2 class="pw-island-2027-form__section-title" id="island-section-person">01｜投稿者基本資料</h2>
+          <div class="pw-form__field">
+            <label class="pw-form__label" for="island-name">姓名 <span class="pw-form__required" aria-hidden="true">*</span></label>
+            <input class="pw-form__control" id="island-name" name="name" type="text" autocomplete="name"  required>
+          </div>
+            <div class="pw-island-2027-form__two-col">
+          <div class="pw-form__field">
+            <label class="pw-form__label" for="island-mobile">行動電話 <span class="pw-form__required" aria-hidden="true">*</span></label>
+            <input class="pw-form__control" id="island-mobile" name="mobile" type="tel" autocomplete="tel" inputmode="tel"  required>
+          </div>
+          <div class="pw-form__field">
+            <label class="pw-form__label" for="island-email">Email <span class="pw-form__required" aria-hidden="true">*</span></label>
+            <input class="pw-form__control" id="island-email" name="email" type="email" autocomplete="email"  required>
+          </div>
+            </div>
+            
+
+<fieldset class="pw-island-2027-form__fieldset">
+  <legend class="pw-form__label">
+    身份 <span class="pw-form__required" aria-hidden="true">*</span>
+  </legend>
+
+  <div class="pw-island-2027-form__choices">
+    <label class="pw-island-2027-form__choice">
+      <input type="radio" name="identityType" value="student" required>
+      在學學生
+    </label>
+
+    <label class="pw-island-2027-form__choice">
+      <input type="radio" name="identityType" value="professional-artist">
+      專職創作者
+    </label>
+
+    <label class="pw-island-2027-form__choice">
+      <input type="radio" name="identityType" value="part-time-artist">
+      業餘創作者
+    </label>
+
+    <label class="pw-island-2027-form__choice">
+      <input type="radio" name="identityType" value="general-public">
+      社會人士
+    </label>
+
+    <label class="pw-island-2027-form__choice">
+      <input type="radio" name="identityType" value="other">
+      其他
+    </label>
+  </div>
+
+  <div class="pw-form__field pw-island-2027-form__identity-other">
+    <label class="pw-form__label" for="island-identity-other">
+      其他身份說明
+    </label>
+    <input
+      class="pw-form__control"
+      id="island-identity-other"
+      name="identityOther"
+      type="text"
+      maxlength="100"
+      placeholder="請輸入其他身份"
+    >
+  </div>
+</fieldset>
+
+<!--
+          <div class="pw-form__field">
+            <label class="pw-form__label" for="island-school">學校名稱（在學學生填寫）</label>
+            <input class="pw-form__control" id="island-school" name="schoolName" type="text"  placeholder="請輸入就讀學校名稱" >
+          </div>
+        -->
+            <fieldset class="pw-island-2027-form__fieldset">
+              <legend class="pw-form__label">居住地 <span class="pw-form__required" aria-hidden="true">*</span></legend>
+              <div class="pw-island-2027-form__residence-line">
+                <label class="pw-island-2027-form__choice"><input type="radio" name="residenceType" value="taiwan" required> 國內</label>
+                <label class="pw-island-2027-form__residence-city">
+                  <span class="pw-island-2027-form__sr-only">居住縣市</span>
+                  <select class="pw-form__control" name="taiwanCity" id="island-city" aria-label="居住縣市">
+                    <option value="" selected>請選擇縣市</option>
+                  <option value="基隆市">基隆市</option>
+                  <option value="臺北市">臺北市</option>
+                  <option value="新北市">新北市</option>
+                  <option value="桃園市">桃園市</option>
+                  <option value="新竹市">新竹市</option>
+                  <option value="新竹縣">新竹縣</option>
+                  <option value="苗栗縣">苗栗縣</option>
+                  <option value="臺中市">臺中市</option>
+                  <option value="彰化縣">彰化縣</option>
+                  <option value="南投縣">南投縣</option>
+                  <option value="雲林縣">雲林縣</option>
+                  <option value="嘉義市">嘉義市</option>
+                  <option value="嘉義縣">嘉義縣</option>
+                  <option value="臺南市">臺南市</option>
+                  <option value="高雄市">高雄市</option>
+                  <option value="屏東縣">屏東縣</option>
+                  <option value="宜蘭縣">宜蘭縣</option>
+                  <option value="花蓮縣">花蓮縣</option>
+                  <option value="臺東縣">臺東縣</option>
+                  <option value="澎湖縣">澎湖縣</option>
+                  <option value="金門縣">金門縣</option>
+                  <option value="連江縣">連江縣</option>
+                  </select>
+                </label>
+                <label class="pw-island-2027-form__choice"><input type="radio" name="residenceType" value="overseas"> 國外</label>
+              </div>
+              <div class="pw-form__field">
+                <label class="pw-form__label" for="island-overseas">居住地資訊（國外填寫）</label>
+                <input class="pw-form__control" id="island-overseas" name="overseasLocation" type="text" placeholder="請輸入國家／城市">
+              </div>
+              <p class="pw-island-2027-form__hint">國內請選擇縣市；國外請填寫國家／城市。</p>
+            </fieldset>
+            <div class="pw-form__field">
+              <label class="pw-form__label" for="island-years">創作年資 <span class="pw-form__required" aria-hidden="true">*</span></label>
+              <select class="pw-form__control" id="island-years" name="experienceYears" required>
+                <option value="" selected disabled>請選擇創作年資</option>
+              <option value="1-5">1～5 年</option>
+              <option value="6-10">6～10 年</option>
+              <option value="11-15">11～15 年</option>
+              <option value="16-20">16～20 年</option>
+              <option value="21-25">21～25 年</option>
+              <option value="26-30">26～30 年</option>
+              <option value="31-plus">31 年以上</option>
+              </select>
+            </div>
+          <div class="pw-form__field">
+            <label class="pw-form__label" for="island-social">個人社群連結 <span class="pw-form__required" aria-hidden="true">*</span></label>
+            <input class="pw-form__control" id="island-social" name="socialUrl" type="url" inputmode="url" placeholder="https://" required>
+          </div>
+            <p class="pw-island-2027-form__hint">可填 Facebook、Instagram、Threads 或個人網站（請包含 https://）。</p>
+            <div class="pw-form__field">
+              <label class="pw-form__label" for="island-statement">創作自述 <span class="pw-form__required" aria-hidden="true">*</span></label>
+              <textarea class="pw-form__control pw-form__control--textarea" id="island-statement" name="artistStatement" maxlength="500" placeholder="500 字以內" required></textarea>
+            </div>
+          </section>
+
+          
+<section class="pw-island-2027-form__section"
+         aria-labelledby="island-section-work">
+
+  <h2 class="pw-island-2027-form__section-title"
+      id="island-section-work">
+    02｜投稿作品資料
+  </h2>
+
+  <div class="pw-form__field">
+    <label class="pw-form__label" for="island-quantity">
+      預計投稿數量
+      <span class="pw-form__required" aria-hidden="true">*</span>
+    </label>
+
+    <select class="pw-form__control"
+            id="island-quantity"
+            name="submissionQuantity"
+            required>
+      <option value="" selected disabled>請選擇投稿數量</option>
+      <option value="1">1 件</option>
+      <option value="2">2 件</option>
+      <option value="3">3 件</option>
+    </select>
+  </div>
+
+  <div class="pw-form__field">
+    <label class="pw-form__label" for="island-photo">
+      上傳代表作品照片
+      <span class="pw-form__required" aria-hidden="true">*</span>
+    </label>
+
+    <input
+      class="pw-form__file pw-island-2027-form__file"
+      id="island-photo"
+      name="representativeArtworkPhoto"
+      type="file"
+      accept="image/jpeg,image/png,image/webp"
+      required
+    >
+
+    <p class="pw-island-2027-form__hint">
+      請上傳一張可代表個人創作風格的作品照片，
+      供主辦單位進行初步審查。
+      通過審查後，再依通知提供正式投稿作品資料。
+    </p>
+  </div>
+
+</section>
+
+
+          
+          <section class="pw-island-2027-form__section" aria-labelledby="island-section-agreement">
+            <h2 class="pw-island-2027-form__section-title" id="island-section-agreement">03｜投稿者同意聲明</h2>
+            <p>請先詳閱<a href="#island-agreement-modal">《島嶼彼境｜BEYOND THE ISLAND》徵件活動報名同意書</a>，並完成確認。</p>
+            <label class="pw-island-2027-form__choice">
+              <input id="island-agreement" name="agreeRules" type="checkbox" value="yes">
+              <span>我已閱讀並同意《島嶼彼境｜BEYOND THE ISLAND》徵件活動報名同意書，並確認所填寫之報名資料及作品資訊均為真實。</span>
+            </label>
+          </section>
+
+
+
+            
+
+          <div class="pw-form__actions">
+            <button type="reset" class="pw-btn pw-btn--secondary">清除重填</button>
+            <!-- React 正式版改為 type=submit，且僅在完成條款確認與表單驗證後開放。 -->
+            <button type="button" class="pw-btn pw-btn--primary" disabled aria-disabled="true">送出資料</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- 純 CSS :target 彈窗示意。正式版請以 React Dialog 與狀態控管替換。
+       注意：CSS 無法偵測滾動到底、記錄同意狀態、焦點限制及 Escape 關閉。 -->
+  <div id="island-agreement-modal" class="pw-island-2027-agreement-modal" role="dialog" aria-modal="true" aria-labelledby="island-agreement-modal-title" aria-describedby="island-agreement-modal-desc">
+    <a href="#island-section-agreement" class="pw-island-2027-agreement-modal__backdrop" aria-label="關閉同意書"></a>
+    <div class="pw-island-2027-agreement-modal__panel">
+      <div class="pw-island-2027-agreement-modal__header">
+        <h2 id="island-agreement-modal-title">徵件活動報名同意書</h2>
+        <a href="#island-section-agreement" class="pw-island-2027-agreement-modal__close" aria-label="關閉同意書">×</a>
+      </div>
+      <p id="island-agreement-modal-desc" class="pw-island-2027-form__hint">請向下閱讀所有條款，正式版於捲動到底後開放「我同意」。</p>
+      <div class="pw-island-2027-agreement-modal__scroll" tabindex="0">
+        <h3 class="pw-island-2027-agreement__main-title">《島嶼彼境｜BEYOND THE ISLAND》徵件活動報名同意書</h3>
+        <p>投稿者於報名前，請詳閱以下條款。完成報名即表示您已閱讀並同意以下內容。</p>
+        <section class="pw-island-2027-agreement__section" aria-labelledby="agreement-article-1">
+          <h3 id="agreement-article-1" class="pw-island-2027-agreement__heading">一、報名與服務內容</h3>
+          <p>本活動由元宇宙資產股份有限公司（POST WINGS MEDIA 波翼藝術）主辦。主辦單位依活動公告及投稿方案提供作品數位掃描、資料建檔、藝術家網頁、作品上架、多國語言語音導覽及相關藝術推廣服務。立體作品如需3D建模或其他額外製作服務，須另行報價並經投稿者同意後執行。</p>
+        </section>
+        <section class="pw-island-2027-agreement__section" aria-labelledby="agreement-article-2">
+          <h3 id="agreement-article-2" class="pw-island-2027-agreement__heading">二、退費規定</h3>
+          <p>投稿者完成報名後，如主辦單位尚未開始執行相關服務，退費事宜依活動公告、雙方約定及相關法令辦理。若已開始進行作品掃描、數位建檔、藝術品上架或其他相關服務，因服務已實際執行，原則上不接受退費申請；依法應退費之情形不在此限。</p>
+        </section>
+        <section class="pw-island-2027-agreement__section" aria-labelledby="agreement-article-3">
+          <h3 id="agreement-article-3" class="pw-island-2027-agreement__heading">三、作品原創性與法律責任</h3>
+          <p>投稿者應確保投稿作品為本人原創，或已取得合法授權，且未侵害第三人之著作權、肖像權、隱私權或其他合法權益。如因作品侵權、資料不實或其他違法情事產生爭議，投稿者應依相關法律及可歸責情形負擔責任。</p>
+        </section>
+        <section class="pw-island-2027-agreement__section" aria-labelledby="agreement-article-4">
+          <h3 id="agreement-article-4" class="pw-island-2027-agreement__heading">四、作品授權與數位展示</h3>
+          <p>投稿者保有作品原有之著作權。投稿者同意主辦單位於本活動及雙方約定之服務範圍內，使用作品圖像、作品資料及藝術家介紹，進行數位掃描、資料建檔、線上展示、VR展覽、語音導覽及相關活動推廣。超出原約定範圍之商業授權、商品製作或第三方轉授權，應另行取得投稿者同意。</p>
+        </section>
+        <section class="pw-island-2027-agreement__section" aria-labelledby="agreement-article-5">
+          <h3 id="agreement-article-5" class="pw-island-2027-agreement__heading">五、作品評選與展示</h3>
+          <p>主辦單位依專業評選機制及策展規劃進行作品審查與展示安排。完成報名不代表作品必然入選，亦不保證所有作品均獲得實體展出、媒體曝光、銷售機會或特定推廣成果。</p>
+        </section>
+        <section class="pw-island-2027-agreement__section" aria-labelledby="agreement-article-6">
+          <h3 id="agreement-article-6" class="pw-island-2027-agreement__heading">六、數位平台服務</h3>
+          <p>主辦單位依活動公告提供作品數位建檔、線上展示及相關服務。因系統維護、技術更新、第三方服務異常或其他不可歸責於主辦單位之因素，可能影響平台服務，主辦單位將於合理範圍內採取必要處理措施。</p>
+        </section>
+        <section class="pw-island-2027-agreement__section" aria-labelledby="agreement-article-7">
+          <h3 id="agreement-article-7" class="pw-island-2027-agreement__heading">七、藝術品交易與市場風險</h3>
+          <p>作品於數位平台展示或開啟線上交易功能，不代表主辦單位保證作品成交、銷售金額、收藏價值或未來市場表現。實際交易條件及相關權利義務，依平台交易規範、個別交易約定及適用法令辦理。</p>
+        </section>
+        <section class="pw-island-2027-agreement__section" aria-labelledby="agreement-article-8">
+          <h3 id="agreement-article-8" class="pw-island-2027-agreement__heading">八、作品運送與相關費用</h3>
+          <p>本活動報名費不包含作品寄送、退件、包裝、運輸及相關保險費用。所有作品運送及相關費用均由投稿者自行負擔。實體作品之保管、展示、返還及損害責任，依活動公告、展覽規範、雙方約定及適用法令辦理。</p>
+        </section>
+        <section class="pw-island-2027-agreement__section" aria-labelledby="agreement-article-9">
+          <h3 id="agreement-article-9" class="pw-island-2027-agreement__heading">九、個人資料保護</h3>
+          <p>投稿者同意主辦單位於辦理報名、聯繫通知、作品建檔、展覽安排及提供相關服務之必要範圍內，依法蒐集、處理及利用其個人資料。主辦單位應依個人資料保護法及相關法令妥善管理個人資料。</p>
+        </section>
+        <section class="pw-island-2027-agreement__section" aria-labelledby="agreement-article-10">
+          <h3 id="agreement-article-10" class="pw-island-2027-agreement__heading">十、活動異動與不可抗力</h3>
+          <p>如因天災、政府命令、公共安全、場地因素或其他不可抗力情形，致活動需延期、調整或取消，主辦單位將於合理範圍內公告相關資訊，並依雙方約定及適用法令處理。</p>
+        </section>
+        <section class="pw-island-2027-agreement__section" aria-labelledby="agreement-article-11">
+          <h3 id="agreement-article-11" class="pw-island-2027-agreement__heading">十一、其他事項</h3>
+          <p>主辦單位得依活動規範進行資格審查、作品評選及合理調整活動安排。未盡事宜依活動公告、雙方約定及中華民國相關法律辦理。本同意書不排除或限制主辦單位依法應負之責任，亦不影響投稿者依法享有之權利。</p>
+        </section>
+        <!--
+        <section class="pw-island-2027-agreement__section">
+          <h3 class="pw-island-2027-agreement__heading">線上報名確認</h3>
+          <p>我已詳閱並同意《島嶼彼境｜BEYOND THE ISLAND》徵件活動報名同意書，並確認所填寫之報名資料及作品資訊均為真實。</p>
+        </section>
+        -->
+      </div>
+      <div class="pw-island-2027-agreement-modal__actions">
+        <a href="#island-section-agreement" class="pw-btn pw-btn--secondary">不同意</a>
+        <!-- 純 CSS 無法依閱讀捲動解鎖；按鈕維持禁用示意。 -->
+        <button type="button" class="pw-btn pw-btn--primary" disabled aria-disabled="true">我同意</button>
+      </div>
+      <!--
+      <p class="pw-island-2027-form__hint">另可於 <a href="./2027-beyond-the-island-agreement.html" target="_blank" rel="noopener noreferrer">獨立條款頁</a> 查閱內容。</p>
+    -->
+    </div>
+  </div>
+</main>
+
+
+
+
+</main>
+
+
+<!-- Footer -->
+<footer class="pw-footer">
+  <div class="pw-container">
+    <div class="pw-inner pw-footer__inner">
+      <!-- Footer 左側 -->
+      <div class="pw-footer__aside">
+        <a
+          class="pw-footer__logo-link"
+          href="./index.html"
+          aria-label="POST WINGS 波翼藝術首頁"
+        >
+          <img
+            class="pw-footer__logo"
+            src="./img/logo.png"
+            alt="POST WINGS 波翼藝術"
+          />
+        </a>
+
+        <div class="pw-footer__meta">
+          <!-- 社群連結 -->
+          <ul class="pw-footer__social-list" aria-label="社群連結">
+            <li class="pw-footer__social-item">
+              <a
+                class="pw-footer__social-link"
+                href="https://www.facebook.com/61556203757989/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+              >
+                <img
+                  class="pw-footer__social-icon"
+                  src="./img/pw-icon-fb.png"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </a>
+            </li>
+
+            <li class="pw-footer__social-item">
+              <a
+                class="pw-footer__social-link"
+                href="https://lin.ee/Fo8Miwj"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LINE"
+              >
+                <img
+                  class="pw-footer__social-icon"
+                  src="./img/pw-icon-line.png"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </a>
+            </li>
+
+            <li class="pw-footer__social-item">
+              <a
+                class="pw-footer__social-link"
+                href="https://www.instagram.com/postwingsart/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+              >
+                <img
+                  class="pw-footer__social-icon"
+                  src="./img/pw-icon-ig.png"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </a>
+            </li>
+
+            <li class="pw-footer__social-item">
+              <a
+                class="pw-footer__social-link"
+                href="https://www.youtube.com/@POSTWINGS-sm4gl"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="YouTube"
+              >
+                <img
+                  class="pw-footer__social-icon"
+                  src="./img/pw-icon-youtube.png"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </a>
+            </li>
+          </ul>
+
+          <!-- 聯絡資料 -->
+          <address class="pw-footer__contact">
+            <h2 class="pw-footer__contact-title">聯絡我們</h2>
+
+            <a
+              class="pw-footer__contact-link"
+              href="mailto:service@metaassets.com.tw"
+            >
+              service@metaassets.com.tw
+            </a>
+
+            <a class="pw-footer__contact-link" href="tel:0930257803">
+              0930-257-803
+            </a>
+
+            <p class="pw-footer__contact-text">
+              台北市中山區建國北路二段3巷37號B1
+            </p>
+          </address>
+
+          <p class="pw-footer__copyright">
+            Copyright © 2026 元宇宙資產股份有限公司 版權所有
+          </p>
+        </div>
+      </div>
+
+
+<!-- Footer 右側導覽 -->
+<nav class="pw-footer__nav" aria-label="頁尾導覽">
+  <!-- 左欄：藝術資產聯盟、合作夥伴 -->
+  <div class="pw-footer__nav-column">
+    <!-- 藝術資產聯盟 -->
+    <div
+      class="pw-footer__nav-group"
+      aria-labelledby="footer-alliance-title"
+    >
+      <h2
+        id="footer-alliance-title"
+        class="pw-footer__nav-title"
+      >
+        藝術資產聯盟
+      </h2>
+
+      <ul class="pw-footer__nav-list">
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://www.bossmen.com/zh-TW/index/index.html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            博士門 Bossmen
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="http://www.easicolor.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            宣城科技 Easicolor
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://uprint.com.tw/about/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            布萊特 uPrint
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://ones-digital.com/zh/首頁/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            加伊創意科技 ONES
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- 合作夥伴 -->
+    <div
+      class="pw-footer__nav-group"
+      aria-labelledby="footer-partner-title"
+    >
+      <h2
+        id="footer-partner-title"
+        class="pw-footer__nav-title"
+      >
+        合作夥伴
+      </h2>
+
+      <ul class="pw-footer__nav-list">
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://www.facebook.com/100068823486807/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            寶佳潭美藝廊
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://www.facebook.com/100085289444712/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LIVE ART SPACE
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://art.kje-event.com.tw/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            台灣藝術博覽會
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://www.facebook.com/61578254614082/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            藝創生活節
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 右欄：合作學協會、平台入口 -->
+  <div class="pw-footer__nav-column">
+    <!-- 合作學協會 -->
+    <div
+      class="pw-footer__nav-group"
+      aria-labelledby="footer-association-title"
+    >
+      <h2
+        id="footer-association-title"
+        class="pw-footer__nav-title"
+      >
+        合作學協會
+      </h2>
+
+      <ul class="pw-footer__nav-list">
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://www.facebook.com/groups/909701919139272/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            中華文創學會
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://www.facebook.com/ccfa.tw/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            中華文物學會
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://www.facebook.com/owlactsartssociety/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            貓頭鷹藝術協會
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://www.facebook.com/maak1987/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            高雄市現代畫學會
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://www.twpapat.org/home/index.php"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            台灣粉彩藝術推廣協會
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://www.panasiaart.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            泛亞藝術聯盟
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://www.facebook.com/100063719484960/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            台北市西畫女畫家畫會
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://www.txsia.org.tw/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            台灣 XR 智能產業發展協會
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- 平台入口 -->
+    <div
+      class="pw-footer__nav-group"
+      aria-labelledby="footer-platform-title"
+    >
+      <h2
+        id="footer-platform-title"
+        class="pw-footer__nav-title"
+      >
+        平台入口
+      </h2>
+
+      <ul class="pw-footer__nav-list">
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://virtual.metaassets.asia/manage/login"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            藝術家後台
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a class="pw-footer__nav-link" href="./pw-service-terms-page.html">
+            服務條款
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a class="pw-footer__nav-link" href="./pw-privacy-policy-page.html">
+            隱私政策
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+  <a
+    class="pw-footer__nav-link"
+    href="./pw-faq-page.html"
+  >
+    常見問題
+  </a>
+</li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating Actions -->
+<div class="pw-floating-actions" aria-label="快速操作">
+  <ul class="pw-floating-actions__list">
+    <li class="pw-floating-actions__item">
+      <button
+        class="pw-floating-actions__button pw-floating-actions__button--to-top"
+        type="button"
+        data-pw-back-to-top
+        aria-label="回到頁面頂端"
+      >
+        <img
+          class="pw-floating-actions__icon"
+          src="./img/pw-icon-gotop.png"
+          alt=""
+          aria-hidden="true"
+        />
+      </button>
+    </li>
+  </ul>
+</div>
+
+
+  <!-- 全站共用 JS：Header、Back to top -->
+  <script type="module" src="./js/pw-enhance.js"></script>
+
+  
+
+
+<!-- 關閉 HTML -->
+</body>
+</html>
+</body>

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="450" viewBox="0 0 720 450" role="img" aria-label="Exhibition placeholder 02">
+  <rect width="720" height="450" fill="#e9e0d4"/>
+  <path d="M90 320 L240 120 L390 320 L540 120 L650 320" fill="none" stroke="#9f7a3d" stroke-width="28" stroke-linejoin="round" opacity="0.45"/>
+  <text x="80" y="56" font-family="Arial, sans-serif" font-size="32" font-weight="700" fill="#211f1b">Exhibition B</text>
+</svg>

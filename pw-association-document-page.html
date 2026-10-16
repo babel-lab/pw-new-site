@@ -1,0 +1,998 @@
+<head>
+  <title>POST WINGS | 波翼藝術</title>
+
+  <!-- 正式上線請更換GA4代碼 -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-VTZNRHLELH"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-VTZNRHLELH");
+  </script>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta
+    name="keywords"
+    content="POST WINGS, 波翼藝術, 虛擬展間, 當代藝術, Web3.0"
+  />
+  <meta
+    name="description"
+    content="波翼藝術專注於當代藝術市場 Web3.0 虛實整合服務。"
+  />
+
+  <link rel="apple-touch-icon" href="./img/apple-touch-icon.png" />
+  <link rel="icon" href="./img/favicon.ico" />
+
+  <meta property="og:url" content="https://www.postwings.art/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="POST WINGS 波翼藝術 | 藝術資產管理服務" />
+  <meta
+    property="og:description"
+    content="POST WINGS 波翼藝術專注於藝術展覽、授權、虛擬實境展間與 Web3.0 藝術服務。"
+  />
+  <meta
+    property="og:image"
+    content="https://www.postwings.art/img/og-image.jpg"
+  />
+
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+
+<body class="pw-site" data-build="designer-preview">
+  <header class="pw-site-header" data-pw-header>
+  <div class="pw-container pw-site-header__inner">
+    <!-- LOGO -->
+    <a
+      class="pw-site-header__brand"
+      href="./index.html"
+      aria-label="回到 POST WINGS 首頁"
+    >
+      <img src="./img/logo.png" class="pw-site-header__logo" alt="POST WINGS" />
+    </a>
+
+    <!-- 大版主選單 -->
+    <nav class="pw-site-header__nav" aria-label="主要選單">
+      <button
+        class="pw-btn pw-site-header__nav-toggle"
+        type="button"
+        aria-controls="pw-header-menu-panel"
+        aria-expanded="false"
+        data-pw-toggle="menu"
+        data-pw-menu-key="exhibitions"
+      >
+        線上展演
+      </button>
+
+      <button
+        class="pw-btn pw-site-header__nav-toggle"
+        type="button"
+        aria-controls="pw-header-menu-panel"
+        aria-expanded="false"
+        data-pw-toggle="menu"
+        data-pw-menu-key="artists"
+      >
+        探索藝術人
+      </button>
+
+      <button
+        class="pw-btn pw-site-header__nav-toggle"
+        type="button"
+        aria-controls="pw-header-menu-panel"
+        aria-expanded="false"
+        data-pw-toggle="menu"
+        data-pw-menu-key="people"
+      >
+        翼見人物
+      </button>
+
+      <button
+        class="pw-btn pw-site-header__nav-toggle"
+        type="button"
+        aria-controls="pw-header-menu-panel"
+        aria-expanded="false"
+        data-pw-toggle="menu"
+        data-pw-menu-key="news"
+      >
+        波翼快訊
+      </button>
+
+      <!-- 加入我們：直接連結，不打開次選單 -->
+      <a class="pw-btn pw-site-header__nav-link" href="./pw-join-us.html">
+        加入我們
+      </a>
+    </nav>
+
+    <!-- 右側按鈕 -->
+    <div class="pw-site-header__actions">
+      <!-- 大版搜尋 toggle；小版隱藏 -->
+      <button
+        id="pw-search-toggle"
+        class="pw-site-header__icon-btn pw-site-header__icon-btn--search"
+        type="button"
+        aria-label="開啟搜尋"
+        aria-controls="pw-header-search-panel"
+        aria-expanded="false"
+        data-pw-toggle="search"
+      >
+        <img src="./img/pw-icon-search.png" alt="" />
+      </button>
+
+      <!-- 小版 menu toggle；大版預設隱藏 -->
+      <button
+        id="pw-menu-toggle"
+        class="pw-site-header__icon-btn pw-site-header__icon-btn--menu"
+        type="button"
+        aria-label="開啟選單"
+        aria-controls="pw-header-menu-panel"
+        aria-expanded="false"
+        data-pw-toggle="menu"
+      >
+        <img src="./img/pw-icon-menu.png" alt="" />
+      </button>
+
+      <!-- 語言 toggle -->
+      <div
+        class="pw-site-header__action-item pw-site-header__action-item--lang"
+      >
+        <button
+          id="pw-lang-toggle"
+          class="pw-site-header__icon-btn pw-site-header__icon-btn--lang"
+          type="button"
+          aria-label="切換語言"
+          aria-controls="pw-header-lang-panel"
+          aria-expanded="false"
+          data-pw-toggle="lang"
+        >
+          <img src="./img/pw-icon-lang.png" alt="" />
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 搜尋區塊 -->
+  <div
+    id="pw-header-search-panel"
+    class="pw-site-header__search-panel"
+    aria-hidden="true"
+    data-pw-panel="search"
+  >
+    <div class="pw-container">
+      <form
+        class="pw-site-header__search-form"
+        action="./pw-search-page.html"
+        method="get"
+        role="search"
+      >
+        <label
+          class="pw-site-header__icon-btn pw-sr-only"
+          for="pw-header-search-input"
+        >
+          <img src="./img/pw-icon-search.png" alt="" />
+        </label>
+
+        <input
+          id="pw-header-search-input"
+          class="pw-site-header__search-input"
+          type="search"
+          name="keyword"
+          placeholder="請輸入藝術家名字、創作媒材"
+        />
+      </form>
+    </div>
+  </div>
+
+  <!-- 展開選單 -->
+  <div
+    id="pw-header-menu-panel"
+    class="pw-site-header__menu-panel"
+    aria-hidden="true"
+    data-pw-panel="menu"
+  >
+    <div class="pw-container pw-site-header__menu-inner">
+      <nav class="pw-site-header__menu-grid" aria-label="展開選單">
+        <!-- 線上展演 -->
+        <div
+          class="pw-site-header__menu-group"
+          data-pw-menu-group="exhibitions"
+        >
+          <span class="pw-site-header__menu-title"> 線上展演 </span>
+
+          <a
+            class="pw-site-header__menu-link"
+            href="./pw-exhibition-page.html?tab=solo"
+          >
+            藝術個展
+          </a>
+
+          <a
+            class="pw-site-header__menu-link"
+            href="./pw-exhibition-page.html?tab=group"
+          >
+            團體聯展
+          </a>
+
+          <a
+            class="pw-site-header__menu-link"
+            href="./pw-exhibition-page.html?tab=fair"
+          >
+            藝文特展
+          </a>
+
+          <a
+            class="pw-site-header__menu-link"
+            href="./pw-exhibition-page.html?tab=curated"
+          >
+            藏家收藏間
+          </a>
+        </div>
+
+        <!-- 探索藝術人 -->
+        <div class="pw-site-header__menu-group" data-pw-menu-group="artists">
+          <span class="pw-site-header__menu-title"> 探索藝術人 </span>
+
+          <a
+            class="pw-site-header__menu-link"
+            href="./pw-artist-explore-page.html?tab=masters"
+          >
+            藝術大師
+          </a>
+
+          <a
+            class="pw-site-header__menu-link"
+            href="./pw-artist-explore-page.html?tab=creators"
+          >
+            創藝人物
+          </a>
+
+          <a
+            class="pw-site-header__menu-link"
+            href="./pw-artist-explore-page.html?tab=organizations"
+          >
+            藝術團體
+          </a>
+
+          <a
+            class="pw-site-header__menu-link"
+            href="./pw-artist-explore-page.html?tab=institutions"
+          >
+            藝術機構
+          </a>
+        </div>
+
+        <!-- 翼見人物 -->
+        <div class="pw-site-header__menu-group" data-pw-menu-group="people">
+          <span class="pw-site-header__menu-title"> 翼見人物 </span>
+
+          <a
+            class="pw-site-header__menu-link"
+            href="./pw-wing-people-page.html?tab=shorts"
+          >
+            短影音
+          </a>
+
+          <a
+            class="pw-site-header__menu-link"
+            href="./pw-wing-people-page.html?tab=interview"
+          >
+            專 訪
+          </a>
+        </div>
+
+        <!-- 波翼快訊 -->
+        <div class="pw-site-header__menu-group" data-pw-menu-group="news">
+          <span class="pw-site-header__menu-title"> 波翼快訊 </span>
+
+          <a class="pw-site-header__menu-link" href="./pw-wing-news-page.html">
+            平面新聞
+          </a>
+        </div>
+      </nav>
+
+      <!-- 小版底部 CTA -->
+      <div class="pw-site-header__menu-cta">
+        <div class="pw-btn-wrap">
+          <a
+            class="pw-site-header__menu-cta-link"
+            href="https://www.postwings.art/service"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            建立3D展間
+          </a>
+
+          <a class="pw-site-header__menu-cta-link" href="./pw-join-us.html">
+            加入我們
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 語言選單 -->
+  <div
+    id="pw-header-lang-panel"
+    class="pw-site-header__lang-panel"
+    aria-hidden="true"
+    data-pw-panel="lang"
+  >
+    <a
+      class="pw-site-header__lang-link pw-site-header__lang-link--active"
+      href="#!"
+      aria-current="true"
+    >
+      中 文
+    </a>
+
+    <a class="pw-site-header__lang-link" href="#!"> English </a>
+
+    <a class="pw-site-header__lang-link" href="#!"> 日本語 </a>
+
+    <a class="pw-site-header__lang-link" href="#!"> 한국어 </a>
+
+    <a class="pw-site-header__lang-link" href="#!"> Español </a>
+
+    <a class="pw-site-header__lang-link" href="#!"> Français </a>
+
+    <a class="pw-site-header__lang-link" href="#!"> Deutsch </a>
+  </div>
+</header>
+
+
+  <main
+    class="pw-association-document-page"
+  >
+
+
+<!-- Start 協會名稱區塊 -->
+<section class="pw-page-heading assoc-head">
+	<div class="container">
+		<div class="item">
+			<div class="title">
+				<h2>中華文創協會</h2>
+				<h3>Chinese Association of Culture Creativity</h3>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End 協會名稱區塊 -->
+
+
+<!-- Start 歷屆畫冊  -->
+
+<section class="pw-card-section association-publication">
+	<div class="container">
+		<div class="title"><h3>歷屆畫冊</h3></div>
+		<div class="item">
+			<div class="content pw-card-list ">			
+			
+				<!-- 若沒任何資料，顯示此區塊 -->
+				<div class="pw-empty-state" role="status">
+				  <p class="pw-empty-state__text">尚未上傳畫冊</p>
+				</div>
+			
+			
+				<!-- PDF1 -->
+				<div class="item">
+					<div class="content">
+						<div class="img avatar">
+							<a href="/artist/167">
+								<img src="data:image/png;base64,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">
+							</a>
+						</div>
+						<div class="info">
+							<h6 class="year">2026</h6>
+							<a href="<?= $association_artist ?>"><h5>台灣粉彩藝術公開賽 - 得獎入圍作品錦集</h5></a>
+						</div>
+					</div>
+				</div>
+				
+				<!-- PDF2 -->
+				<div class="item">
+					<div class="content">
+						<div class="img avatar">
+							<a href="/artist/167">
+								<img src="data:image/png;base64,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">
+							</a>
+						</div>
+						<div class="info">
+							<h6 class="year">2026</h6>
+							<a href="<?= $association_artist ?>"><h5>台灣粉彩藝術公開賽 - 得獎入圍作品錦集</h5></a>
+						</div>
+					</div>
+				</div>
+				
+				<!-- PDF3 -->
+				<div class="item">
+					<div class="content">
+						<div class="img avatar">
+							<a href="/artist/167">
+								<img src="data:image/png;base64,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">
+							</a>
+						</div>
+						<div class="info">
+							<h6 class="year">2026</h6>
+							<a href="<?= $association_artist ?>"><h5>台灣粉彩藝術公開賽 - 得獎入圍作品錦集</h5></a>
+						</div>
+					</div>
+				</div>
+				
+				<!-- PDF4 -->
+				<div class="item">
+					<div class="content">
+						<div class="img avatar">
+							<a href="/artist/167">
+								<img src="data:image/png;base64,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">
+							</a>
+						</div>
+						<div class="info">
+							<h6 class="year">2026</h6>
+							<a href="<?= $association_artist ?>"><h5>台灣粉彩藝術公開賽 - 得獎入圍作品錦集</h5></a>
+						</div>
+					</div>
+				</div>
+				
+				<!-- PDF5 -->
+				<div class="item">
+					<div class="content">
+						<div class="img avatar">
+							<a href="/artist/167">
+								<img src="data:image/png;base64,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">
+							</a>
+						</div>
+						<div class="info">
+							<h6 class="year">2026</h6>
+							<a href="<?= $association_artist ?>"><h5>台灣粉彩藝術公開賽 - 得獎入圍作品錦集</h5></a>
+						</div>
+					</div>
+				</div>
+				
+				
+			</div>
+		</div>
+		
+		<!-- 分頁按鈕區塊開始 -->
+		<div class="pw-pagination" aria-label="分頁導覽">
+		  <a
+			class="pw-pagination__control pw-pagination__control--disabled"
+			href="#"
+			aria-label="上一頁"
+			aria-disabled="true"
+			tabindex="-1"
+		  >
+			‹
+		  </a>
+
+		  <a
+			class="pw-pagination__item pw-pagination__item--active"
+			href="#"
+			aria-current="page"
+		  >
+			1
+		  </a>
+
+		  <a class="pw-pagination__item" href="#">2</a>
+		  <a class="pw-pagination__item" href="#">3</a>
+		  <a class="pw-pagination__item" href="#">4</a>
+
+		  <span class="pw-pagination__ellipsis" aria-hidden="true">...</span>
+
+		  <a class="pw-pagination__item" href="#">134</a>
+
+		  <a class="pw-pagination__control" href="#" aria-label="下一頁">
+			›
+		  </a>
+		</div>
+		
+		<!-- 分頁按鈕區塊結束 -->
+		
+	</div>
+</section>
+
+<!-- End 歷屆畫冊 -->
+
+
+
+
+
+  
+
+  
+
+
+  <!-- 分隔線 -->
+<div class="pw-section-divider" aria-hidden="true"></div>
+
+<!-- 加入我們 -->
+<!-- ACT 區塊 -->
+<!-- Action CTA -->
+<section class="pw-section pw-act" aria-labelledby="pw-act-title">
+ 
+  <div class="pw-container">
+    <div class="pw-inner pw-act__inner">
+      <h2 id="pw-act-title" class="pw-act__title">
+        申請 3DVR 線上藝廊
+      </h2>
+
+      <ul class="pw-act__stats" aria-label="平台數據">
+        <li class="pw-act__stat">
+          <strong class="pw-act__number">815</strong>
+          <span class="pw-act__label">ARTIST</span>
+        </li>
+
+        <li class="pw-act__stat">
+          <strong class="pw-act__number">4527</strong>
+          <span class="pw-act__label">ARTWORK</span>
+        </li>
+
+        <li class="pw-act__stat">
+          <strong class="pw-act__number">225</strong>
+          <span class="pw-act__label">3DVR</span>
+        </li>
+      </ul>
+
+      <p class="pw-act__lead">
+        讓世界看見你的作品，立即申請 3DVR 線上藝廊
+      </p>
+
+      <div class="pw-act__actions" aria-label="申請行動">
+  <a
+    class="pw-btn pw-btn--secondary pw-act__button"
+    href="./pw-sales-page.html"
+  >
+    開啟你的全球藝術展示空間
+  </a>
+<!--
+  <a
+    class="pw-btn pw-btn--primary pw-act__button"
+    href="./pw-join-us.html"
+  >
+    加入波翼
+  </a>
+  -->
+</div>
+    </div>
+  </div>
+</section>
+
+
+
+</main>
+
+
+<!-- Footer -->
+<footer class="pw-footer">
+  <div class="pw-container">
+    <div class="pw-inner pw-footer__inner">
+      <!-- Footer 左側 -->
+      <div class="pw-footer__aside">
+        <a
+          class="pw-footer__logo-link"
+          href="./index.html"
+          aria-label="POST WINGS 波翼藝術首頁"
+        >
+          <img
+            class="pw-footer__logo"
+            src="./img/logo.png"
+            alt="POST WINGS 波翼藝術"
+          />
+        </a>
+
+        <div class="pw-footer__meta">
+          <!-- 社群連結 -->
+          <ul class="pw-footer__social-list" aria-label="社群連結">
+            <li class="pw-footer__social-item">
+              <a
+                class="pw-footer__social-link"
+                href="https://www.facebook.com/61556203757989/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+              >
+                <img
+                  class="pw-footer__social-icon"
+                  src="./img/pw-icon-fb.png"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </a>
+            </li>
+
+            <li class="pw-footer__social-item">
+              <a
+                class="pw-footer__social-link"
+                href="https://lin.ee/Fo8Miwj"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LINE"
+              >
+                <img
+                  class="pw-footer__social-icon"
+                  src="./img/pw-icon-line.png"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </a>
+            </li>
+
+            <li class="pw-footer__social-item">
+              <a
+                class="pw-footer__social-link"
+                href="https://www.instagram.com/postwingsart/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+              >
+                <img
+                  class="pw-footer__social-icon"
+                  src="./img/pw-icon-ig.png"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </a>
+            </li>
+
+            <li class="pw-footer__social-item">
+              <a
+                class="pw-footer__social-link"
+                href="https://www.youtube.com/@POSTWINGS-sm4gl"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="YouTube"
+              >
+                <img
+                  class="pw-footer__social-icon"
+                  src="./img/pw-icon-youtube.png"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </a>
+            </li>
+          </ul>
+
+          <!-- 聯絡資料 -->
+          <address class="pw-footer__contact">
+            <h2 class="pw-footer__contact-title">聯絡我們</h2>
+
+            <a
+              class="pw-footer__contact-link"
+              href="mailto:service@metaassets.com.tw"
+            >
+              service@metaassets.com.tw
+            </a>
+
+            <a class="pw-footer__contact-link" href="tel:0930257803">
+              0930-257-803
+            </a>
+
+            <p class="pw-footer__contact-text">
+              台北市中山區建國北路二段3巷37號B1
+            </p>
+          </address>
+
+          <p class="pw-footer__copyright">
+            Copyright © 2026 元宇宙資產股份有限公司 版權所有
+          </p>
+        </div>
+      </div>
+
+
+<!-- Footer 右側導覽 -->
+<nav class="pw-footer__nav" aria-label="頁尾導覽">
+  <!-- 左欄：藝術資產聯盟、合作夥伴 -->
+  <div class="pw-footer__nav-column">
+    <!-- 藝術資產聯盟 -->
+    <div
+      class="pw-footer__nav-group"
+      aria-labelledby="footer-alliance-title"
+    >
+      <h2
+        id="footer-alliance-title"
+        class="pw-footer__nav-title"
+      >
+        藝術資產聯盟
+      </h2>
+
+      <ul class="pw-footer__nav-list">
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://www.bossmen.com/zh-TW/index/index.html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            博士門 Bossmen
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="http://www.easicolor.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            宣城科技 Easicolor
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://uprint.com.tw/about/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            布萊特 uPrint
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://ones-digital.com/zh/首頁/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            加伊創意科技 ONES
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- 合作夥伴 -->
+    <div
+      class="pw-footer__nav-group"
+      aria-labelledby="footer-partner-title"
+    >
+      <h2
+        id="footer-partner-title"
+        class="pw-footer__nav-title"
+      >
+        合作夥伴
+      </h2>
+
+      <ul class="pw-footer__nav-list">
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://www.facebook.com/100068823486807/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            寶佳潭美藝廊
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://www.facebook.com/100085289444712/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LIVE ART SPACE
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://art.kje-event.com.tw/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            台灣藝術博覽會
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://www.facebook.com/61578254614082/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            藝創生活節
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 右欄：合作學協會、平台入口 -->
+  <div class="pw-footer__nav-column">
+    <!-- 合作學協會 -->
+    <div
+      class="pw-footer__nav-group"
+      aria-labelledby="footer-association-title"
+    >
+      <h2
+        id="footer-association-title"
+        class="pw-footer__nav-title"
+      >
+        合作學協會
+      </h2>
+
+      <ul class="pw-footer__nav-list">
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://www.facebook.com/groups/909701919139272/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            中華文創學會
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://www.facebook.com/ccfa.tw/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            中華文物學會
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://www.facebook.com/owlactsartssociety/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            貓頭鷹藝術協會
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://www.facebook.com/maak1987/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            高雄市現代畫學會
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://www.twpapat.org/home/index.php"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            台灣粉彩藝術推廣協會
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://www.panasiaart.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            泛亞藝術聯盟
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://www.facebook.com/100063719484960/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            台北市西畫女畫家畫會
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://www.txsia.org.tw/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            台灣 XR 智能產業發展協會
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- 平台入口 -->
+    <div
+      class="pw-footer__nav-group"
+      aria-labelledby="footer-platform-title"
+    >
+      <h2
+        id="footer-platform-title"
+        class="pw-footer__nav-title"
+      >
+        平台入口
+      </h2>
+
+      <ul class="pw-footer__nav-list">
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://virtual.metaassets.asia/manage/login"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            藝術家後台
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a class="pw-footer__nav-link" href="./pw-service-terms-page.html">
+            服務條款
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a class="pw-footer__nav-link" href="./pw-privacy-policy-page.html">
+            隱私政策
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+  <a
+    class="pw-footer__nav-link"
+    href="./pw-faq-page.html"
+  >
+    常見問題
+  </a>
+</li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating Actions -->
+<div class="pw-floating-actions" aria-label="快速操作">
+  <ul class="pw-floating-actions__list">
+    <li class="pw-floating-actions__item">
+      <button
+        class="pw-floating-actions__button pw-floating-actions__button--to-top"
+        type="button"
+        data-pw-back-to-top
+        aria-label="回到頁面頂端"
+      >
+        <img
+          class="pw-floating-actions__icon"
+          src="./img/pw-icon-gotop.png"
+          alt=""
+          aria-hidden="true"
+        />
+      </button>
+    </li>
+  </ul>
+</div>
+
+
+  <!-- 全站共用 JS：Header、Back to top -->
+  <script type="module" src="./js/pw-enhance.js"></script>
+
+  
+
+
+<!-- 關閉 HTML -->
+</body>
+</html>

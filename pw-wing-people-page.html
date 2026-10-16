@@ -1,0 +1,3128 @@
+<head>
+  <title>POST WINGS | 波翼藝術</title>
+
+  <!-- 正式上線請更換GA4代碼 -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-VTZNRHLELH"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-VTZNRHLELH");
+  </script>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta
+    name="keywords"
+    content="POST WINGS, 波翼藝術, 虛擬展間, 當代藝術, Web3.0"
+  />
+  <meta
+    name="description"
+    content="波翼藝術專注於當代藝術市場 Web3.0 虛實整合服務。"
+  />
+
+  <link rel="apple-touch-icon" href="./img/apple-touch-icon.png" />
+  <link rel="icon" href="./img/favicon.ico" />
+
+  <meta property="og:url" content="https://www.postwings.art/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="POST WINGS 波翼藝術 | 藝術資產管理服務" />
+  <meta
+    property="og:description"
+    content="POST WINGS 波翼藝術專注於藝術展覽、授權、虛擬實境展間與 Web3.0 藝術服務。"
+  />
+  <meta
+    property="og:image"
+    content="https://www.postwings.art/img/og-image.jpg"
+  />
+
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body class="pw-site" data-build="designer-preview">
+<header class="pw-site-header" data-pw-header>
+  <div class="pw-container pw-site-header__inner">
+    <!-- LOGO -->
+    <a
+      class="pw-site-header__brand"
+      href="./index.html"
+      aria-label="回到 POST WINGS 首頁"
+    >
+      <img src="./img/logo.png" class="pw-site-header__logo" alt="POST WINGS" />
+    </a>
+
+    <!-- 大版主選單 -->
+    <nav class="pw-site-header__nav" aria-label="主要選單">
+      <button
+        class="pw-btn pw-site-header__nav-toggle"
+        type="button"
+        aria-controls="pw-header-menu-panel"
+        aria-expanded="false"
+        data-pw-toggle="menu"
+        data-pw-menu-key="exhibitions"
+      >
+        線上展演
+      </button>
+
+      <button
+        class="pw-btn pw-site-header__nav-toggle"
+        type="button"
+        aria-controls="pw-header-menu-panel"
+        aria-expanded="false"
+        data-pw-toggle="menu"
+        data-pw-menu-key="artists"
+      >
+        探索藝術人
+      </button>
+
+      <button
+        class="pw-btn pw-site-header__nav-toggle"
+        type="button"
+        aria-controls="pw-header-menu-panel"
+        aria-expanded="false"
+        data-pw-toggle="menu"
+        data-pw-menu-key="people"
+      >
+        翼見人物
+      </button>
+
+      <button
+        class="pw-btn pw-site-header__nav-toggle"
+        type="button"
+        aria-controls="pw-header-menu-panel"
+        aria-expanded="false"
+        data-pw-toggle="menu"
+        data-pw-menu-key="news"
+      >
+        波翼快訊
+      </button>
+
+      <!-- 加入我們：直接連結，不打開次選單 -->
+      <a class="pw-btn pw-site-header__nav-link" href="./pw-join-us.html">
+        加入我們
+      </a>
+    </nav>
+
+    <!-- 右側按鈕 -->
+    <div class="pw-site-header__actions">
+      <!-- 大版搜尋 toggle；小版隱藏 -->
+      <button
+        id="pw-search-toggle"
+        class="pw-site-header__icon-btn pw-site-header__icon-btn--search"
+        type="button"
+        aria-label="開啟搜尋"
+        aria-controls="pw-header-search-panel"
+        aria-expanded="false"
+        data-pw-toggle="search"
+      >
+        <img src="./img/pw-icon-search.png" alt="" />
+      </button>
+
+      <!-- 小版 menu toggle；大版預設隱藏 -->
+      <button
+        id="pw-menu-toggle"
+        class="pw-site-header__icon-btn pw-site-header__icon-btn--menu"
+        type="button"
+        aria-label="開啟選單"
+        aria-controls="pw-header-menu-panel"
+        aria-expanded="false"
+        data-pw-toggle="menu"
+      >
+        <img src="./img/pw-icon-menu.png" alt="" />
+      </button>
+
+      <!-- 語言 toggle -->
+      <div
+        class="pw-site-header__action-item pw-site-header__action-item--lang"
+      >
+        <button
+          id="pw-lang-toggle"
+          class="pw-site-header__icon-btn pw-site-header__icon-btn--lang"
+          type="button"
+          aria-label="切換語言"
+          aria-controls="pw-header-lang-panel"
+          aria-expanded="false"
+          data-pw-toggle="lang"
+        >
+          <img src="./img/pw-icon-lang.png" alt="" />
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 搜尋區塊 -->
+  <div
+    id="pw-header-search-panel"
+    class="pw-site-header__search-panel"
+    aria-hidden="true"
+    data-pw-panel="search"
+  >
+    <div class="pw-container">
+      <form
+        class="pw-site-header__search-form"
+        action="./pw-search-page.html"
+        method="get"
+        role="search"
+      >
+        <label
+          class="pw-site-header__icon-btn pw-sr-only"
+          for="pw-header-search-input"
+        >
+          <img src="./img/pw-icon-search.png" alt="" />
+        </label>
+
+        <input
+          id="pw-header-search-input"
+          class="pw-site-header__search-input"
+          type="search"
+          name="keyword"
+          placeholder="請輸入藝術家名字、創作媒材"
+        />
+      </form>
+    </div>
+  </div>
+
+  <!-- 展開選單 -->
+  <div
+    id="pw-header-menu-panel"
+    class="pw-site-header__menu-panel"
+    aria-hidden="true"
+    data-pw-panel="menu"
+  >
+    <div class="pw-container pw-site-header__menu-inner">
+      <nav class="pw-site-header__menu-grid" aria-label="展開選單">
+        <!-- 線上展演 -->
+        <div
+          class="pw-site-header__menu-group"
+          data-pw-menu-group="exhibitions"
+        >
+          <span class="pw-site-header__menu-title"> 線上展演 </span>
+
+          <a
+            class="pw-site-header__menu-link"
+            href="./pw-exhibition-page.html?tab=solo"
+          >
+            藝術個展
+          </a>
+
+          <a
+            class="pw-site-header__menu-link"
+            href="./pw-exhibition-page.html?tab=group"
+          >
+            團體聯展
+          </a>
+
+          <a
+            class="pw-site-header__menu-link"
+            href="./pw-exhibition-page.html?tab=fair"
+          >
+            藝文特展
+          </a>
+
+          <a
+            class="pw-site-header__menu-link"
+            href="./pw-exhibition-page.html?tab=curated"
+          >
+            藏家收藏間
+          </a>
+        </div>
+
+        <!-- 探索藝術人 -->
+        <div class="pw-site-header__menu-group" data-pw-menu-group="artists">
+          <span class="pw-site-header__menu-title"> 探索藝術人 </span>
+
+          <a
+            class="pw-site-header__menu-link"
+            href="./pw-artist-explore-page.html?tab=masters"
+          >
+            藝術大師
+          </a>
+
+          <a
+            class="pw-site-header__menu-link"
+            href="./pw-artist-explore-page.html?tab=creators"
+          >
+            創藝人物
+          </a>
+
+          <a
+            class="pw-site-header__menu-link"
+            href="./pw-artist-explore-page.html?tab=organizations"
+          >
+            藝術團體
+          </a>
+
+          <a
+            class="pw-site-header__menu-link"
+            href="./pw-artist-explore-page.html?tab=institutions"
+          >
+            藝術機構
+          </a>
+        </div>
+
+        <!-- 翼見人物 -->
+        <div class="pw-site-header__menu-group" data-pw-menu-group="people">
+          <span class="pw-site-header__menu-title"> 翼見人物 </span>
+
+          <a
+            class="pw-site-header__menu-link"
+            href="./pw-wing-people-page.html?tab=shorts"
+          >
+            短影音
+          </a>
+
+          <a
+            class="pw-site-header__menu-link"
+            href="./pw-wing-people-page.html?tab=interview"
+          >
+            專 訪
+          </a>
+        </div>
+
+        <!-- 波翼快訊 -->
+        <div class="pw-site-header__menu-group" data-pw-menu-group="news">
+          <span class="pw-site-header__menu-title"> 波翼快訊 </span>
+
+          <a class="pw-site-header__menu-link" href="./pw-wing-news-page.html">
+            平面新聞
+          </a>
+        </div>
+      </nav>
+
+      <!-- 小版底部 CTA -->
+      <div class="pw-site-header__menu-cta">
+        <div class="pw-btn-wrap">
+          <a
+            class="pw-site-header__menu-cta-link"
+            href="https://www.postwings.art/service"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            建立3D展間
+          </a>
+
+          <a class="pw-site-header__menu-cta-link" href="./pw-join-us.html">
+            加入我們
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 語言選單 -->
+  <div
+    id="pw-header-lang-panel"
+    class="pw-site-header__lang-panel"
+    aria-hidden="true"
+    data-pw-panel="lang"
+  >
+    <a
+      class="pw-site-header__lang-link pw-site-header__lang-link--active"
+      href="#!"
+      aria-current="true"
+    >
+      中 文
+    </a>
+
+    <a class="pw-site-header__lang-link" href="#!"> English </a>
+
+    <a class="pw-site-header__lang-link" href="#!"> 日本語 </a>
+
+    <a class="pw-site-header__lang-link" href="#!"> 한국어 </a>
+
+    <a class="pw-site-header__lang-link" href="#!"> Español </a>
+
+    <a class="pw-site-header__lang-link" href="#!"> Français </a>
+
+    <a class="pw-site-header__lang-link" href="#!"> Deutsch </a>
+  </div>
+</header>
+
+
+<main class="pw-main">
+  <!-- 翼見人物列表頁：專訪 / 短影音 -->
+  <section
+  class="pw-section pw-wing-people-page"
+  aria-labelledby="wing-people-page-title"
+  data-pw-wing-people-page
+>
+  <!-- 上方分類區 -->
+  <header class="pw-wing-people-page__category">
+    <div class="pw-container">
+      <div class="pw-wing-people-page__category-inner">
+        <!-- 設計稿不顯示 H1，但保留頁面主標題語意 -->
+        <h1
+          class="pw-wing-people-page__title"
+          id="wing-people-page-title"
+        >
+          翼見人物
+        </h1>
+
+        <!--
+          所有資料都已存在於 HTML。
+          JS 只負責切換 aria-selected、tabindex 與 hidden。
+        -->
+        <div
+          class="pw-category-tabs pw-wing-people-page__tabs"
+          role="tablist"
+          aria-label="翼見人物內容分類"
+          data-pw-wing-people-tabs
+        >
+          <button
+            class="
+              pw-category-tabs__button
+              pw-wing-people-page__tab
+              is-active
+            "
+            id="wing-people-interview-tab"
+            type="button"
+            role="tab"
+            aria-selected="true"
+            aria-controls="wing-people-interview-panel"
+            tabindex="0"
+            data-pw-wing-people-tab
+            data-panel-id="interview"
+          >
+            專訪
+          </button>
+
+          <button
+            class="
+              pw-category-tabs__button
+              pw-wing-people-page__tab
+            "
+            id="wing-people-shorts-tab"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            aria-controls="wing-people-shorts-panel"
+            tabindex="-1"
+            data-pw-wing-people-tab
+            data-panel-id="shorts"
+          >
+            短影音
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!--
+      分類區底線。
+      小版左右縮排，大版延伸至整個頁面寬度。
+    -->
+    <div
+  class="
+    pw-category-divider
+    pw-wing-people-page__divider
+  "
+  aria-hidden="true"
+></div>
+  </header>
+
+  <!-- 下方內容區 -->
+  <div class="pw-wing-people-page__content">
+    <div class="pw-container">
+        <div class="pw-wing-people-page__panels">
+          <!-- 專訪 PANEL：卡片連至未來的專訪內容頁 -->
+          <div
+  class="pw-wing-people-page__panel pw-wing-interview"
+  id="wing-people-interview-panel"
+  role="tabpanel"
+  aria-labelledby="wing-people-interview-tab"
+  tabindex="0"
+  data-pw-wing-people-panel
+  data-panel-id="interview"
+>
+            <ul class="pw-wing-interview__list">
+          <li class="pw-wing-interview__item">
+            <article
+              class="pw-wing-interview__card"
+              data-youtube-url="https://www.youtube.com/watch?v=hJHfw6JoE5M"
+            >
+              <a
+                class="pw-wing-interview__media-link"
+                href="./pw-wing-interview-detail.html?video=hJHfw6JoE5M"
+                aria-label="前往專訪內容頁：波翼藝術 POST WINGS｜台灣藝術博覽會 × 劉洋哲"
+              >
+                <img
+                  class="pw-wing-interview__media"
+                  src="https://i.ytimg.com/vi/hJHfw6JoE5M/hqdefault.jpg"
+                  alt="波翼藝術 POST WINGS｜台灣藝術博覽會 × 劉洋哲"
+                  loading="lazy"
+                  decoding="async"
+                  referrerpolicy="no-referrer"
+                >
+              </a>
+
+              <div class="pw-wing-interview__body">
+                <h2 class="pw-wing-interview__title">
+                  <a
+                    class="pw-wing-interview__title-link"
+                    href="./pw-wing-interview-detail.html?video=hJHfw6JoE5M"
+                  >
+                    波翼藝術 POST WINGS｜台灣藝術博覽會 × 劉洋哲
+                  </a>
+                </h2>
+
+                <p class="pw-wing-interview__desc">
+                  從創作歷程、媒材選擇到展覽現場，透過專訪認識藝術人的創作觀點與作品故事。
+                </p>
+
+                <time
+                  class="pw-wing-interview__date"
+                  datetime="2025-01-18"
+                >
+                  2025/01/18
+                </time>
+              </div>
+            </article>
+          </li>
+
+          <li class="pw-wing-interview__item">
+            <article
+              class="pw-wing-interview__card"
+              data-youtube-url="https://www.youtube.com/watch?v=Vf7ZZTIUx58"
+            >
+              <a
+                class="pw-wing-interview__media-link"
+                href="./pw-wing-interview-detail.html?video=Vf7ZZTIUx58"
+                aria-label="前往專訪內容頁：波翼藝術 POST WINGS｜台灣藝術博覽會－藝術人陳凱森老師"
+              >
+                <img
+                  class="pw-wing-interview__media"
+                  src="https://i.ytimg.com/vi/Vf7ZZTIUx58/hqdefault.jpg"
+                  alt="波翼藝術 POST WINGS｜台灣藝術博覽會－藝術人陳凱森老師"
+                  loading="lazy"
+                  decoding="async"
+                  referrerpolicy="no-referrer"
+                >
+              </a>
+
+              <div class="pw-wing-interview__body">
+                <h2 class="pw-wing-interview__title">
+                  <a
+                    class="pw-wing-interview__title-link"
+                    href="./pw-wing-interview-detail.html?video=Vf7ZZTIUx58"
+                  >
+                    波翼藝術 POST WINGS｜台灣藝術博覽會－藝術人陳凱森老師
+                  </a>
+                </h2>
+
+                <p class="pw-wing-interview__desc">
+                  藝術家分享創作脈絡與展覽思考，帶領觀眾理解作品背後的文化與情感連結。
+                </p>
+
+                <time
+                  class="pw-wing-interview__date"
+                  datetime="2025-01-12"
+                >
+                  2025/01/12
+                </time>
+              </div>
+            </article>
+          </li>
+
+          <li class="pw-wing-interview__item">
+            <article
+              class="pw-wing-interview__card"
+              data-youtube-url="https://www.youtube.com/watch?v=5jcCwaBqaEQ"
+            >
+              <a
+                class="pw-wing-interview__media-link"
+                href="./pw-wing-interview-detail.html?video=5jcCwaBqaEQ"
+                aria-label="前往專訪內容頁：波翼藝術 POST WINGS｜台灣藝術博覽會－藝術人潘蓬彬老師"
+              >
+                <img
+                  class="pw-wing-interview__media"
+                  src="https://i.ytimg.com/vi/5jcCwaBqaEQ/hqdefault.jpg"
+                  alt="波翼藝術 POST WINGS｜台灣藝術博覽會－藝術人潘蓬彬老師"
+                  loading="lazy"
+                  decoding="async"
+                  referrerpolicy="no-referrer"
+                >
+              </a>
+
+              <div class="pw-wing-interview__body">
+                <h2 class="pw-wing-interview__title">
+                  <a
+                    class="pw-wing-interview__title-link"
+                    href="./pw-wing-interview-detail.html?video=5jcCwaBqaEQ"
+                  >
+                    波翼藝術 POST WINGS｜台灣藝術博覽會－藝術人潘蓬彬老師
+                  </a>
+                </h2>
+
+                <p class="pw-wing-interview__desc">
+                  從藝術實踐出發，談創作如何回應生活經驗、時代變化與觀看者的感受。
+                </p>
+
+                <time
+                  class="pw-wing-interview__date"
+                  datetime="2025-01-05"
+                >
+                  2025/01/05
+                </time>
+              </div>
+            </article>
+          </li>
+
+          <li class="pw-wing-interview__item">
+            <article
+              class="pw-wing-interview__card"
+              data-youtube-url="https://www.youtube.com/watch?v=xaHkm6Z4qL8"
+            >
+              <a
+                class="pw-wing-interview__media-link"
+                href="./pw-wing-interview-detail.html?video=xaHkm6Z4qL8"
+                aria-label="前往專訪內容頁：波翼藝術 POST WINGS｜Art Taipei 2024 × Meet 鄭月妹"
+              >
+                <img
+                  class="pw-wing-interview__media"
+                  src="https://i.ytimg.com/vi/xaHkm6Z4qL8/hqdefault.jpg"
+                  alt="波翼藝術 POST WINGS｜Art Taipei 2024 × Meet 鄭月妹"
+                  loading="lazy"
+                  decoding="async"
+                  referrerpolicy="no-referrer"
+                >
+              </a>
+
+              <div class="pw-wing-interview__body">
+                <h2 class="pw-wing-interview__title">
+                  <a
+                    class="pw-wing-interview__title-link"
+                    href="./pw-wing-interview-detail.html?video=xaHkm6Z4qL8"
+                  >
+                    波翼藝術 POST WINGS｜Art Taipei 2024 × Meet 鄭月妹
+                  </a>
+                </h2>
+
+                <p class="pw-wing-interview__desc">
+                  專訪藝術家於展覽現場分享作品語彙、創作方法，以及藝術與科技之間的可能性。
+                </p>
+
+                <time
+                  class="pw-wing-interview__date"
+                  datetime="2024-12-22"
+                >
+                  2024/12/22
+                </time>
+              </div>
+            </article>
+          </li>
+
+          <li class="pw-wing-interview__item">
+            <article
+              class="pw-wing-interview__card"
+              data-youtube-url="https://www.youtube.com/watch?v=wi98quJ6Trw"
+            >
+              <a
+                class="pw-wing-interview__media-link"
+                href="./pw-wing-interview-detail.html?video=wi98quJ6Trw"
+                aria-label="前往專訪內容頁：波翼藝術 POST WINGS｜2024 藝博展 × uPRINT 殷鴻逸執行長特別專訪"
+              >
+                <img
+                  class="pw-wing-interview__media"
+                  src="https://i.ytimg.com/vi/wi98quJ6Trw/hqdefault.jpg"
+                  alt="波翼藝術 POST WINGS｜2024 藝博展 × uPRINT 殷鴻逸執行長特別專訪"
+                  loading="lazy"
+                  decoding="async"
+                  referrerpolicy="no-referrer"
+                >
+              </a>
+
+              <div class="pw-wing-interview__body">
+                <h2 class="pw-wing-interview__title">
+                  <a
+                    class="pw-wing-interview__title-link"
+                    href="./pw-wing-interview-detail.html?video=wi98quJ6Trw"
+                  >
+                    波翼藝術 POST WINGS｜2024 藝博展 × uPRINT 殷鴻逸執行長特別專訪
+                  </a>
+                </h2>
+
+                <p class="pw-wing-interview__desc">
+                  跨域合作如何協助藝術被看見？從製作、展示到推廣，認識藝術產業的協作現場。
+                </p>
+
+                <time
+                  class="pw-wing-interview__date"
+                  datetime="2024-12-15"
+                >
+                  2024/12/15
+                </time>
+              </div>
+            </article>
+          </li>
+
+          <li class="pw-wing-interview__item">
+            <article
+              class="pw-wing-interview__card"
+              data-youtube-url="https://www.youtube.com/watch?v=qQxihL844dw"
+            >
+              <a
+                class="pw-wing-interview__media-link"
+                href="./pw-wing-interview-detail.html?video=qQxihL844dw"
+                aria-label="前往專訪內容頁：波翼藝術 POST WINGS｜藝博展執行單位－王迺慧理事長"
+              >
+                <img
+                  class="pw-wing-interview__media"
+                  src="https://i.ytimg.com/vi/qQxihL844dw/hqdefault.jpg"
+                  alt="波翼藝術 POST WINGS｜藝博展執行單位－王迺慧理事長"
+                  loading="lazy"
+                  decoding="async"
+                  referrerpolicy="no-referrer"
+                >
+              </a>
+
+              <div class="pw-wing-interview__body">
+                <h2 class="pw-wing-interview__title">
+                  <a
+                    class="pw-wing-interview__title-link"
+                    href="./pw-wing-interview-detail.html?video=qQxihL844dw"
+                  >
+                    波翼藝術 POST WINGS｜藝博展執行單位－王迺慧理事長
+                  </a>
+                </h2>
+
+                <p class="pw-wing-interview__desc">
+                  從策展與執行角度回看藝術博覽會，分享展會規劃、藝術交流及文化推廣經驗。
+                </p>
+
+                <time
+                  class="pw-wing-interview__date"
+                  datetime="2024-12-08"
+                >
+                  2024/12/08
+                </time>
+              </div>
+            </article>
+          </li>
+
+          <li class="pw-wing-interview__item">
+            <article
+              class="pw-wing-interview__card"
+              data-youtube-url="https://www.youtube.com/watch?v=HcHc1CJ9RMY"
+            >
+              <a
+                class="pw-wing-interview__media-link"
+                href="./pw-wing-interview-detail.html?video=HcHc1CJ9RMY"
+                aria-label="前往專訪內容頁：波翼藝術 POST WINGS｜Art Taipei 2024 × Meet 王焜生 Emerson WANG"
+              >
+                <img
+                  class="pw-wing-interview__media"
+                  src="https://i.ytimg.com/vi/HcHc1CJ9RMY/hqdefault.jpg"
+                  alt="波翼藝術 POST WINGS｜Art Taipei 2024 × Meet 王焜生 Emerson WANG"
+                  loading="lazy"
+                  decoding="async"
+                  referrerpolicy="no-referrer"
+                >
+              </a>
+
+              <div class="pw-wing-interview__body">
+                <h2 class="pw-wing-interview__title">
+                  <a
+                    class="pw-wing-interview__title-link"
+                    href="./pw-wing-interview-detail.html?video=HcHc1CJ9RMY"
+                  >
+                    波翼藝術 POST WINGS｜Art Taipei 2024 × Meet 王焜生 Emerson WANG
+                  </a>
+                </h2>
+
+                <p class="pw-wing-interview__desc">
+                  策展人從展覽現場談藝術觀看、策展方法，以及當代藝術與觀眾之間的對話。
+                </p>
+
+                <time
+                  class="pw-wing-interview__date"
+                  datetime="2024-12-01"
+                >
+                  2024/12/01
+                </time>
+              </div>
+            </article>
+          </li>
+
+          <li class="pw-wing-interview__item">
+            <article
+              class="pw-wing-interview__card"
+              data-youtube-url="https://www.youtube.com/watch?v=DBnuDgTIRto"
+            >
+              <a
+                class="pw-wing-interview__media-link"
+                href="./pw-wing-interview-detail.html?video=DBnuDgTIRto"
+                aria-label="前往專訪內容頁：波翼藝術 POST WINGS｜「擬．實．境．界」觀看藝術未來式"
+              >
+                <img
+                  class="pw-wing-interview__media"
+                  src="https://i.ytimg.com/vi/DBnuDgTIRto/hqdefault.jpg"
+                  alt="波翼藝術 POST WINGS｜「擬．實．境．界」觀看藝術未來式"
+                  loading="lazy"
+                  decoding="async"
+                  referrerpolicy="no-referrer"
+                >
+              </a>
+
+              <div class="pw-wing-interview__body">
+                <h2 class="pw-wing-interview__title">
+                  <a
+                    class="pw-wing-interview__title-link"
+                    href="./pw-wing-interview-detail.html?video=DBnuDgTIRto"
+                  >
+                    波翼藝術 POST WINGS｜「擬．實．境．界」觀看藝術未來式
+                  </a>
+                </h2>
+
+                <p class="pw-wing-interview__desc">
+                  從虛實整合、沉浸式體驗到數位展示，探討科技如何擴張藝術展覽的觀看方式。
+                </p>
+
+                <time
+                  class="pw-wing-interview__date"
+                  datetime="2024-11-24"
+                >
+                  2024/11/24
+                </time>
+              </div>
+            </article>
+          </li>
+
+          <li class="pw-wing-interview__item">
+            <article
+              class="pw-wing-interview__card"
+              data-youtube-url="https://www.youtube.com/watch?v=6NeL4SUhuJc"
+            >
+              <a
+                class="pw-wing-interview__media-link"
+                href="./pw-wing-interview-detail.html?video=6NeL4SUhuJc"
+                aria-label="前往專訪內容頁：波翼藝術 POST WINGS｜台灣藝術博覽會藝術人－倉薩貢噶"
+              >
+                <img
+                  class="pw-wing-interview__media"
+                  src="https://i.ytimg.com/vi/6NeL4SUhuJc/hqdefault.jpg"
+                  alt="波翼藝術 POST WINGS｜台灣藝術博覽會藝術人－倉薩貢噶"
+                  loading="lazy"
+                  decoding="async"
+                  referrerpolicy="no-referrer"
+                >
+              </a>
+
+              <div class="pw-wing-interview__body">
+                <h2 class="pw-wing-interview__title">
+                  <a
+                    class="pw-wing-interview__title-link"
+                    href="./pw-wing-interview-detail.html?video=6NeL4SUhuJc"
+                  >
+                    波翼藝術 POST WINGS｜台灣藝術博覽會藝術人－倉薩貢噶
+                  </a>
+                </h2>
+
+                <p class="pw-wing-interview__desc">
+                  藝術人分享創作中的精神性、文化記憶與生命經驗，讓作品成為跨越語言的交流。
+                </p>
+
+                <time
+                  class="pw-wing-interview__date"
+                  datetime="2024-11-17"
+                >
+                  2024/11/17
+                </time>
+              </div>
+            </article>
+          </li>
+            </ul>
+
+            <nav
+              class="pw-pagination pw-wing-people-page__pagination"
+              aria-label="專訪分頁"
+            >
+              <span
+                class="pw-pagination__control"
+                aria-disabled="true"
+                aria-label="上一頁"
+              >‹</span>
+
+              <a
+                class="pw-pagination__item is-current"
+                href="#"
+                aria-current="page"
+              >1</a>
+              <a class="pw-pagination__item" href="#">2</a>
+              <a class="pw-pagination__item" href="#">3</a>
+              <a
+                class="pw-pagination__item pw-pagination__item--wide-only"
+                href="#"
+              >4</a>
+              <span
+                class="pw-pagination__ellipsis pw-pagination__item--wide-only"
+                aria-hidden="true"
+              >…</span>
+              <a
+                class="pw-pagination__item pw-pagination__item--wide-only"
+                href="#"
+              >10</a>
+
+              <a
+                class="pw-pagination__control"
+                href="#"
+                aria-label="下一頁"
+              >›</a>
+            </nav>
+          </div>
+
+<!-- 短影音 PANEL：內嵌 YouTube Shorts；列表頁小版一排 1 張、大版一排 4 張 -->
+<!-- 短影音 PANEL：內嵌 YouTube Shorts；列表頁小版一排 1 張、大版一排 4 張 -->
+          <div
+  class="
+    pw-wing-people-page__panel
+    pw-wing-people
+    pw-wing-people--listing
+    pw-wing-people--home
+  "
+  id="wing-people-shorts-panel"
+  role="tabpanel"
+  aria-labelledby="wing-people-shorts-tab"
+  tabindex="0"
+  hidden
+  data-pw-wing-people-panel
+  data-panel-id="shorts"
+  data-pw-wing-people
+>
+            <ul class="pw-wing-people__list">
+          <li class="pw-wing-people__item pw-wing-people__item--featured"
+            data-youtube-preview
+            data-video-id="lX7CnV8eyQg"
+            data-preview-start="0"
+          >
+            <article class="pw-wing-people__card">
+              <div class="pw-wing-people__media-frame">
+                <div
+                  class="pw-wing-people__player"
+                  id="pw-wing-listing-player-01"
+                >
+                  <a
+                    class="pw-wing-people__preview-link"
+                    href="https://www.youtube.com/shorts/lX7CnV8eyQg"
+                    target="_blank"
+                    rel="nofollow noopener noreferrer"
+                    referrerpolicy="no-referrer"
+                    aria-label="開啟影片：鄭麗瑀 Li-Yu Tseng｜創作人"
+                  >
+                    <img
+                      class="pw-wing-people__media"
+                      src="https://i.ytimg.com/vi/lX7CnV8eyQg/hqdefault.jpg"
+                      alt="鄭麗瑀 Li-Yu Tseng｜創作人"
+                      loading="lazy"
+                      decoding="async"
+                      referrerpolicy="no-referrer"
+                    >
+                  </a>
+                </div>
+
+                <span
+                  class="pw-wing-people__preview-status"
+                  aria-hidden="true"
+                >
+                  <span class="pw-wing-people__preview-status-text">
+                    預覽 3 秒
+                  </span>
+                </span>
+
+                <span
+                  class="pw-wing-people__preview-loading"
+                  aria-hidden="true"
+                ></span>
+              </div>
+
+              <div class="pw-wing-people__meta">
+                <a
+                  class="pw-wing-people__title-link"
+                  href="https://www.youtube.com/shorts/lX7CnV8eyQg"
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                  referrerpolicy="no-referrer"
+                >
+                  <h2 class="pw-wing-people__title">
+                    鄭麗瑀 Li-Yu Tseng｜創作人
+                  </h2>
+                </a>
+
+                <div class="pw-wing-people__share">
+                  <button
+                    class="pw-wing-people__share-toggle"
+                    type="button"
+                    aria-label="開啟分享選單：鄭麗瑀 Li-Yu Tseng｜創作人"
+                    aria-expanded="false"
+                    data-pw-wing-share-toggle
+                  >
+                    <span
+                      class="pw-wing-people__share-dot-icon"
+                      aria-hidden="true"
+                    >⋮</span>
+                  </button>
+
+                  <div
+                    class="pw-wing-people__share-panel pw-social-share pw-social-share--panel"
+                    hidden
+                    data-pw-wing-share-panel
+                    aria-label="分享連結"
+                  >
+                    <a
+                      class="pw-wing-people__share-link pw-social-share__link"
+                      href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.youtube.com%2Fshorts%2FlX7CnV8eyQg"
+                      target="_blank"
+                      rel="nofollow noopener noreferrer"
+                      referrerpolicy="no-referrer"
+                      aria-label="分享到 Facebook"
+                    >
+                      <img
+                        class="pw-wing-people__share-icon pw-social-share__icon"
+                        src="./img/pw-icon-fb.png"
+                        alt=""
+                        loading="lazy"
+                        decoding="async"
+                      >
+                    </a>
+
+                    <a
+                      class="pw-wing-people__share-link pw-social-share__link"
+                      href="https://social-plugins.line.me/lineit/share?url=https%3A%2F%2Fwww.youtube.com%2Fshorts%2FlX7CnV8eyQg"
+                      target="_blank"
+                      rel="nofollow noopener noreferrer"
+                      referrerpolicy="no-referrer"
+                      aria-label="分享到 LINE"
+                    >
+                      <img
+                        class="pw-wing-people__share-icon pw-social-share__icon"
+                        src="./img/pw-icon-line.png"
+                        alt=""
+                        loading="lazy"
+                        decoding="async"
+                      >
+                    </a>
+
+                    <a
+                      class="pw-wing-people__share-link pw-social-share__link"
+                      href="https://www.youtube.com/shorts/lX7CnV8eyQg"
+                      target="_blank"
+                      rel="nofollow noopener noreferrer"
+                      referrerpolicy="no-referrer"
+                      aria-label="開啟短影音連結"
+                    >
+                      <img
+                        class="pw-wing-people__share-icon pw-social-share__icon"
+                        src="./img/pw-icon-ig.png"
+                        alt=""
+                        loading="lazy"
+                        decoding="async"
+                      >
+                    </a>
+
+                    <button
+                      class="pw-wing-people__share-close"
+                      type="button"
+                      data-pw-wing-share-close
+                    >
+                      取消
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <li class="pw-wing-people__item"
+            data-youtube-preview
+            data-video-id="eyMeik0oIGY"
+            data-preview-start="0"
+          >
+            <article class="pw-wing-people__card">
+              <div class="pw-wing-people__media-frame">
+                <div
+                  class="pw-wing-people__player"
+                  id="pw-wing-listing-player-02"
+                >
+                  <a
+                    class="pw-wing-people__preview-link"
+                    href="https://www.youtube.com/shorts/eyMeik0oIGY"
+                    target="_blank"
+                    rel="nofollow noopener noreferrer"
+                    referrerpolicy="no-referrer"
+                    aria-label="開啟影片：2025 國際粉彩畫家特展"
+                  >
+                    <img
+                      class="pw-wing-people__media"
+                      src="https://i.ytimg.com/vi/eyMeik0oIGY/hqdefault.jpg"
+                      alt="2025 國際粉彩畫家特展"
+                      loading="lazy"
+                      decoding="async"
+                      referrerpolicy="no-referrer"
+                    >
+                  </a>
+                </div>
+
+                <span
+                  class="pw-wing-people__preview-status"
+                  aria-hidden="true"
+                >
+                  <span class="pw-wing-people__preview-status-text">
+                    預覽 3 秒
+                  </span>
+                </span>
+
+                <span
+                  class="pw-wing-people__preview-loading"
+                  aria-hidden="true"
+                ></span>
+              </div>
+
+              <div class="pw-wing-people__meta">
+                <a
+                  class="pw-wing-people__title-link"
+                  href="https://www.youtube.com/shorts/eyMeik0oIGY"
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                  referrerpolicy="no-referrer"
+                >
+                  <h2 class="pw-wing-people__title">
+                    2025 國際粉彩畫家特展
+                  </h2>
+                </a>
+
+                <div class="pw-wing-people__share">
+                  <button
+                    class="pw-wing-people__share-toggle"
+                    type="button"
+                    aria-label="開啟分享選單：2025 國際粉彩畫家特展"
+                    aria-expanded="false"
+                    data-pw-wing-share-toggle
+                  >
+                    <span
+                      class="pw-wing-people__share-dot-icon"
+                      aria-hidden="true"
+                    >⋮</span>
+                  </button>
+
+                  <div
+                    class="pw-wing-people__share-panel pw-social-share pw-social-share--panel"
+                    hidden
+                    data-pw-wing-share-panel
+                    aria-label="分享連結"
+                  >
+                    <a
+                      class="pw-wing-people__share-link pw-social-share__link"
+                      href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.youtube.com%2Fshorts%2FeyMeik0oIGY"
+                      target="_blank"
+                      rel="nofollow noopener noreferrer"
+                      referrerpolicy="no-referrer"
+                      aria-label="分享到 Facebook"
+                    >
+                      <img
+                        class="pw-wing-people__share-icon pw-social-share__icon"
+                        src="./img/pw-icon-fb.png"
+                        alt=""
+                        loading="lazy"
+                        decoding="async"
+                      >
+                    </a>
+
+                    <a
+                      class="pw-wing-people__share-link pw-social-share__link"
+                      href="https://social-plugins.line.me/lineit/share?url=https%3A%2F%2Fwww.youtube.com%2Fshorts%2FeyMeik0oIGY"
+                      target="_blank"
+                      rel="nofollow noopener noreferrer"
+                      referrerpolicy="no-referrer"
+                      aria-label="分享到 LINE"
+                    >
+                      <img
+                        class="pw-wing-people__share-icon pw-social-share__icon"
+                        src="./img/pw-icon-line.png"
+                        alt=""
+                        loading="lazy"
+                        decoding="async"
+                      >
+                    </a>
+
+                    <a
+                      class="pw-wing-people__share-link pw-social-share__link"
+                      href="https://www.youtube.com/shorts/eyMeik0oIGY"
+                      target="_blank"
+                      rel="nofollow noopener noreferrer"
+                      referrerpolicy="no-referrer"
+                      aria-label="開啟短影音連結"
+                    >
+                      <img
+                        class="pw-wing-people__share-icon pw-social-share__icon"
+                        src="./img/pw-icon-ig.png"
+                        alt=""
+                        loading="lazy"
+                        decoding="async"
+                      >
+                    </a>
+
+                    <button
+                      class="pw-wing-people__share-close"
+                      type="button"
+                      data-pw-wing-share-close
+                    >
+                      取消
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <li class="pw-wing-people__item"
+            data-youtube-preview
+            data-video-id="nCQko2M0k_4"
+            data-preview-start="0"
+          >
+            <article class="pw-wing-people__card">
+              <div class="pw-wing-people__media-frame">
+                <div
+                  class="pw-wing-people__player"
+                  id="pw-wing-listing-player-03"
+                >
+                  <a
+                    class="pw-wing-people__preview-link"
+                    href="https://www.youtube.com/shorts/nCQko2M0k_4"
+                    target="_blank"
+                    rel="nofollow noopener noreferrer"
+                    referrerpolicy="no-referrer"
+                    aria-label="開啟影片：2025 ART ON CRUISE｜來自古巴的超現實魔幻畫家－雷岱爾 Reydel Espinosa"
+                  >
+                    <img
+                      class="pw-wing-people__media"
+                      src="https://i.ytimg.com/vi/nCQko2M0k_4/hqdefault.jpg"
+                      alt="2025 ART ON CRUISE｜來自古巴的超現實魔幻畫家－雷岱爾 Reydel Espinosa"
+                      loading="lazy"
+                      decoding="async"
+                      referrerpolicy="no-referrer"
+                    >
+                  </a>
+                </div>
+
+                <span
+                  class="pw-wing-people__preview-status"
+                  aria-hidden="true"
+                >
+                  <span class="pw-wing-people__preview-status-text">
+                    預覽 3 秒
+                  </span>
+                </span>
+
+                <span
+                  class="pw-wing-people__preview-loading"
+                  aria-hidden="true"
+                ></span>
+              </div>
+
+              <div class="pw-wing-people__meta">
+                <a
+                  class="pw-wing-people__title-link"
+                  href="https://www.youtube.com/shorts/nCQko2M0k_4"
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                  referrerpolicy="no-referrer"
+                >
+                  <h2 class="pw-wing-people__title">
+                    2025 ART ON CRUISE｜來自古巴的超現實魔幻畫家－雷岱爾 Reydel Espinosa
+                  </h2>
+                </a>
+
+                <div class="pw-wing-people__share">
+                  <button
+                    class="pw-wing-people__share-toggle"
+                    type="button"
+                    aria-label="開啟分享選單：2025 ART ON CRUISE｜來自古巴的超現實魔幻畫家－雷岱爾 Reydel Espinosa"
+                    aria-expanded="false"
+                    data-pw-wing-share-toggle
+                  >
+                    <span
+                      class="pw-wing-people__share-dot-icon"
+                      aria-hidden="true"
+                    >⋮</span>
+                  </button>
+
+                  <div
+                    class="pw-wing-people__share-panel pw-social-share pw-social-share--panel"
+                    hidden
+                    data-pw-wing-share-panel
+                    aria-label="分享連結"
+                  >
+                    <a
+                      class="pw-wing-people__share-link pw-social-share__link"
+                      href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.youtube.com%2Fshorts%2FnCQko2M0k_4"
+                      target="_blank"
+                      rel="nofollow noopener noreferrer"
+                      referrerpolicy="no-referrer"
+                      aria-label="分享到 Facebook"
+                    >
+                      <img
+                        class="pw-wing-people__share-icon pw-social-share__icon"
+                        src="./img/pw-icon-fb.png"
+                        alt=""
+                        loading="lazy"
+                        decoding="async"
+                      >
+                    </a>
+
+                    <a
+                      class="pw-wing-people__share-link pw-social-share__link"
+                      href="https://social-plugins.line.me/lineit/share?url=https%3A%2F%2Fwww.youtube.com%2Fshorts%2FnCQko2M0k_4"
+                      target="_blank"
+                      rel="nofollow noopener noreferrer"
+                      referrerpolicy="no-referrer"
+                      aria-label="分享到 LINE"
+                    >
+                      <img
+                        class="pw-wing-people__share-icon pw-social-share__icon"
+                        src="./img/pw-icon-line.png"
+                        alt=""
+                        loading="lazy"
+                        decoding="async"
+                      >
+                    </a>
+
+                    <a
+                      class="pw-wing-people__share-link pw-social-share__link"
+                      href="https://www.youtube.com/shorts/nCQko2M0k_4"
+                      target="_blank"
+                      rel="nofollow noopener noreferrer"
+                      referrerpolicy="no-referrer"
+                      aria-label="開啟短影音連結"
+                    >
+                      <img
+                        class="pw-wing-people__share-icon pw-social-share__icon"
+                        src="./img/pw-icon-ig.png"
+                        alt=""
+                        loading="lazy"
+                        decoding="async"
+                      >
+                    </a>
+
+                    <button
+                      class="pw-wing-people__share-close"
+                      type="button"
+                      data-pw-wing-share-close
+                    >
+                      取消
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <li class="pw-wing-people__item"
+            data-youtube-preview
+            data-video-id="cEOqv-jOjqU"
+            data-preview-start="0"
+          >
+            <article class="pw-wing-people__card">
+              <div class="pw-wing-people__media-frame">
+                <div
+                  class="pw-wing-people__player"
+                  id="pw-wing-listing-player-04"
+                >
+                  <a
+                    class="pw-wing-people__preview-link"
+                    href="https://www.youtube.com/shorts/cEOqv-jOjqU"
+                    target="_blank"
+                    rel="nofollow noopener noreferrer"
+                    referrerpolicy="no-referrer"
+                    aria-label="開啟影片：2025 ART ON CRUIS × 村木紀之 MURAKI NORIYUKI"
+                  >
+                    <img
+                      class="pw-wing-people__media"
+                      src="https://i.ytimg.com/vi/cEOqv-jOjqU/hqdefault.jpg"
+                      alt="2025 ART ON CRUIS × 村木紀之 MURAKI NORIYUKI"
+                      loading="lazy"
+                      decoding="async"
+                      referrerpolicy="no-referrer"
+                    >
+                  </a>
+                </div>
+
+                <span
+                  class="pw-wing-people__preview-status"
+                  aria-hidden="true"
+                >
+                  <span class="pw-wing-people__preview-status-text">
+                    預覽 3 秒
+                  </span>
+                </span>
+
+                <span
+                  class="pw-wing-people__preview-loading"
+                  aria-hidden="true"
+                ></span>
+              </div>
+
+              <div class="pw-wing-people__meta">
+                <a
+                  class="pw-wing-people__title-link"
+                  href="https://www.youtube.com/shorts/cEOqv-jOjqU"
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                  referrerpolicy="no-referrer"
+                >
+                  <h2 class="pw-wing-people__title">
+                    2025 ART ON CRUIS × 村木紀之 MURAKI NORIYUKI
+                  </h2>
+                </a>
+
+                <div class="pw-wing-people__share">
+                  <button
+                    class="pw-wing-people__share-toggle"
+                    type="button"
+                    aria-label="開啟分享選單：2025 ART ON CRUIS × 村木紀之 MURAKI NORIYUKI"
+                    aria-expanded="false"
+                    data-pw-wing-share-toggle
+                  >
+                    <span
+                      class="pw-wing-people__share-dot-icon"
+                      aria-hidden="true"
+                    >⋮</span>
+                  </button>
+
+                  <div
+                    class="pw-wing-people__share-panel pw-social-share pw-social-share--panel"
+                    hidden
+                    data-pw-wing-share-panel
+                    aria-label="分享連結"
+                  >
+                    <a
+                      class="pw-wing-people__share-link pw-social-share__link"
+                      href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.youtube.com%2Fshorts%2FcEOqv-jOjqU"
+                      target="_blank"
+                      rel="nofollow noopener noreferrer"
+                      referrerpolicy="no-referrer"
+                      aria-label="分享到 Facebook"
+                    >
+                      <img
+                        class="pw-wing-people__share-icon pw-social-share__icon"
+                        src="./img/pw-icon-fb.png"
+                        alt=""
+                        loading="lazy"
+                        decoding="async"
+                      >
+                    </a>
+
+                    <a
+                      class="pw-wing-people__share-link pw-social-share__link"
+                      href="https://social-plugins.line.me/lineit/share?url=https%3A%2F%2Fwww.youtube.com%2Fshorts%2FcEOqv-jOjqU"
+                      target="_blank"
+                      rel="nofollow noopener noreferrer"
+                      referrerpolicy="no-referrer"
+                      aria-label="分享到 LINE"
+                    >
+                      <img
+                        class="pw-wing-people__share-icon pw-social-share__icon"
+                        src="./img/pw-icon-line.png"
+                        alt=""
+                        loading="lazy"
+                        decoding="async"
+                      >
+                    </a>
+
+                    <a
+                      class="pw-wing-people__share-link pw-social-share__link"
+                      href="https://www.youtube.com/shorts/cEOqv-jOjqU"
+                      target="_blank"
+                      rel="nofollow noopener noreferrer"
+                      referrerpolicy="no-referrer"
+                      aria-label="開啟短影音連結"
+                    >
+                      <img
+                        class="pw-wing-people__share-icon pw-social-share__icon"
+                        src="./img/pw-icon-ig.png"
+                        alt=""
+                        loading="lazy"
+                        decoding="async"
+                      >
+                    </a>
+
+                    <button
+                      class="pw-wing-people__share-close"
+                      type="button"
+                      data-pw-wing-share-close
+                    >
+                      取消
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <li class="pw-wing-people__item"
+            data-youtube-preview
+            data-video-id="qcE-gVK5FmY"
+            data-preview-start="0"
+          >
+            <article class="pw-wing-people__card">
+              <div class="pw-wing-people__media-frame">
+                <div
+                  class="pw-wing-people__player"
+                  id="pw-wing-listing-player-05"
+                >
+                  <a
+                    class="pw-wing-people__preview-link"
+                    href="https://www.youtube.com/shorts/qcE-gVK5FmY"
+                    target="_blank"
+                    rel="nofollow noopener noreferrer"
+                    referrerpolicy="no-referrer"
+                    aria-label="開啟影片：愛．共善｜淨空老法師文物展開幕式"
+                  >
+                    <img
+                      class="pw-wing-people__media"
+                      src="https://i.ytimg.com/vi/qcE-gVK5FmY/hqdefault.jpg"
+                      alt="愛．共善｜淨空老法師文物展開幕式"
+                      loading="lazy"
+                      decoding="async"
+                      referrerpolicy="no-referrer"
+                    >
+                  </a>
+                </div>
+
+                <span
+                  class="pw-wing-people__preview-status"
+                  aria-hidden="true"
+                >
+                  <span class="pw-wing-people__preview-status-text">
+                    預覽 3 秒
+                  </span>
+                </span>
+
+                <span
+                  class="pw-wing-people__preview-loading"
+                  aria-hidden="true"
+                ></span>
+              </div>
+
+              <div class="pw-wing-people__meta">
+                <a
+                  class="pw-wing-people__title-link"
+                  href="https://www.youtube.com/shorts/qcE-gVK5FmY"
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                  referrerpolicy="no-referrer"
+                >
+                  <h2 class="pw-wing-people__title">
+                    愛．共善｜淨空老法師文物展開幕式
+                  </h2>
+                </a>
+
+                <div class="pw-wing-people__share">
+                  <button
+                    class="pw-wing-people__share-toggle"
+                    type="button"
+                    aria-label="開啟分享選單：愛．共善｜淨空老法師文物展開幕式"
+                    aria-expanded="false"
+                    data-pw-wing-share-toggle
+                  >
+                    <span
+                      class="pw-wing-people__share-dot-icon"
+                      aria-hidden="true"
+                    >⋮</span>
+                  </button>
+
+                  <div
+                    class="pw-wing-people__share-panel pw-social-share pw-social-share--panel"
+                    hidden
+                    data-pw-wing-share-panel
+                    aria-label="分享連結"
+                  >
+                    <a
+                      class="pw-wing-people__share-link pw-social-share__link"
+                      href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.youtube.com%2Fshorts%2FqcE-gVK5FmY"
+                      target="_blank"
+                      rel="nofollow noopener noreferrer"
+                      referrerpolicy="no-referrer"
+                      aria-label="分享到 Facebook"
+                    >
+                      <img
+                        class="pw-wing-people__share-icon pw-social-share__icon"
+                        src="./img/pw-icon-fb.png"
+                        alt=""
+                        loading="lazy"
+                        decoding="async"
+                      >
+                    </a>
+
+                    <a
+                      class="pw-wing-people__share-link pw-social-share__link"
+                      href="https://social-plugins.line.me/lineit/share?url=https%3A%2F%2Fwww.youtube.com%2Fshorts%2FqcE-gVK5FmY"
+                      target="_blank"
+                      rel="nofollow noopener noreferrer"
+                      referrerpolicy="no-referrer"
+                      aria-label="分享到 LINE"
+                    >
+                      <img
+                        class="pw-wing-people__share-icon pw-social-share__icon"
+                        src="./img/pw-icon-line.png"
+                        alt=""
+                        loading="lazy"
+                        decoding="async"
+                      >
+                    </a>
+
+                    <a
+                      class="pw-wing-people__share-link pw-social-share__link"
+                      href="https://www.youtube.com/shorts/qcE-gVK5FmY"
+                      target="_blank"
+                      rel="nofollow noopener noreferrer"
+                      referrerpolicy="no-referrer"
+                      aria-label="開啟短影音連結"
+                    >
+                      <img
+                        class="pw-wing-people__share-icon pw-social-share__icon"
+                        src="./img/pw-icon-ig.png"
+                        alt=""
+                        loading="lazy"
+                        decoding="async"
+                      >
+                    </a>
+
+                    <button
+                      class="pw-wing-people__share-close"
+                      type="button"
+                      data-pw-wing-share-close
+                    >
+                      取消
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <li class="pw-wing-people__item"
+            data-youtube-preview
+            data-video-id="eIRW3hKSP8I"
+            data-preview-start="0"
+          >
+            <article class="pw-wing-people__card">
+              <div class="pw-wing-people__media-frame">
+                <div
+                  class="pw-wing-people__player"
+                  id="pw-wing-listing-player-06"
+                >
+                  <a
+                    class="pw-wing-people__preview-link"
+                    href="https://www.youtube.com/shorts/eIRW3hKSP8I"
+                    target="_blank"
+                    rel="nofollow noopener noreferrer"
+                    referrerpolicy="no-referrer"
+                    aria-label="開啟影片：波翼藝術採訪｜蔡士弘 BAD LANCE－日帝藝術 HELIOS GALLERY 個展"
+                  >
+                    <img
+                      class="pw-wing-people__media"
+                      src="https://i.ytimg.com/vi/eIRW3hKSP8I/hqdefault.jpg"
+                      alt="波翼藝術採訪｜蔡士弘 BAD LANCE－日帝藝術 HELIOS GALLERY 個展"
+                      loading="lazy"
+                      decoding="async"
+                      referrerpolicy="no-referrer"
+                    >
+                  </a>
+                </div>
+
+                <span
+                  class="pw-wing-people__preview-status"
+                  aria-hidden="true"
+                >
+                  <span class="pw-wing-people__preview-status-text">
+                    預覽 3 秒
+                  </span>
+                </span>
+
+                <span
+                  class="pw-wing-people__preview-loading"
+                  aria-hidden="true"
+                ></span>
+              </div>
+
+              <div class="pw-wing-people__meta">
+                <a
+                  class="pw-wing-people__title-link"
+                  href="https://www.youtube.com/shorts/eIRW3hKSP8I"
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                  referrerpolicy="no-referrer"
+                >
+                  <h2 class="pw-wing-people__title">
+                    波翼藝術採訪｜蔡士弘 BAD LANCE－日帝藝術 HELIOS GALLERY 個展
+                  </h2>
+                </a>
+
+                <div class="pw-wing-people__share">
+                  <button
+                    class="pw-wing-people__share-toggle"
+                    type="button"
+                    aria-label="開啟分享選單：波翼藝術採訪｜蔡士弘 BAD LANCE－日帝藝術 HELIOS GALLERY 個展"
+                    aria-expanded="false"
+                    data-pw-wing-share-toggle
+                  >
+                    <span
+                      class="pw-wing-people__share-dot-icon"
+                      aria-hidden="true"
+                    >⋮</span>
+                  </button>
+
+                  <div
+                    class="pw-wing-people__share-panel pw-social-share pw-social-share--panel"
+                    hidden
+                    data-pw-wing-share-panel
+                    aria-label="分享連結"
+                  >
+                    <a
+                      class="pw-wing-people__share-link pw-social-share__link"
+                      href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.youtube.com%2Fshorts%2FeIRW3hKSP8I"
+                      target="_blank"
+                      rel="nofollow noopener noreferrer"
+                      referrerpolicy="no-referrer"
+                      aria-label="分享到 Facebook"
+                    >
+                      <img
+                        class="pw-wing-people__share-icon pw-social-share__icon"
+                        src="./img/pw-icon-fb.png"
+                        alt=""
+                        loading="lazy"
+                        decoding="async"
+                      >
+                    </a>
+
+                    <a
+                      class="pw-wing-people__share-link pw-social-share__link"
+                      href="https://social-plugins.line.me/lineit/share?url=https%3A%2F%2Fwww.youtube.com%2Fshorts%2FeIRW3hKSP8I"
+                      target="_blank"
+                      rel="nofollow noopener noreferrer"
+                      referrerpolicy="no-referrer"
+                      aria-label="分享到 LINE"
+                    >
+                      <img
+                        class="pw-wing-people__share-icon pw-social-share__icon"
+                        src="./img/pw-icon-line.png"
+                        alt=""
+                        loading="lazy"
+                        decoding="async"
+                      >
+                    </a>
+
+                    <a
+                      class="pw-wing-people__share-link pw-social-share__link"
+                      href="https://www.youtube.com/shorts/eIRW3hKSP8I"
+                      target="_blank"
+                      rel="nofollow noopener noreferrer"
+                      referrerpolicy="no-referrer"
+                      aria-label="開啟短影音連結"
+                    >
+                      <img
+                        class="pw-wing-people__share-icon pw-social-share__icon"
+                        src="./img/pw-icon-ig.png"
+                        alt=""
+                        loading="lazy"
+                        decoding="async"
+                      >
+                    </a>
+
+                    <button
+                      class="pw-wing-people__share-close"
+                      type="button"
+                      data-pw-wing-share-close
+                    >
+                      取消
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <li class="pw-wing-people__item"
+            data-youtube-preview
+            data-video-id="UHm1tpqzBHM"
+            data-preview-start="0"
+          >
+            <article class="pw-wing-people__card">
+              <div class="pw-wing-people__media-frame">
+                <div
+                  class="pw-wing-people__player"
+                  id="pw-wing-listing-player-07"
+                >
+                  <a
+                    class="pw-wing-people__preview-link"
+                    href="https://www.youtube.com/shorts/UHm1tpqzBHM"
+                    target="_blank"
+                    rel="nofollow noopener noreferrer"
+                    referrerpolicy="no-referrer"
+                    aria-label="開啟影片：藝創生活展－王焜生"
+                  >
+                    <img
+                      class="pw-wing-people__media"
+                      src="https://i.ytimg.com/vi/UHm1tpqzBHM/hqdefault.jpg"
+                      alt="藝創生活展－王焜生"
+                      loading="lazy"
+                      decoding="async"
+                      referrerpolicy="no-referrer"
+                    >
+                  </a>
+                </div>
+
+                <span
+                  class="pw-wing-people__preview-status"
+                  aria-hidden="true"
+                >
+                  <span class="pw-wing-people__preview-status-text">
+                    預覽 3 秒
+                  </span>
+                </span>
+
+                <span
+                  class="pw-wing-people__preview-loading"
+                  aria-hidden="true"
+                ></span>
+              </div>
+
+              <div class="pw-wing-people__meta">
+                <a
+                  class="pw-wing-people__title-link"
+                  href="https://www.youtube.com/shorts/UHm1tpqzBHM"
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                  referrerpolicy="no-referrer"
+                >
+                  <h2 class="pw-wing-people__title">
+                    藝創生活展－王焜生
+                  </h2>
+                </a>
+
+                <div class="pw-wing-people__share">
+                  <button
+                    class="pw-wing-people__share-toggle"
+                    type="button"
+                    aria-label="開啟分享選單：藝創生活展－王焜生"
+                    aria-expanded="false"
+                    data-pw-wing-share-toggle
+                  >
+                    <span
+                      class="pw-wing-people__share-dot-icon"
+                      aria-hidden="true"
+                    >⋮</span>
+                  </button>
+
+                  <div
+                    class="pw-wing-people__share-panel pw-social-share pw-social-share--panel"
+                    hidden
+                    data-pw-wing-share-panel
+                    aria-label="分享連結"
+                  >
+                    <a
+                      class="pw-wing-people__share-link pw-social-share__link"
+                      href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.youtube.com%2Fshorts%2FUHm1tpqzBHM"
+                      target="_blank"
+                      rel="nofollow noopener noreferrer"
+                      referrerpolicy="no-referrer"
+                      aria-label="分享到 Facebook"
+                    >
+                      <img
+                        class="pw-wing-people__share-icon pw-social-share__icon"
+                        src="./img/pw-icon-fb.png"
+                        alt=""
+                        loading="lazy"
+                        decoding="async"
+                      >
+                    </a>
+
+                    <a
+                      class="pw-wing-people__share-link pw-social-share__link"
+                      href="https://social-plugins.line.me/lineit/share?url=https%3A%2F%2Fwww.youtube.com%2Fshorts%2FUHm1tpqzBHM"
+                      target="_blank"
+                      rel="nofollow noopener noreferrer"
+                      referrerpolicy="no-referrer"
+                      aria-label="分享到 LINE"
+                    >
+                      <img
+                        class="pw-wing-people__share-icon pw-social-share__icon"
+                        src="./img/pw-icon-line.png"
+                        alt=""
+                        loading="lazy"
+                        decoding="async"
+                      >
+                    </a>
+
+                    <a
+                      class="pw-wing-people__share-link pw-social-share__link"
+                      href="https://www.youtube.com/shorts/UHm1tpqzBHM"
+                      target="_blank"
+                      rel="nofollow noopener noreferrer"
+                      referrerpolicy="no-referrer"
+                      aria-label="開啟短影音連結"
+                    >
+                      <img
+                        class="pw-wing-people__share-icon pw-social-share__icon"
+                        src="./img/pw-icon-ig.png"
+                        alt=""
+                        loading="lazy"
+                        decoding="async"
+                      >
+                    </a>
+
+                    <button
+                      class="pw-wing-people__share-close"
+                      type="button"
+                      data-pw-wing-share-close
+                    >
+                      取消
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <li class="pw-wing-people__item"
+            data-youtube-preview
+            data-video-id="u-IPaclAKSk"
+            data-preview-start="0"
+          >
+            <article class="pw-wing-people__card">
+              <div class="pw-wing-people__media-frame">
+                <div
+                  class="pw-wing-people__player"
+                  id="pw-wing-listing-player-08"
+                >
+                  <a
+                    class="pw-wing-people__preview-link"
+                    href="https://www.youtube.com/shorts/u-IPaclAKSk"
+                    target="_blank"
+                    rel="nofollow noopener noreferrer"
+                    referrerpolicy="no-referrer"
+                    aria-label="開啟影片：藝術家陳俊吉｜華藏嚴飾"
+                  >
+                    <img
+                      class="pw-wing-people__media"
+                      src="https://i.ytimg.com/vi/u-IPaclAKSk/hqdefault.jpg"
+                      alt="藝術家陳俊吉｜華藏嚴飾"
+                      loading="lazy"
+                      decoding="async"
+                      referrerpolicy="no-referrer"
+                    >
+                  </a>
+                </div>
+
+                <span
+                  class="pw-wing-people__preview-status"
+                  aria-hidden="true"
+                >
+                  <span class="pw-wing-people__preview-status-text">
+                    預覽 3 秒
+                  </span>
+                </span>
+
+                <span
+                  class="pw-wing-people__preview-loading"
+                  aria-hidden="true"
+                ></span>
+              </div>
+
+              <div class="pw-wing-people__meta">
+                <a
+                  class="pw-wing-people__title-link"
+                  href="https://www.youtube.com/shorts/u-IPaclAKSk"
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                  referrerpolicy="no-referrer"
+                >
+                  <h2 class="pw-wing-people__title">
+                    藝術家陳俊吉｜華藏嚴飾
+                  </h2>
+                </a>
+
+                <div class="pw-wing-people__share">
+                  <button
+                    class="pw-wing-people__share-toggle"
+                    type="button"
+                    aria-label="開啟分享選單：藝術家陳俊吉｜華藏嚴飾"
+                    aria-expanded="false"
+                    data-pw-wing-share-toggle
+                  >
+                    <span
+                      class="pw-wing-people__share-dot-icon"
+                      aria-hidden="true"
+                    >⋮</span>
+                  </button>
+
+                  <div
+                    class="pw-wing-people__share-panel pw-social-share pw-social-share--panel"
+                    hidden
+                    data-pw-wing-share-panel
+                    aria-label="分享連結"
+                  >
+                    <a
+                      class="pw-wing-people__share-link pw-social-share__link"
+                      href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.youtube.com%2Fshorts%2Fu-IPaclAKSk"
+                      target="_blank"
+                      rel="nofollow noopener noreferrer"
+                      referrerpolicy="no-referrer"
+                      aria-label="分享到 Facebook"
+                    >
+                      <img
+                        class="pw-wing-people__share-icon pw-social-share__icon"
+                        src="./img/pw-icon-fb.png"
+                        alt=""
+                        loading="lazy"
+                        decoding="async"
+                      >
+                    </a>
+
+                    <a
+                      class="pw-wing-people__share-link pw-social-share__link"
+                      href="https://social-plugins.line.me/lineit/share?url=https%3A%2F%2Fwww.youtube.com%2Fshorts%2Fu-IPaclAKSk"
+                      target="_blank"
+                      rel="nofollow noopener noreferrer"
+                      referrerpolicy="no-referrer"
+                      aria-label="分享到 LINE"
+                    >
+                      <img
+                        class="pw-wing-people__share-icon pw-social-share__icon"
+                        src="./img/pw-icon-line.png"
+                        alt=""
+                        loading="lazy"
+                        decoding="async"
+                      >
+                    </a>
+
+                    <a
+                      class="pw-wing-people__share-link pw-social-share__link"
+                      href="https://www.youtube.com/shorts/u-IPaclAKSk"
+                      target="_blank"
+                      rel="nofollow noopener noreferrer"
+                      referrerpolicy="no-referrer"
+                      aria-label="開啟短影音連結"
+                    >
+                      <img
+                        class="pw-wing-people__share-icon pw-social-share__icon"
+                        src="./img/pw-icon-ig.png"
+                        alt=""
+                        loading="lazy"
+                        decoding="async"
+                      >
+                    </a>
+
+                    <button
+                      class="pw-wing-people__share-close"
+                      type="button"
+                      data-pw-wing-share-close
+                    >
+                      取消
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <li class="pw-wing-people__item"
+            data-youtube-preview
+            data-video-id="ZiZGZvYzSRU"
+            data-preview-start="0"
+          >
+            <article class="pw-wing-people__card">
+              <div class="pw-wing-people__media-frame">
+                <div
+                  class="pw-wing-people__player"
+                  id="pw-wing-listing-player-09"
+                >
+                  <a
+                    class="pw-wing-people__preview-link"
+                    href="https://www.youtube.com/shorts/ZiZGZvYzSRU"
+                    target="_blank"
+                    rel="nofollow noopener noreferrer"
+                    referrerpolicy="no-referrer"
+                    aria-label="開啟影片：藝術家陳俊吉｜3DVR 線上展間"
+                  >
+                    <img
+                      class="pw-wing-people__media"
+                      src="https://i.ytimg.com/vi/ZiZGZvYzSRU/hqdefault.jpg"
+                      alt="藝術家陳俊吉｜3DVR 線上展間"
+                      loading="lazy"
+                      decoding="async"
+                      referrerpolicy="no-referrer"
+                    >
+                  </a>
+                </div>
+
+                <span
+                  class="pw-wing-people__preview-status"
+                  aria-hidden="true"
+                >
+                  <span class="pw-wing-people__preview-status-text">
+                    預覽 3 秒
+                  </span>
+                </span>
+
+                <span
+                  class="pw-wing-people__preview-loading"
+                  aria-hidden="true"
+                ></span>
+              </div>
+
+              <div class="pw-wing-people__meta">
+                <a
+                  class="pw-wing-people__title-link"
+                  href="https://www.youtube.com/shorts/ZiZGZvYzSRU"
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                  referrerpolicy="no-referrer"
+                >
+                  <h2 class="pw-wing-people__title">
+                    藝術家陳俊吉｜3DVR 線上展間
+                  </h2>
+                </a>
+
+                <div class="pw-wing-people__share">
+                  <button
+                    class="pw-wing-people__share-toggle"
+                    type="button"
+                    aria-label="開啟分享選單：藝術家陳俊吉｜3DVR 線上展間"
+                    aria-expanded="false"
+                    data-pw-wing-share-toggle
+                  >
+                    <span
+                      class="pw-wing-people__share-dot-icon"
+                      aria-hidden="true"
+                    >⋮</span>
+                  </button>
+
+                  <div
+                    class="pw-wing-people__share-panel pw-social-share pw-social-share--panel"
+                    hidden
+                    data-pw-wing-share-panel
+                    aria-label="分享連結"
+                  >
+                    <a
+                      class="pw-wing-people__share-link pw-social-share__link"
+                      href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.youtube.com%2Fshorts%2FZiZGZvYzSRU"
+                      target="_blank"
+                      rel="nofollow noopener noreferrer"
+                      referrerpolicy="no-referrer"
+                      aria-label="分享到 Facebook"
+                    >
+                      <img
+                        class="pw-wing-people__share-icon pw-social-share__icon"
+                        src="./img/pw-icon-fb.png"
+                        alt=""
+                        loading="lazy"
+                        decoding="async"
+                      >
+                    </a>
+
+                    <a
+                      class="pw-wing-people__share-link pw-social-share__link"
+                      href="https://social-plugins.line.me/lineit/share?url=https%3A%2F%2Fwww.youtube.com%2Fshorts%2FZiZGZvYzSRU"
+                      target="_blank"
+                      rel="nofollow noopener noreferrer"
+                      referrerpolicy="no-referrer"
+                      aria-label="分享到 LINE"
+                    >
+                      <img
+                        class="pw-wing-people__share-icon pw-social-share__icon"
+                        src="./img/pw-icon-line.png"
+                        alt=""
+                        loading="lazy"
+                        decoding="async"
+                      >
+                    </a>
+
+                    <a
+                      class="pw-wing-people__share-link pw-social-share__link"
+                      href="https://www.youtube.com/shorts/ZiZGZvYzSRU"
+                      target="_blank"
+                      rel="nofollow noopener noreferrer"
+                      referrerpolicy="no-referrer"
+                      aria-label="開啟短影音連結"
+                    >
+                      <img
+                        class="pw-wing-people__share-icon pw-social-share__icon"
+                        src="./img/pw-icon-ig.png"
+                        alt=""
+                        loading="lazy"
+                        decoding="async"
+                      >
+                    </a>
+
+                    <button
+                      class="pw-wing-people__share-close"
+                      type="button"
+                      data-pw-wing-share-close
+                    >
+                      取消
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <li class="pw-wing-people__item"
+            data-youtube-preview
+            data-video-id="PfKAtW8Rdv0"
+            data-preview-start="0"
+          >
+            <article class="pw-wing-people__card">
+              <div class="pw-wing-people__media-frame">
+                <div
+                  class="pw-wing-people__player"
+                  id="pw-wing-listing-player-10"
+                >
+                  <a
+                    class="pw-wing-people__preview-link"
+                    href="https://www.youtube.com/shorts/PfKAtW8Rdv0"
+                    target="_blank"
+                    rel="nofollow noopener noreferrer"
+                    referrerpolicy="no-referrer"
+                    aria-label="開啟影片：鄭月妹－無．界．藝．境科技水墨互動藝術展"
+                  >
+                    <img
+                      class="pw-wing-people__media"
+                      src="https://i.ytimg.com/vi/PfKAtW8Rdv0/hqdefault.jpg"
+                      alt="鄭月妹－無．界．藝．境科技水墨互動藝術展"
+                      loading="lazy"
+                      decoding="async"
+                      referrerpolicy="no-referrer"
+                    >
+                  </a>
+                </div>
+
+                <span
+                  class="pw-wing-people__preview-status"
+                  aria-hidden="true"
+                >
+                  <span class="pw-wing-people__preview-status-text">
+                    預覽 3 秒
+                  </span>
+                </span>
+
+                <span
+                  class="pw-wing-people__preview-loading"
+                  aria-hidden="true"
+                ></span>
+              </div>
+
+              <div class="pw-wing-people__meta">
+                <a
+                  class="pw-wing-people__title-link"
+                  href="https://www.youtube.com/shorts/PfKAtW8Rdv0"
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                  referrerpolicy="no-referrer"
+                >
+                  <h2 class="pw-wing-people__title">
+                    鄭月妹－無．界．藝．境科技水墨互動藝術展
+                  </h2>
+                </a>
+
+                <div class="pw-wing-people__share">
+                  <button
+                    class="pw-wing-people__share-toggle"
+                    type="button"
+                    aria-label="開啟分享選單：鄭月妹－無．界．藝．境科技水墨互動藝術展"
+                    aria-expanded="false"
+                    data-pw-wing-share-toggle
+                  >
+                    <span
+                      class="pw-wing-people__share-dot-icon"
+                      aria-hidden="true"
+                    >⋮</span>
+                  </button>
+
+                  <div
+                    class="pw-wing-people__share-panel pw-social-share pw-social-share--panel"
+                    hidden
+                    data-pw-wing-share-panel
+                    aria-label="分享連結"
+                  >
+                    <a
+                      class="pw-wing-people__share-link pw-social-share__link"
+                      href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.youtube.com%2Fshorts%2FPfKAtW8Rdv0"
+                      target="_blank"
+                      rel="nofollow noopener noreferrer"
+                      referrerpolicy="no-referrer"
+                      aria-label="分享到 Facebook"
+                    >
+                      <img
+                        class="pw-wing-people__share-icon pw-social-share__icon"
+                        src="./img/pw-icon-fb.png"
+                        alt=""
+                        loading="lazy"
+                        decoding="async"
+                      >
+                    </a>
+
+                    <a
+                      class="pw-wing-people__share-link pw-social-share__link"
+                      href="https://social-plugins.line.me/lineit/share?url=https%3A%2F%2Fwww.youtube.com%2Fshorts%2FPfKAtW8Rdv0"
+                      target="_blank"
+                      rel="nofollow noopener noreferrer"
+                      referrerpolicy="no-referrer"
+                      aria-label="分享到 LINE"
+                    >
+                      <img
+                        class="pw-wing-people__share-icon pw-social-share__icon"
+                        src="./img/pw-icon-line.png"
+                        alt=""
+                        loading="lazy"
+                        decoding="async"
+                      >
+                    </a>
+
+                    <a
+                      class="pw-wing-people__share-link pw-social-share__link"
+                      href="https://www.youtube.com/shorts/PfKAtW8Rdv0"
+                      target="_blank"
+                      rel="nofollow noopener noreferrer"
+                      referrerpolicy="no-referrer"
+                      aria-label="開啟短影音連結"
+                    >
+                      <img
+                        class="pw-wing-people__share-icon pw-social-share__icon"
+                        src="./img/pw-icon-ig.png"
+                        alt=""
+                        loading="lazy"
+                        decoding="async"
+                      >
+                    </a>
+
+                    <button
+                      class="pw-wing-people__share-close"
+                      type="button"
+                      data-pw-wing-share-close
+                    >
+                      取消
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <li class="pw-wing-people__item"
+            data-youtube-preview
+            data-video-id="OIZnloFRbNw"
+            data-preview-start="0"
+          >
+            <article class="pw-wing-people__card">
+              <div class="pw-wing-people__media-frame">
+                <div
+                  class="pw-wing-people__player"
+                  id="pw-wing-listing-player-11"
+                >
+                  <a
+                    class="pw-wing-people__preview-link"
+                    href="https://www.youtube.com/shorts/OIZnloFRbNw"
+                    target="_blank"
+                    rel="nofollow noopener noreferrer"
+                    referrerpolicy="no-referrer"
+                    aria-label="開啟影片：波翼 SHOT｜文物收藏家李彌教授"
+                  >
+                    <img
+                      class="pw-wing-people__media"
+                      src="https://i.ytimg.com/vi/OIZnloFRbNw/hqdefault.jpg"
+                      alt="波翼 SHOT｜文物收藏家李彌教授"
+                      loading="lazy"
+                      decoding="async"
+                      referrerpolicy="no-referrer"
+                    >
+                  </a>
+                </div>
+
+                <span
+                  class="pw-wing-people__preview-status"
+                  aria-hidden="true"
+                >
+                  <span class="pw-wing-people__preview-status-text">
+                    預覽 3 秒
+                  </span>
+                </span>
+
+                <span
+                  class="pw-wing-people__preview-loading"
+                  aria-hidden="true"
+                ></span>
+              </div>
+
+              <div class="pw-wing-people__meta">
+                <a
+                  class="pw-wing-people__title-link"
+                  href="https://www.youtube.com/shorts/OIZnloFRbNw"
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                  referrerpolicy="no-referrer"
+                >
+                  <h2 class="pw-wing-people__title">
+                    波翼 SHOT｜文物收藏家李彌教授
+                  </h2>
+                </a>
+
+                <div class="pw-wing-people__share">
+                  <button
+                    class="pw-wing-people__share-toggle"
+                    type="button"
+                    aria-label="開啟分享選單：波翼 SHOT｜文物收藏家李彌教授"
+                    aria-expanded="false"
+                    data-pw-wing-share-toggle
+                  >
+                    <span
+                      class="pw-wing-people__share-dot-icon"
+                      aria-hidden="true"
+                    >⋮</span>
+                  </button>
+
+                  <div
+                    class="pw-wing-people__share-panel pw-social-share pw-social-share--panel"
+                    hidden
+                    data-pw-wing-share-panel
+                    aria-label="分享連結"
+                  >
+                    <a
+                      class="pw-wing-people__share-link pw-social-share__link"
+                      href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.youtube.com%2Fshorts%2FOIZnloFRbNw"
+                      target="_blank"
+                      rel="nofollow noopener noreferrer"
+                      referrerpolicy="no-referrer"
+                      aria-label="分享到 Facebook"
+                    >
+                      <img
+                        class="pw-wing-people__share-icon pw-social-share__icon"
+                        src="./img/pw-icon-fb.png"
+                        alt=""
+                        loading="lazy"
+                        decoding="async"
+                      >
+                    </a>
+
+                    <a
+                      class="pw-wing-people__share-link pw-social-share__link"
+                      href="https://social-plugins.line.me/lineit/share?url=https%3A%2F%2Fwww.youtube.com%2Fshorts%2FOIZnloFRbNw"
+                      target="_blank"
+                      rel="nofollow noopener noreferrer"
+                      referrerpolicy="no-referrer"
+                      aria-label="分享到 LINE"
+                    >
+                      <img
+                        class="pw-wing-people__share-icon pw-social-share__icon"
+                        src="./img/pw-icon-line.png"
+                        alt=""
+                        loading="lazy"
+                        decoding="async"
+                      >
+                    </a>
+
+                    <a
+                      class="pw-wing-people__share-link pw-social-share__link"
+                      href="https://www.youtube.com/shorts/OIZnloFRbNw"
+                      target="_blank"
+                      rel="nofollow noopener noreferrer"
+                      referrerpolicy="no-referrer"
+                      aria-label="開啟短影音連結"
+                    >
+                      <img
+                        class="pw-wing-people__share-icon pw-social-share__icon"
+                        src="./img/pw-icon-ig.png"
+                        alt=""
+                        loading="lazy"
+                        decoding="async"
+                      >
+                    </a>
+
+                    <button
+                      class="pw-wing-people__share-close"
+                      type="button"
+                      data-pw-wing-share-close
+                    >
+                      取消
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <li class="pw-wing-people__item"
+            data-youtube-preview
+            data-video-id="cRNknK7vkd8"
+            data-preview-start="0"
+          >
+            <article class="pw-wing-people__card">
+              <div class="pw-wing-people__media-frame">
+                <div
+                  class="pw-wing-people__player"
+                  id="pw-wing-listing-player-12"
+                >
+                  <a
+                    class="pw-wing-people__preview-link"
+                    href="https://www.youtube.com/shorts/cRNknK7vkd8"
+                    target="_blank"
+                    rel="nofollow noopener noreferrer"
+                    referrerpolicy="no-referrer"
+                    aria-label="開啟影片：藝創生活－李素貞"
+                  >
+                    <img
+                      class="pw-wing-people__media"
+                      src="https://i.ytimg.com/vi/cRNknK7vkd8/hqdefault.jpg"
+                      alt="藝創生活－李素貞"
+                      loading="lazy"
+                      decoding="async"
+                      referrerpolicy="no-referrer"
+                    >
+                  </a>
+                </div>
+
+                <span
+                  class="pw-wing-people__preview-status"
+                  aria-hidden="true"
+                >
+                  <span class="pw-wing-people__preview-status-text">
+                    預覽 3 秒
+                  </span>
+                </span>
+
+                <span
+                  class="pw-wing-people__preview-loading"
+                  aria-hidden="true"
+                ></span>
+              </div>
+
+              <div class="pw-wing-people__meta">
+                <a
+                  class="pw-wing-people__title-link"
+                  href="https://www.youtube.com/shorts/cRNknK7vkd8"
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                  referrerpolicy="no-referrer"
+                >
+                  <h2 class="pw-wing-people__title">
+                    藝創生活－李素貞
+                  </h2>
+                </a>
+
+                <div class="pw-wing-people__share">
+                  <button
+                    class="pw-wing-people__share-toggle"
+                    type="button"
+                    aria-label="開啟分享選單：藝創生活－李素貞"
+                    aria-expanded="false"
+                    data-pw-wing-share-toggle
+                  >
+                    <span
+                      class="pw-wing-people__share-dot-icon"
+                      aria-hidden="true"
+                    >⋮</span>
+                  </button>
+
+                  <div
+                    class="pw-wing-people__share-panel pw-social-share pw-social-share--panel"
+                    hidden
+                    data-pw-wing-share-panel
+                    aria-label="分享連結"
+                  >
+                    <a
+                      class="pw-wing-people__share-link pw-social-share__link"
+                      href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.youtube.com%2Fshorts%2FcRNknK7vkd8"
+                      target="_blank"
+                      rel="nofollow noopener noreferrer"
+                      referrerpolicy="no-referrer"
+                      aria-label="分享到 Facebook"
+                    >
+                      <img
+                        class="pw-wing-people__share-icon pw-social-share__icon"
+                        src="./img/pw-icon-fb.png"
+                        alt=""
+                        loading="lazy"
+                        decoding="async"
+                      >
+                    </a>
+
+                    <a
+                      class="pw-wing-people__share-link pw-social-share__link"
+                      href="https://social-plugins.line.me/lineit/share?url=https%3A%2F%2Fwww.youtube.com%2Fshorts%2FcRNknK7vkd8"
+                      target="_blank"
+                      rel="nofollow noopener noreferrer"
+                      referrerpolicy="no-referrer"
+                      aria-label="分享到 LINE"
+                    >
+                      <img
+                        class="pw-wing-people__share-icon pw-social-share__icon"
+                        src="./img/pw-icon-line.png"
+                        alt=""
+                        loading="lazy"
+                        decoding="async"
+                      >
+                    </a>
+
+                    <a
+                      class="pw-wing-people__share-link pw-social-share__link"
+                      href="https://www.youtube.com/shorts/cRNknK7vkd8"
+                      target="_blank"
+                      rel="nofollow noopener noreferrer"
+                      referrerpolicy="no-referrer"
+                      aria-label="開啟短影音連結"
+                    >
+                      <img
+                        class="pw-wing-people__share-icon pw-social-share__icon"
+                        src="./img/pw-icon-ig.png"
+                        alt=""
+                        loading="lazy"
+                        decoding="async"
+                      >
+                    </a>
+
+                    <button
+                      class="pw-wing-people__share-close"
+                      type="button"
+                      data-pw-wing-share-close
+                    >
+                      取消
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </li>
+            </ul>
+
+            <nav
+              class="pw-pagination pw-wing-people__pagination"
+              aria-label="短影音分頁"
+            >
+              <span
+                class="pw-pagination__control"
+                aria-disabled="true"
+                aria-label="上一頁"
+              >‹</span>
+
+              <a
+                class="pw-pagination__item is-current"
+                href="#"
+                aria-current="page"
+              >1</a>
+              <a class="pw-pagination__item" href="#">2</a>
+              <a class="pw-pagination__item" href="#">3</a>
+
+              <a
+                class="pw-pagination__control"
+                href="#"
+                aria-label="下一頁"
+              >›</a>
+            </nav>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+
+
+
+  <!-- 分隔線 -->
+<div class="pw-section-divider" aria-hidden="true"></div>
+
+<!-- 加入我們 -->
+<!-- ACT 區塊 -->
+<!-- Action CTA -->
+<section class="pw-section pw-act" aria-labelledby="pw-act-title">
+ 
+  <div class="pw-container">
+    <div class="pw-inner pw-act__inner">
+      <h2 id="pw-act-title" class="pw-act__title">
+        申請 3DVR 線上藝廊
+      </h2>
+
+      <ul class="pw-act__stats" aria-label="平台數據">
+        <li class="pw-act__stat">
+          <strong class="pw-act__number">815</strong>
+          <span class="pw-act__label">ARTIST</span>
+        </li>
+
+        <li class="pw-act__stat">
+          <strong class="pw-act__number">4527</strong>
+          <span class="pw-act__label">ARTWORK</span>
+        </li>
+
+        <li class="pw-act__stat">
+          <strong class="pw-act__number">225</strong>
+          <span class="pw-act__label">3DVR</span>
+        </li>
+      </ul>
+
+      <p class="pw-act__lead">
+        讓世界看見你的作品，立即申請 3DVR 線上藝廊
+      </p>
+
+      <div class="pw-act__actions" aria-label="申請行動">
+  <a
+    class="pw-btn pw-btn--secondary pw-act__button"
+    href="./pw-sales-page.html"
+  >
+    開啟你的全球藝術展示空間
+  </a>
+<!--
+  <a
+    class="pw-btn pw-btn--primary pw-act__button"
+    href="./pw-join-us.html"
+  >
+    加入波翼
+  </a>
+  -->
+</div>
+    </div>
+  </div>
+</section>
+
+
+
+</main>
+
+
+<!-- Footer -->
+<footer class="pw-footer">
+  <div class="pw-container">
+    <div class="pw-inner pw-footer__inner">
+      <!-- Footer 左側 -->
+      <div class="pw-footer__aside">
+        <a
+          class="pw-footer__logo-link"
+          href="./index.html"
+          aria-label="POST WINGS 波翼藝術首頁"
+        >
+          <img
+            class="pw-footer__logo"
+            src="./img/logo.png"
+            alt="POST WINGS 波翼藝術"
+          />
+        </a>
+
+        <div class="pw-footer__meta">
+          <!-- 社群連結 -->
+          <ul class="pw-footer__social-list" aria-label="社群連結">
+            <li class="pw-footer__social-item">
+              <a
+                class="pw-footer__social-link"
+                href="https://www.facebook.com/61556203757989/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+              >
+                <img
+                  class="pw-footer__social-icon"
+                  src="./img/pw-icon-fb.png"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </a>
+            </li>
+
+            <li class="pw-footer__social-item">
+              <a
+                class="pw-footer__social-link"
+                href="https://lin.ee/Fo8Miwj"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LINE"
+              >
+                <img
+                  class="pw-footer__social-icon"
+                  src="./img/pw-icon-line.png"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </a>
+            </li>
+
+            <li class="pw-footer__social-item">
+              <a
+                class="pw-footer__social-link"
+                href="https://www.instagram.com/postwingsart/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+              >
+                <img
+                  class="pw-footer__social-icon"
+                  src="./img/pw-icon-ig.png"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </a>
+            </li>
+
+            <li class="pw-footer__social-item">
+              <a
+                class="pw-footer__social-link"
+                href="https://www.youtube.com/@POSTWINGS-sm4gl"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="YouTube"
+              >
+                <img
+                  class="pw-footer__social-icon"
+                  src="./img/pw-icon-youtube.png"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </a>
+            </li>
+          </ul>
+
+          <!-- 聯絡資料 -->
+          <address class="pw-footer__contact">
+            <h2 class="pw-footer__contact-title">聯絡我們</h2>
+
+            <a
+              class="pw-footer__contact-link"
+              href="mailto:service@metaassets.com.tw"
+            >
+              service@metaassets.com.tw
+            </a>
+
+            <a class="pw-footer__contact-link" href="tel:0930257803">
+              0930-257-803
+            </a>
+
+            <p class="pw-footer__contact-text">
+              台北市中山區建國北路二段3巷37號B1
+            </p>
+          </address>
+
+          <p class="pw-footer__copyright">
+            Copyright © 2026 元宇宙資產股份有限公司 版權所有
+          </p>
+        </div>
+      </div>
+
+
+<!-- Footer 右側導覽 -->
+<nav class="pw-footer__nav" aria-label="頁尾導覽">
+  <!-- 左欄：藝術資產聯盟、合作夥伴 -->
+  <div class="pw-footer__nav-column">
+    <!-- 藝術資產聯盟 -->
+    <div
+      class="pw-footer__nav-group"
+      aria-labelledby="footer-alliance-title"
+    >
+      <h2
+        id="footer-alliance-title"
+        class="pw-footer__nav-title"
+      >
+        藝術資產聯盟
+      </h2>
+
+      <ul class="pw-footer__nav-list">
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://www.bossmen.com/zh-TW/index/index.html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            博士門 Bossmen
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="http://www.easicolor.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            宣城科技 Easicolor
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://uprint.com.tw/about/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            布萊特 uPrint
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://ones-digital.com/zh/首頁/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            加伊創意科技 ONES
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- 合作夥伴 -->
+    <div
+      class="pw-footer__nav-group"
+      aria-labelledby="footer-partner-title"
+    >
+      <h2
+        id="footer-partner-title"
+        class="pw-footer__nav-title"
+      >
+        合作夥伴
+      </h2>
+
+      <ul class="pw-footer__nav-list">
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://www.facebook.com/100068823486807/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            寶佳潭美藝廊
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://www.facebook.com/100085289444712/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LIVE ART SPACE
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://art.kje-event.com.tw/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            台灣藝術博覽會
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://www.facebook.com/61578254614082/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            藝創生活節
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 右欄：合作學協會、平台入口 -->
+  <div class="pw-footer__nav-column">
+    <!-- 合作學協會 -->
+    <div
+      class="pw-footer__nav-group"
+      aria-labelledby="footer-association-title"
+    >
+      <h2
+        id="footer-association-title"
+        class="pw-footer__nav-title"
+      >
+        合作學協會
+      </h2>
+
+      <ul class="pw-footer__nav-list">
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://www.facebook.com/groups/909701919139272/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            中華文創學會
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://www.facebook.com/ccfa.tw/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            中華文物學會
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://www.facebook.com/owlactsartssociety/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            貓頭鷹藝術協會
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://www.facebook.com/maak1987/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            高雄市現代畫學會
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://www.twpapat.org/home/index.php"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            台灣粉彩藝術推廣協會
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://www.panasiaart.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            泛亞藝術聯盟
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://www.facebook.com/100063719484960/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            台北市西畫女畫家畫會
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://www.txsia.org.tw/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            台灣 XR 智能產業發展協會
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- 平台入口 -->
+    <div
+      class="pw-footer__nav-group"
+      aria-labelledby="footer-platform-title"
+    >
+      <h2
+        id="footer-platform-title"
+        class="pw-footer__nav-title"
+      >
+        平台入口
+      </h2>
+
+      <ul class="pw-footer__nav-list">
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://virtual.metaassets.asia/manage/login"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            藝術家後台
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a class="pw-footer__nav-link" href="./pw-service-terms-page.html">
+            服務條款
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a class="pw-footer__nav-link" href="./pw-privacy-policy-page.html">
+            隱私政策
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+  <a
+    class="pw-footer__nav-link"
+    href="./pw-faq-page.html"
+  >
+    常見問題
+  </a>
+</li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating Actions -->
+<div class="pw-floating-actions" aria-label="快速操作">
+  <ul class="pw-floating-actions__list">
+    <li class="pw-floating-actions__item">
+      <button
+        class="pw-floating-actions__button pw-floating-actions__button--to-top"
+        type="button"
+        data-pw-back-to-top
+        aria-label="回到頁面頂端"
+      >
+        <img
+          class="pw-floating-actions__icon"
+          src="./img/pw-icon-gotop.png"
+          alt=""
+          aria-hidden="true"
+        />
+      </button>
+    </li>
+  </ul>
+</div>
+
+
+  <!-- 全站共用 JS：Header、Back to top -->
+  <script type="module" src="./js/pw-enhance.js"></script>
+
+  
+    <!-- 頁面專用 JS -->
+    <script type="module" src="./js/pw-wing-people-page.js"></script>
+  
+
+
+<!-- 關閉 HTML -->
+</body>
+</html>
