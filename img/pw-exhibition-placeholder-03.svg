@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="450" viewBox="0 0 720 450" role="img" aria-label="Exhibition placeholder 03">
+  <rect width="720" height="450" fill="#ede7dc"/>
+  <circle cx="540" cy="230" r="120" fill="#211f1b" opacity="0.13"/>
+  <circle cx="280" cy="230" r="90" fill="#9f7a3d" opacity="0.4"/>
+  <text x="80" y="56" font-family="Arial, sans-serif" font-size="32" font-weight="700" fill="#211f1b">Exhibition C</text>
+</svg>

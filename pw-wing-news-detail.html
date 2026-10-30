@@ -1,0 +1,1301 @@
+
+
+<head>
+  <title>POST WINGS | 波翼藝術</title>
+
+  <!-- 正式上線請更換GA4代碼 -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-VTZNRHLELH"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-VTZNRHLELH");
+  </script>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta
+    name="keywords"
+    content="POST WINGS, 波翼藝術, 虛擬展間, 當代藝術, Web3.0"
+  />
+  <meta
+    name="description"
+    content="波翼藝術專注於當代藝術市場 Web3.0 虛實整合服務。"
+  />
+
+  <link rel="apple-touch-icon" href="./img/apple-touch-icon.png" />
+  <link rel="icon" href="./img/favicon.ico" />
+
+  <meta property="og:url" content="https://www.postwings.art/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="POST WINGS 波翼藝術 | 藝術資產管理服務" />
+  <meta
+    property="og:description"
+    content="POST WINGS 波翼藝術專注於藝術展覽、授權、虛擬實境展間與 Web3.0 藝術服務。"
+  />
+  <meta
+    property="og:image"
+    content="https://www.postwings.art/img/og-image.jpg"
+  />
+
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+
+<body class="pw-site" data-build="designer-preview">
+<header class="pw-site-header" data-pw-header>
+  <div class="pw-container pw-site-header__inner">
+    <!-- LOGO -->
+    <a
+      class="pw-site-header__brand"
+      href="./index.html"
+      aria-label="回到 POST WINGS 首頁"
+    >
+      <img src="./img/logo.png" class="pw-site-header__logo" alt="POST WINGS" />
+    </a>
+
+    <!-- 大版主選單 -->
+    <nav class="pw-site-header__nav" aria-label="主要選單">
+      <button
+        class="pw-btn pw-site-header__nav-toggle"
+        type="button"
+        aria-controls="pw-header-menu-panel"
+        aria-expanded="false"
+        data-pw-toggle="menu"
+        data-pw-menu-key="exhibitions"
+      >
+        線上展演
+      </button>
+
+      <button
+        class="pw-btn pw-site-header__nav-toggle"
+        type="button"
+        aria-controls="pw-header-menu-panel"
+        aria-expanded="false"
+        data-pw-toggle="menu"
+        data-pw-menu-key="artists"
+      >
+        探索藝術人
+      </button>
+
+      <button
+        class="pw-btn pw-site-header__nav-toggle"
+        type="button"
+        aria-controls="pw-header-menu-panel"
+        aria-expanded="false"
+        data-pw-toggle="menu"
+        data-pw-menu-key="people"
+      >
+        翼見人物
+      </button>
+
+      <button
+        class="pw-btn pw-site-header__nav-toggle"
+        type="button"
+        aria-controls="pw-header-menu-panel"
+        aria-expanded="false"
+        data-pw-toggle="menu"
+        data-pw-menu-key="news"
+      >
+        波翼快訊
+      </button>
+
+      <!-- 加入我們：直接連結，不打開次選單 -->
+      <a class="pw-btn pw-site-header__nav-link" href="./pw-join-us.html">
+        加入我們
+      </a>
+    </nav>
+
+    <!-- 右側按鈕 -->
+    <div class="pw-site-header__actions">
+      <!-- 大版搜尋 toggle；小版隱藏 -->
+      <button
+        id="pw-search-toggle"
+        class="pw-site-header__icon-btn pw-site-header__icon-btn--search"
+        type="button"
+        aria-label="開啟搜尋"
+        aria-controls="pw-header-search-panel"
+        aria-expanded="false"
+        data-pw-toggle="search"
+      >
+        <img src="./img/pw-icon-search.png" alt="" />
+      </button>
+
+      <!-- 小版 menu toggle；大版預設隱藏 -->
+      <button
+        id="pw-menu-toggle"
+        class="pw-site-header__icon-btn pw-site-header__icon-btn--menu"
+        type="button"
+        aria-label="開啟選單"
+        aria-controls="pw-header-menu-panel"
+        aria-expanded="false"
+        data-pw-toggle="menu"
+      >
+        <img src="./img/pw-icon-menu.png" alt="" />
+      </button>
+
+      <!-- 語言 toggle -->
+      <div
+        class="pw-site-header__action-item pw-site-header__action-item--lang"
+      >
+        <button
+          id="pw-lang-toggle"
+          class="pw-site-header__icon-btn pw-site-header__icon-btn--lang"
+          type="button"
+          aria-label="切換語言"
+          aria-controls="pw-header-lang-panel"
+          aria-expanded="false"
+          data-pw-toggle="lang"
+        >
+          <img src="./img/pw-icon-lang.png" alt="" />
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 搜尋區塊 -->
+  <div
+    id="pw-header-search-panel"
+    class="pw-site-header__search-panel"
+    aria-hidden="true"
+    data-pw-panel="search"
+  >
+    <div class="pw-container">
+      <form
+        class="pw-site-header__search-form"
+        action="./pw-search-page.html"
+        method="get"
+        role="search"
+      >
+        <label
+          class="pw-site-header__icon-btn pw-sr-only"
+          for="pw-header-search-input"
+        >
+          <img src="./img/pw-icon-search.png" alt="" />
+        </label>
+
+        <input
+          id="pw-header-search-input"
+          class="pw-site-header__search-input"
+          type="search"
+          name="keyword"
+          placeholder="請輸入藝術家名字、創作媒材"
+        />
+      </form>
+    </div>
+  </div>
+
+  <!-- 展開選單 -->
+  <div
+    id="pw-header-menu-panel"
+    class="pw-site-header__menu-panel"
+    aria-hidden="true"
+    data-pw-panel="menu"
+  >
+    <div class="pw-container pw-site-header__menu-inner">
+      <nav class="pw-site-header__menu-grid" aria-label="展開選單">
+        <!-- 線上展演 -->
+        <div
+          class="pw-site-header__menu-group"
+          data-pw-menu-group="exhibitions"
+        >
+          <span class="pw-site-header__menu-title"> 線上展演 </span>
+
+          <a
+            class="pw-site-header__menu-link"
+            href="./pw-exhibition-page.html?tab=solo"
+          >
+            藝術個展
+          </a>
+
+          <a
+            class="pw-site-header__menu-link"
+            href="./pw-exhibition-page.html?tab=group"
+          >
+            團體聯展
+          </a>
+
+          <a
+            class="pw-site-header__menu-link"
+            href="./pw-exhibition-page.html?tab=fair"
+          >
+            藝文特展
+          </a>
+
+          <a
+            class="pw-site-header__menu-link"
+            href="./pw-exhibition-page.html?tab=curated"
+          >
+            藏家收藏間
+          </a>
+        </div>
+
+        <!-- 探索藝術人 -->
+        <div class="pw-site-header__menu-group" data-pw-menu-group="artists">
+          <span class="pw-site-header__menu-title"> 探索藝術人 </span>
+
+          <a
+            class="pw-site-header__menu-link"
+            href="./pw-artist-explore-page.html?tab=masters"
+          >
+            藝術大師
+          </a>
+
+          <a
+            class="pw-site-header__menu-link"
+            href="./pw-artist-explore-page.html?tab=creators"
+          >
+            創藝人物
+          </a>
+
+          <a
+            class="pw-site-header__menu-link"
+            href="./pw-artist-explore-page.html?tab=organizations"
+          >
+            藝術團體
+          </a>
+
+          <a
+            class="pw-site-header__menu-link"
+            href="./pw-artist-explore-page.html?tab=institutions"
+          >
+            藝術機構
+          </a>
+        </div>
+
+        <!-- 翼見人物 -->
+        <div class="pw-site-header__menu-group" data-pw-menu-group="people">
+          <span class="pw-site-header__menu-title"> 翼見人物 </span>
+
+          <a
+            class="pw-site-header__menu-link"
+            href="./pw-wing-people-page.html?tab=shorts"
+          >
+            短影音
+          </a>
+
+          <a
+            class="pw-site-header__menu-link"
+            href="./pw-wing-people-page.html?tab=interview"
+          >
+            專 訪
+          </a>
+        </div>
+
+        <!-- 波翼快訊 -->
+        <div class="pw-site-header__menu-group" data-pw-menu-group="news">
+          <span class="pw-site-header__menu-title"> 波翼快訊 </span>
+
+          <a class="pw-site-header__menu-link" href="./pw-wing-news-page.html">
+            平面新聞
+          </a>
+        </div>
+      </nav>
+
+      <!-- 小版底部 CTA -->
+      <div class="pw-site-header__menu-cta">
+        <div class="pw-btn-wrap">
+          <a
+            class="pw-site-header__menu-cta-link"
+            href="https://www.postwings.art/service"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            建立3D展間
+          </a>
+
+          <a class="pw-site-header__menu-cta-link" href="./pw-join-us.html">
+            加入我們
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 語言選單 -->
+  <div
+    id="pw-header-lang-panel"
+    class="pw-site-header__lang-panel"
+    aria-hidden="true"
+    data-pw-panel="lang"
+  >
+    <a
+      class="pw-site-header__lang-link pw-site-header__lang-link--active"
+      href="#!"
+      aria-current="true"
+    >
+      中 文
+    </a>
+
+    <a class="pw-site-header__lang-link" href="#!"> English </a>
+
+    <a class="pw-site-header__lang-link" href="#!"> 日本語 </a>
+
+    <a class="pw-site-header__lang-link" href="#!"> 한국어 </a>
+
+    <a class="pw-site-header__lang-link" href="#!"> Español </a>
+
+    <a class="pw-site-header__lang-link" href="#!"> Français </a>
+
+    <a class="pw-site-header__lang-link" href="#!"> Deutsch </a>
+  </div>
+</header>
+
+
+<main class="pw-main">
+  <div class="pw-wing-news-detail">
+    <!-- 新聞文章 -->
+    <article
+      class="pw-wing-news-detail__article"
+      aria-labelledby="pw-wing-news-detail-title"
+    >
+      <!-- 新聞標題區 -->
+      <section class="pw-section pw-wing-news-detail__header-section">
+        <div class="pw-container">
+          <div class="pw-inner pw-wing-news-detail__header-inner">
+            <header
+              class="
+                pw-accent-heading
+                pw-accent-heading--article
+                pw-wing-news-detail__heading
+              "
+            >
+              <h1
+                class="pw-accent-heading__title"
+                id="pw-wing-news-detail-title"
+              >
+                歲月流光・智慧降低攝影回顧特展演繹當代老書哲學
+              </h1>
+
+              <div class="pw-accent-heading__meta">
+                <time
+                  class="pw-accent-heading__meta-item"
+                  datetime="2026-05-01"
+                >
+                  2026/05/01
+                </time>
+
+                <span
+                  class="
+                    pw-accent-heading__meta-item
+                    pw-accent-heading__meta-item--accent
+                  "
+                  aria-label="瀏覽次數 168"
+                >
+                  <svg
+                    class="
+                      pw-accent-heading__meta-icon
+                      pw-wing-news-detail__views-icon
+                    "
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12Z"
+                    />
+                    <circle cx="12" cy="12" r="3" />
+                  </svg>
+
+                  <span>168</span>
+                </span>
+              </div>
+            </header>
+
+            <!-- 返回與分享 -->
+            <div class="pw-wing-news-detail__actions">
+              <a
+                class="pw-icon-btn pw-wing-news-detail__back"
+                href="./pw-wing-news-page.html"
+                aria-label="返回波翼快訊列表"
+              >
+                <span aria-hidden="true">‹</span>
+              </a>
+
+              <div
+                class="
+                  pw-social-share
+                  pw-social-share--detail
+                  pw-wing-news-detail__share
+                "
+                aria-label="分享這篇新聞"
+              >
+                <a
+                  class="pw-social-share__link"
+                  href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.postwings.art%2Farticle%2F44"
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                  referrerpolicy="no-referrer"
+                  aria-label="分享到 Facebook"
+                >
+                  <img
+                    class="pw-social-share__icon"
+                    src="./img/pw-icon-fb.png"
+                    alt=""
+                    loading="lazy"
+                    decoding="async"
+                  >
+                </a>
+
+                <a
+                  class="pw-social-share__link"
+                  href="https://social-plugins.line.me/lineit/share?url=https%3A%2F%2Fwww.postwings.art%2Farticle%2F44"
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                  referrerpolicy="no-referrer"
+                  aria-label="分享到 LINE"
+                >
+                  <img
+                    class="pw-social-share__icon"
+                    src="./img/pw-icon-line.png"
+                    alt=""
+                    loading="lazy"
+                    decoding="async"
+                  >
+                </a>
+
+                <a
+                  class="pw-social-share__link"
+                  href="https://www.instagram.com/postwingsart/"
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                  referrerpolicy="no-referrer"
+                  aria-label="前往 POST WINGS Instagram"
+                >
+                  <img
+                    class="pw-social-share__icon"
+                    src="./img/pw-icon-ig.png"
+                    alt=""
+                    loading="lazy"
+                    decoding="async"
+                  >
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 標題與內文分隔線 -->
+      <div
+        class="
+          pw-section-divider
+          pw-wing-news-detail__article-divider
+        "
+        aria-hidden="true"
+      ></div>
+
+      <!-- RSS 新聞內容 -->
+      <section class="pw-section pw-wing-news-detail__content-section">
+        <div class="pw-container">
+          <div class="pw-inner pw-wing-news-detail__content-inner">
+            <!--
+              RSS HTML 樣式控制邊界。
+
+              正式資料請先在後端或資料處理層清理，
+              再以未跳脫 HTML 放入這個容器。
+            -->
+            <div
+              class="
+                pw-wing-news-detail__rss-content
+                pw-rss-content
+              "
+              data-pw-rss-content
+            >
+              
+    <p>
+      《藝術生活誌》邀請藝術人齊聚一堂，透過影像、展覽與數位技術，
+      重新觀看藝術創作與當代生活之間的關係。
+    </p>
+
+    <p>
+      本次展覽以攝影、裝置與多媒體作品為主軸，
+      從城市空間、生命記憶與文化觀察出發，
+      呈現藝術家對時間與環境的細膩思考。
+    </p>
+
+    <figure>
+      <img
+        src="https://news.postwings.art/uploads/banners//LINE_20260701_223325.jpg"
+        alt="展覽場館外觀"
+        loading="eager"
+        decoding="async"
+      >
+      <figcaption>
+        展覽場館入口與建築外觀。
+      </figcaption>
+    </figure>
+
+    <h2>科技與藝術的交會</h2>
+
+    <p>
+      展覽不只呈現實體作品，也導入線上展示與數位導覽，
+      讓觀眾能從不同裝置與觀看方式進入作品，
+      擴大藝術內容的傳播範圍。
+    </p>
+
+    <figure>
+      <img
+        src="https://cdn.metaassets.asia/exhibitions/banner_55_20251212073814.jpg"
+        alt="藝術作品展覽畫面"
+        loading="lazy"
+        decoding="async"
+      >
+      <figcaption>
+        藝術作品透過實體展覽與線上空間同步呈現。
+      </figcaption>
+    </figure>
+
+    <h2>重新理解觀看與記憶</h2>
+
+    <p>
+      藝術家藉由作品重新整理個人記憶、城市經驗與生命感受，
+      觀眾也能在作品之中找到自身經驗的投射，
+      形成創作者、作品與觀看者之間的交流。
+    </p>
+
+    <blockquote>
+      藝術不只是被展示的物件，也是觀看者重新理解生活的方法。
+    </blockquote>
+
+    <p>
+      本次特展將持續展出，並同步提供線上展覽內容，
+      讓更多觀眾不受時間與地點限制，進入藝術家的創作世界。
+    </p>
+  
+            </div>
+          </div>
+        </div>
+      </section>
+    </article>
+
+    <!-- 新聞內容與其他新聞分隔線 -->
+    <div
+      class="
+        pw-section-divider
+        pw-wing-news-detail__related-divider
+      "
+      aria-hidden="true"
+    ></div>
+
+    <!-- 其他平面新聞 -->
+    <section
+      class="pw-section pw-wing-news-detail__related"
+      aria-labelledby="pw-wing-news-detail-related-title"
+    >
+      <div class="pw-container">
+        <div class="pw-inner pw-wing-news-detail__related-inner">
+          <div
+            class="
+              pw-section-heading
+              pw-wing-news-detail__related-heading
+            "
+          >
+            <h2
+              class="pw-section-heading__title"
+              id="pw-wing-news-detail-related-title"
+            >
+              其他平面新聞
+            </h2>
+          </div>
+
+          <!-- 沿用既有新聞卡片元件 -->
+          <div class="pw-wing-news pw-wing-news--related">
+            <ul class="pw-wing-news__list">
+              
+                <li class="pw-wing-news__item">
+                  <article class="pw-wing-news__card">
+                    <a
+                      class="pw-wing-news__media-link"
+                      href="./pw-wing-news-detail.html?id=43"
+                      aria-label="閱讀新聞：文化為根，眾力之橋：波翼藝術打造全新藝術觀看體驗"
+                    >
+                      <img
+                        class="pw-wing-news__media"
+                        src="https://api.microlink.io/?url=https%3A%2F%2Fwww.postwings.art%2Farticle%2F43&amp;embed=image.url"
+                        alt="文化為根，眾力之橋"
+                        loading="lazy"
+                        decoding="async"
+                      >
+                    </a>
+
+                    <div class="pw-wing-news__body">
+                      <h3 class="pw-wing-news__title">
+                        <a
+                          class="pw-wing-news__title-link"
+                          href="./pw-wing-news-detail.html?id=43"
+                        >
+                          文化為根，眾力之橋：波翼藝術打造全新藝術觀看體驗
+                        </a>
+                      </h3>
+
+                      <p class="pw-wing-news__author">
+                        撰文者：波翼藝術
+                      </p>
+
+                      <div class="pw-wing-news__meta">
+                        <time
+                          class="pw-wing-news__date"
+                          datetime="2026-04-05"
+                        >
+                          2026/04/05
+                        </time>
+
+                        <span
+                          class="pw-wing-news__views"
+                          aria-label="瀏覽次數 168"
+                        >
+                          <svg
+                            class="pw-wing-news__views-icon"
+                            viewBox="0 0 24 24"
+                            aria-hidden="true"
+                          >
+                            <path
+                              d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12Z"
+                            />
+                            <circle cx="12" cy="12" r="3" />
+                          </svg>
+
+                          <span>168</span>
+                        </span>
+                      </div>
+
+                      <p class="pw-wing-news__desc">
+                        本屆展覽首度導入3DVR線上藝術系統，突破傳統展覽形式限制，重新定義藝術的觀看方式。
+                      </p>
+                    </div>
+                  </article>
+                </li>
+              
+                <li class="pw-wing-news__item">
+                  <article class="pw-wing-news__card">
+                    <a
+                      class="pw-wing-news__media-link"
+                      href="./pw-wing-news-detail.html?id=42"
+                      aria-label="閱讀新聞：色彩作為生命場域——論莊惠婷《精靈派對》的感知結構"
+                    >
+                      <img
+                        class="pw-wing-news__media"
+                        src="https://api.microlink.io/?url=https%3A%2F%2Fwww.postwings.art%2Farticle%2F42&amp;embed=image.url"
+                        alt="莊惠婷精靈派對創作展"
+                        loading="lazy"
+                        decoding="async"
+                      >
+                    </a>
+
+                    <div class="pw-wing-news__body">
+                      <h3 class="pw-wing-news__title">
+                        <a
+                          class="pw-wing-news__title-link"
+                          href="./pw-wing-news-detail.html?id=42"
+                        >
+                          色彩作為生命場域——論莊惠婷《精靈派對》的感知結構
+                        </a>
+                      </h3>
+
+                      <p class="pw-wing-news__author">
+                        撰文者：波翼藝術
+                      </p>
+
+                      <div class="pw-wing-news__meta">
+                        <time
+                          class="pw-wing-news__date"
+                          datetime="2026-03-17"
+                        >
+                          2026/03/17
+                        </time>
+
+                        <span
+                          class="pw-wing-news__views"
+                          aria-label="瀏覽次數 142"
+                        >
+                          <svg
+                            class="pw-wing-news__views-icon"
+                            viewBox="0 0 24 24"
+                            aria-hidden="true"
+                          >
+                            <path
+                              d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12Z"
+                            />
+                            <circle cx="12" cy="12" r="3" />
+                          </svg>
+
+                          <span>142</span>
+                        </span>
+                      </div>
+
+                      <p class="pw-wing-news__desc">
+                        藝術家透過高彩度色彩與層層堆疊的視覺語彙，將生命經驗轉化為充滿情感能量的創作場域。
+                      </p>
+                    </div>
+                  </article>
+                </li>
+              
+                <li class="pw-wing-news__item">
+                  <article class="pw-wing-news__card">
+                    <a
+                      class="pw-wing-news__media-link"
+                      href="./pw-wing-news-detail.html?id=34"
+                      aria-label="閱讀新聞：被遺忘半世紀的藝術家──趙二呆紀念展重新開啟歷史對話"
+                    >
+                      <img
+                        class="pw-wing-news__media"
+                        src="https://api.microlink.io/?url=https%3A%2F%2Fwww.postwings.art%2Farticle%2F34&amp;embed=image.url"
+                        alt="趙二呆紀念展"
+                        loading="lazy"
+                        decoding="async"
+                      >
+                    </a>
+
+                    <div class="pw-wing-news__body">
+                      <h3 class="pw-wing-news__title">
+                        <a
+                          class="pw-wing-news__title-link"
+                          href="./pw-wing-news-detail.html?id=34"
+                        >
+                          被遺忘半世紀的藝術家──趙二呆紀念展重新開啟歷史對話
+                        </a>
+                      </h3>
+
+                      <p class="pw-wing-news__author">
+                        撰文者：波翼藝術
+                      </p>
+
+                      <div class="pw-wing-news__meta">
+                        <time
+                          class="pw-wing-news__date"
+                          datetime="2026-03-13"
+                        >
+                          2026/03/13
+                        </time>
+
+                        <span
+                          class="pw-wing-news__views"
+                          aria-label="瀏覽次數 127"
+                        >
+                          <svg
+                            class="pw-wing-news__views-icon"
+                            viewBox="0 0 24 24"
+                            aria-hidden="true"
+                          >
+                            <path
+                              d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12Z"
+                            />
+                            <circle cx="12" cy="12" r="3" />
+                          </svg>
+
+                          <span>127</span>
+                        </span>
+                      </div>
+
+                      <p class="pw-wing-news__desc">
+                        展覽重新整理藝術家的創作脈絡，讓長期被忽略的藝術家再次進入臺灣戰後水墨的歷史視野。
+                      </p>
+                    </div>
+                  </article>
+                </li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+
+
+  <!-- 分隔線 -->
+<div class="pw-section-divider" aria-hidden="true"></div>
+
+<!-- 加入我們 -->
+<!-- ACT 區塊 -->
+<!-- Action CTA -->
+<section class="pw-section pw-act" aria-labelledby="pw-act-title">
+ 
+  <div class="pw-container">
+    <div class="pw-inner pw-act__inner">
+      <h2 id="pw-act-title" class="pw-act__title">
+        申請 3DVR 線上藝廊
+      </h2>
+
+      <ul class="pw-act__stats" aria-label="平台數據">
+        <li class="pw-act__stat">
+          <strong class="pw-act__number">815</strong>
+          <span class="pw-act__label">ARTIST</span>
+        </li>
+
+        <li class="pw-act__stat">
+          <strong class="pw-act__number">4527</strong>
+          <span class="pw-act__label">ARTWORK</span>
+        </li>
+
+        <li class="pw-act__stat">
+          <strong class="pw-act__number">225</strong>
+          <span class="pw-act__label">3DVR</span>
+        </li>
+      </ul>
+
+      <p class="pw-act__lead">
+        讓世界看見你的作品，立即申請 3DVR 線上藝廊
+      </p>
+
+      <div class="pw-act__actions" aria-label="申請行動">
+  <a
+    class="pw-btn pw-btn--secondary pw-act__button"
+    href="./pw-sales-page.html"
+  >
+    開啟你的全球藝術展示空間
+  </a>
+<!--
+  <a
+    class="pw-btn pw-btn--primary pw-act__button"
+    href="./pw-join-us.html"
+  >
+    加入波翼
+  </a>
+  -->
+</div>
+    </div>
+  </div>
+</section>
+
+
+
+</main>
+
+
+<!-- Footer -->
+<footer class="pw-footer">
+  <div class="pw-container">
+    <div class="pw-inner pw-footer__inner">
+      <!-- Footer 左側 -->
+      <div class="pw-footer__aside">
+        <a
+          class="pw-footer__logo-link"
+          href="./index.html"
+          aria-label="POST WINGS 波翼藝術首頁"
+        >
+          <img
+            class="pw-footer__logo"
+            src="./img/logo.png"
+            alt="POST WINGS 波翼藝術"
+          />
+        </a>
+
+        <div class="pw-footer__meta">
+          <!-- 社群連結 -->
+          <ul class="pw-footer__social-list" aria-label="社群連結">
+            <li class="pw-footer__social-item">
+              <a
+                class="pw-footer__social-link"
+                href="https://www.facebook.com/61556203757989/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+              >
+                <img
+                  class="pw-footer__social-icon"
+                  src="./img/pw-icon-fb.png"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </a>
+            </li>
+
+            <li class="pw-footer__social-item">
+              <a
+                class="pw-footer__social-link"
+                href="https://lin.ee/Fo8Miwj"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LINE"
+              >
+                <img
+                  class="pw-footer__social-icon"
+                  src="./img/pw-icon-line.png"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </a>
+            </li>
+
+            <li class="pw-footer__social-item">
+              <a
+                class="pw-footer__social-link"
+                href="https://www.instagram.com/postwingsart/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+              >
+                <img
+                  class="pw-footer__social-icon"
+                  src="./img/pw-icon-ig.png"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </a>
+            </li>
+
+            <li class="pw-footer__social-item">
+              <a
+                class="pw-footer__social-link"
+                href="https://www.youtube.com/@POSTWINGS-sm4gl"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="YouTube"
+              >
+                <img
+                  class="pw-footer__social-icon"
+                  src="./img/pw-icon-youtube.png"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </a>
+            </li>
+          </ul>
+
+          <!-- 聯絡資料 -->
+          <address class="pw-footer__contact">
+            <h2 class="pw-footer__contact-title">聯絡我們</h2>
+
+            <a
+              class="pw-footer__contact-link"
+              href="mailto:service@metaassets.com.tw"
+            >
+              service@metaassets.com.tw
+            </a>
+
+            <a class="pw-footer__contact-link" href="tel:0930257803">
+              0930-257-803
+            </a>
+
+            <p class="pw-footer__contact-text">
+              台北市中山區建國北路二段3巷37號B1
+            </p>
+          </address>
+
+          <p class="pw-footer__copyright">
+            Copyright © 2026 元宇宙資產股份有限公司 版權所有
+          </p>
+        </div>
+      </div>
+
+
+<!-- Footer 右側導覽 -->
+<nav class="pw-footer__nav" aria-label="頁尾導覽">
+  <!-- 左欄：藝術資產聯盟、合作夥伴 -->
+  <div class="pw-footer__nav-column">
+    <!-- 藝術資產聯盟 -->
+    <div
+      class="pw-footer__nav-group"
+      aria-labelledby="footer-alliance-title"
+    >
+      <h2
+        id="footer-alliance-title"
+        class="pw-footer__nav-title"
+      >
+        藝術資產聯盟
+      </h2>
+
+      <ul class="pw-footer__nav-list">
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://www.bossmen.com/zh-TW/index/index.html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            博士門 Bossmen
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="http://www.easicolor.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            宣城科技 Easicolor
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://uprint.com.tw/about/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            布萊特 uPrint
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://ones-digital.com/zh/首頁/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            加伊創意科技 ONES
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- 合作夥伴 -->
+    <div
+      class="pw-footer__nav-group"
+      aria-labelledby="footer-partner-title"
+    >
+      <h2
+        id="footer-partner-title"
+        class="pw-footer__nav-title"
+      >
+        合作夥伴
+      </h2>
+
+      <ul class="pw-footer__nav-list">
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://www.facebook.com/100068823486807/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            寶佳潭美藝廊
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://www.facebook.com/100085289444712/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LIVE ART SPACE
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://art.kje-event.com.tw/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            台灣藝術博覽會
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://www.facebook.com/61578254614082/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            藝創生活節
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 右欄：合作學協會、平台入口 -->
+  <div class="pw-footer__nav-column">
+    <!-- 合作學協會 -->
+    <div
+      class="pw-footer__nav-group"
+      aria-labelledby="footer-association-title"
+    >
+      <h2
+        id="footer-association-title"
+        class="pw-footer__nav-title"
+      >
+        合作學協會
+      </h2>
+
+      <ul class="pw-footer__nav-list">
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://www.facebook.com/groups/909701919139272/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            中華文創學會
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://www.facebook.com/ccfa.tw/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            中華文物學會
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://www.facebook.com/owlactsartssociety/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            貓頭鷹藝術協會
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://www.facebook.com/maak1987/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            高雄市現代畫學會
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://www.twpapat.org/home/index.php"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            台灣粉彩藝術推廣協會
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://www.panasiaart.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            泛亞藝術聯盟
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://www.facebook.com/100063719484960/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            台北市西畫女畫家畫會
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://www.txsia.org.tw/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            台灣 XR 智能產業發展協會
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- 平台入口 -->
+    <div
+      class="pw-footer__nav-group"
+      aria-labelledby="footer-platform-title"
+    >
+      <h2
+        id="footer-platform-title"
+        class="pw-footer__nav-title"
+      >
+        平台入口
+      </h2>
+
+      <ul class="pw-footer__nav-list">
+        <li class="pw-footer__nav-item">
+          <a
+            class="pw-footer__nav-link"
+            href="https://virtual.metaassets.asia/manage/login"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            藝術家後台
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a class="pw-footer__nav-link" href="./pw-service-terms-page.html">
+            服務條款
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+          <a class="pw-footer__nav-link" href="./pw-privacy-policy-page.html">
+            隱私政策
+          </a>
+        </li>
+
+        <li class="pw-footer__nav-item">
+  <a
+    class="pw-footer__nav-link"
+    href="./pw-faq-page.html"
+  >
+    常見問題
+  </a>
+</li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating Actions -->
+<div class="pw-floating-actions" aria-label="快速操作">
+  <ul class="pw-floating-actions__list">
+    <li class="pw-floating-actions__item">
+      <button
+        class="pw-floating-actions__button pw-floating-actions__button--to-top"
+        type="button"
+        data-pw-back-to-top
+        aria-label="回到頁面頂端"
+      >
+        <img
+          class="pw-floating-actions__icon"
+          src="./img/pw-icon-gotop.png"
+          alt=""
+          aria-hidden="true"
+        />
+      </button>
+    </li>
+  </ul>
+</div>
+
+
+  <!-- 全站共用 JS：Header、Back to top -->
+  <script type="module" src="./js/pw-enhance.js"></script>
+
+  
+
+
+<!-- 關閉 HTML -->
+</body>
+</html>
